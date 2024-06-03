@@ -1,0 +1,40 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "animal:pangolin",
+
+
+            "textures": {
+                "default": "textures/safari/pangolin_0.png"
+            },
+            "geometry": {
+                "default": "geometry.pangolin"
+            },
+            "render_controllers": [
+                "controller.render.one"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            "animations": {
+                "idle": "animation.pangolin.idle",
+                "walk": "animation.pangolin.walk",
+                "look_at_target": "animation.common.look_at_target_half",
+                "varOne" : "animation.pangolin.variantone"
+            },
+            "animation_controllers": [
+                { "animal": "controller.animation.pangolin.general" }
+            ],
+
+
+            "spawn_egg": { 
+                "base_color" : "#fff98a" ,
+                "overlay_color" : "#f6b8c5"
+            }
+        }
+    }
+}

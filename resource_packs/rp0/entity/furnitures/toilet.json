@@ -1,0 +1,48 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "furniture:toilet",
+
+            "geometry": {
+                "default": "geometry.toilet"
+            },
+            "materials": {
+                "default": "bat"
+            },
+            "render_controllers": [
+                "controller.render.two"
+            ],
+            "textures": {
+                "one": "textures/furniture/toilet/01.png",
+                "two": "textures/furniture/toilet/02.png"
+            },
+
+
+
+            "animations": {
+                "recolor_particle": "animation.particles.recolor_furn",
+                "rotate_particle": "animation.particles.rotate_furn",
+                "toilet_open" : "animation.toilet.open",
+                "toilet_close" : "animation.toilet.close"
+            },
+            "animation_controllers": [
+                { "rotate": "controller.animation.particles.furniture_rotate" },
+                { "recolor": "controller.animation.particles.furniture_recolor" },
+                { "open_close": "controller.animation.furniture.toilet" }
+            ],
+
+
+
+
+            "particle_effects": {
+                "recolor_p": "p:recolor",
+                "rotate_p": "p:rotate"
+            },
+
+            "spawn_egg": {
+                "texture": "toilet"
+            }
+        }
+    }
+}

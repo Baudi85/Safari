@@ -1,0 +1,139 @@
+{
+    "format_version": [ 1, 1, 0 ],
+    
+    "craft:c_01_0": {    "textures": "craft_01_0" ,    "sound": "stone"    },
+    "craft:c_01_1": {    "textures": "craft_01_1" ,    "sound": "stone"    },
+    "craft:c_01_2": {    "textures": "craft_01_2" ,    "sound": "stone"    },
+    "craft:c_01_3": {    "textures": "craft_01_3" ,    "sound": "stone"    },
+    "craft:c_01_4": {    "textures": "craft_01_4" ,    "sound": "stone"    },
+    "craft:c_01_5": {    "textures": "craft_01_5" ,    "sound": "stone"    },
+    "craft:c_01_6": {    "textures": "craft_01_6" ,    "sound": "stone"    },
+    "craft:c_01_7": {    "textures": "craft_01_7" ,    "sound": "stone"    },
+    "craft:c_01_8": {    "textures": "craft_01_8" ,    "sound": "stone"    },
+    
+    "craft:c_02_0": {    "textures": "craft_02_0" ,    "sound": "stone"    },
+    "craft:c_02_1": {    "textures": "craft_02_1" ,    "sound": "stone"    },
+    "craft:c_02_2": {    "textures": "craft_02_2" ,    "sound": "stone"    },
+    "craft:c_02_3": {    "textures": "craft_02_3" ,    "sound": "stone"    },
+    "craft:c_02_4": {    "textures": "craft_02_4" ,    "sound": "stone"    },
+    "craft:c_02_5": {    "textures": "craft_02_5" ,    "sound": "stone"    },
+    "craft:c_02_6": {    "textures": "craft_02_6" ,    "sound": "stone"    },
+    "craft:c_02_7": {    "textures": "craft_02_7" ,    "sound": "stone"    },
+    "craft:c_02_8": {    "textures": "craft_02_8" ,    "sound": "stone"    },
+    
+    "craft:03_0": {    "textures": "craft_03_0" ,    "sound": "stone"    },
+    "craft:03_1": {    "textures": "craft_03_1" ,    "sound": "stone"    },
+    "craft:03_2": {    "textures": "craft_03_2" ,    "sound": "stone"    },
+    "craft:03_3": {    "textures": "craft_03_3" ,    "sound": "stone"    },
+    "craft:03_4": {    "textures": "craft_03_4" ,    "sound": "stone"    },
+    "craft:03_5": {    "textures": "craft_03_5" ,    "sound": "stone"    },
+    "craft:03_6": {    "textures": "craft_03_6" ,    "sound": "stone"    },
+    "craft:03_7": {    "textures": "craft_03_7" ,    "sound": "stone"    },
+    "craft:03_8": {    "textures": "craft_03_8" ,    "sound": "stone"    },
+    
+    "craft:04_0": {    "textures": "craft_04_0" ,    "sound": "stone"    },
+    "craft:04_1": {    "textures": "craft_04_1" ,    "sound": "stone"    },
+    "craft:04_2": {    "textures": "craft_04_2" ,    "sound": "stone"    },
+    "craft:04_3": {    "textures": "craft_04_3" ,    "sound": "stone"    },
+    "craft:04_4": {    "textures": "craft_04_4" ,    "sound": "stone"    },
+    "craft:04_5": {    "textures": "craft_04_5" ,    "sound": "stone"    },
+    "craft:04_6": {    "textures": "craft_04_6" ,    "sound": "stone"    },
+    "craft:04_7": {    "textures": "craft_04_7" ,    "sound": "stone"    },
+    "craft:04_8": {    "textures": "craft_04_8" ,    "sound": "stone"    },
+    
+
+    "craft:05_0": {    "textures": "craft_05_0" ,    "sound": "stone"    },
+    "craft:05_1": {    "textures": "craft_05_1" ,    "sound": "stone"    },
+    "craft:05_2": {    "textures": "craft_05_2" ,    "sound": "stone"    },
+    "craft:05_3": {    "textures": "craft_05_3" ,    "sound": "stone"    },
+    "craft:05_4": {    "textures": "craft_05_4" ,    "sound": "stone"    },
+    "craft:05_5": {    "textures": "craft_05_5" ,    "sound": "stone"    },
+    "craft:05_6": {    "textures": "craft_05_6" ,    "sound": "stone"    },
+    "craft:05_7": {    "textures": "craft_05_7" ,    "sound": "stone"    },
+    "craft:05_8": {    "textures": "craft_05_8" ,    "sound": "stone"    },
+
+
+    "craft:c_06_0": {    "textures": "craft_06_0" ,    "sound": "stone"    },
+    "craft:c_06_1": {    "textures": "craft_06_1" ,    "sound": "stone"    },
+    "craft:c_06_2": {    "textures": "craft_06_2" ,    "sound": "stone"    },
+    "craft:c_06_3": {    "textures": "craft_06_3" ,    "sound": "stone"    },
+    "craft:c_06_4": {    "textures": "craft_06_4" ,    "sound": "stone"    },
+    "craft:c_06_5": {    "textures": "craft_06_5" ,    "sound": "stone"    },
+    "craft:c_06_6": {    "textures": "craft_06_6" ,    "sound": "stone"    },
+    "craft:c_06_7": {    "textures": "craft_06_7" ,    "sound": "stone"    },
+    "craft:c_06_8": {    "textures": "craft_06_8" ,    "sound": "stone"    },
+
+
+
+    "tuto:01_0": {    "textures" : { "down" : "black", "east" : "tuto_01_01", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+    "tuto:01_1": {    "textures" : { "down" : "black", "east" : "tuto_01_02", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+    "tuto:01_2": {    "textures" : { "down" : "black", "east" : "tuto_01_03", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+    "tuto:01_3": {    "textures" : { "down" : "black", "east" : "tuto_01_04", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+    "tuto:01_4": {    "textures" : { "down" : "black", "east" : "tuto_01_05", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+    "tuto:01_5": {    "textures" : { "down" : "black", "east" : "tuto_01_06", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+    "tuto:01_6": {    "textures" : { "down" : "black", "east" : "tuto_01_07", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+    "tuto:01_7": {    "textures" : { "down" : "black", "east" : "tuto_01_08", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+    "tuto:01_8": {    "textures" : { "down" : "black", "east" : "tuto_01_09", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+
+    "tuto:02_0": {    "textures" : { "down" : "black", "east" : "tuto_02_01", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+    "tuto:02_1": {    "textures" : { "down" : "black", "east" : "tuto_02_02", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+    "tut:02_2":  {    "textures" : { "down" : "black", "east" : "tuto_02_03", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+    "tuto:02_3": {    "textures" : { "down" : "black", "east" : "tuto_02_04", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+    "tuto:02_4": {    "textures" : { "down" : "black", "east" : "tuto_02_05", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+    "tuto:02_5": {    "textures" : { "down" : "black", "east" : "tuto_02_06", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+    "tuto:02_6": {    "textures" : { "down" : "black", "east" : "tuto_02_07", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+    "tuto:02_7": {    "textures" : { "down" : "black", "east" : "tuto_02_08", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+    "tuto:02_8": {    "textures" : { "down" : "black", "east" : "tuto_02_09", "north" : "black", "south" : "black", "up" : "black", "west" : "black" } ,"sound": "stone"    },
+
+
+    "tuto:red_sand": {    "textures": "red_top" ,    "sound": "stone"    },
+    "tuto:red_sand_c": {    "textures": "red_top_c" ,    "sound": "stone"    },
+
+
+
+    "map:m_01": {    "textures" : { "down" : "log_side", "east" : "log_side", "north" : "log_side", "south" : "map_01", "up" : "log_side", "west" : "log_side" } ,"sound": "stone"    },
+    "map:m_02": {    "textures" : { "down" : "log_side", "east" : "log_side", "north" : "log_side", "south" : "map_02", "up" : "log_side", "west" : "log_side" } ,"sound": "stone"    },
+    "map:m_03": {    "textures" : { "down" : "log_side", "east" : "log_side", "north" : "log_side", "south" : "map_03", "up" : "log_side", "west" : "log_side" } ,"sound": "stone"    },
+    "map:m_04": {    "textures" : { "down" : "log_side", "east" : "log_side", "north" : "log_side", "south" : "map_04", "up" : "log_side", "west" : "log_side" } ,"sound": "stone"    },
+    "map:m_05": {    "textures" : { "down" : "log_side", "east" : "log_side", "north" : "log_side", "south" : "map_05", "up" : "log_side", "west" : "log_side" } ,"sound": "stone"    },
+    "map:m_06": {    "textures" : { "down" : "log_side", "east" : "log_side", "north" : "log_side", "south" : "map_06", "up" : "log_side", "west" : "log_side" } ,"sound": "stone"    },
+    "map:m_07": {    "textures" : { "down" : "log_side", "east" : "log_side", "north" : "log_side", "south" : "map_07", "up" : "log_side", "west" : "log_side" } ,"sound": "stone"    },
+    "map:m_08": {    "textures" : { "down" : "log_side", "east" : "log_side", "north" : "log_side", "south" : "map_08", "up" : "log_side", "west" : "log_side" } ,"sound": "stone"    },
+    "map:m_09": {    "textures" : { "down" : "log_side", "east" : "log_side", "north" : "log_side", "south" : "map_09", "up" : "log_side", "west" : "log_side" } ,"sound": "stone"    },
+
+
+    "dirt" : {
+        "isotropic" : false,
+        "sound" : "gravel",
+        "textures" : "dirt"
+    },
+    "sand" : {
+        "brightness_gamma" : 0.550,
+        "isotropic" : false,
+        "sound" : "sand",
+        "textures" : "sand"
+    },
+    "grass" : {
+        "carried_textures" : {
+           "down" : "grass_carried_bottom",
+           "side" : "grass_carried",
+           "up" : "grass_carried_top"
+        },
+        "isotropic" : {
+           "down" : false,
+           "up" : false
+        },
+        "sound" : "grass",
+        "textures" : {
+           "down" : "grass_bottom",
+           "side" : "grass_side",
+           "up" : "grass_top"
+        }
+        
+    },
+    "hardened_clay" : {
+        "isotropic" : false,
+        "sound" : "stone",
+        "textures" : "hardened_clay"
+    }
+}

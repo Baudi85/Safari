@@ -1,0 +1,39 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "animal:serval",
+
+
+            "textures": {
+                "default": "textures/safari/serval_01.png"
+            },
+            "geometry": {
+                "default": "geometry.serval"
+            },
+            "render_controllers": [
+                "controller.render.one"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            "animations": {
+                "idle": "animation.serval.idle",
+                "walk": "animation.serval.walk",
+                "look_at_target": "animation.common.look_at_target"
+            },
+            "animation_controllers": [
+                { "animal": "controller.animation.serval.general" }
+            ],
+
+
+            "spawn_egg": { 
+                "base_color" : "#8c250d" ,
+                "overlay_color" : "#973cad"
+            }
+        }
+    }
+}

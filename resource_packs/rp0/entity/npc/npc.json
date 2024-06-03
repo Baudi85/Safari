@@ -1,0 +1,50 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "npc:npc",
+
+      "textures": {
+        "one":   "textures/npc/01",
+        "two":   "textures/npc/02",
+        "three": "textures/npc/03",
+        "four":  "textures/npc/04",
+        "five":  "textures/npc/05",
+        "six":   "textures/npc/06",
+        "seven": "textures/npc/07",
+        "eight": "textures/npc/08",
+        "nine":  "textures/npc/09",
+        "ten":   "textures/npc/10"
+      },
+      "geometry": {
+        "steve": "geometry.steve",
+        "alex":   "geometry.alex"
+      },
+
+
+
+      "render_controllers": [
+        "controller.render.npc_c"
+      ],
+      "materials": {
+        "default": "bat"
+      },
+
+      "animations" : {
+        "idle" : "animation.npc.idle",
+        "look_at_target" : "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+        { "root": "controller.animation.npc.idle" }
+      ],
+    
+
+
+      
+      "spawn_egg": { 
+        "base_color" : "#b88a38" ,
+        "overlay_color" : "#ce79c0"
+      }
+    }
+  }
+}

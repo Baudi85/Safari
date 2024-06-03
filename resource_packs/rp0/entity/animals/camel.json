@@ -1,0 +1,43 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "animal:camel",
+
+
+            "textures": {
+                "default": "textures/safari/camel_01.png"
+            },
+            "geometry": {
+                "default": "geometry.camel"
+            },
+            "render_controllers": [
+                "controller.render.oneChest"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            "animations": {
+                "idle": "animation.camel.idle",
+                "walk": "animation.camel.walk",
+                "look_at_target": "animation.common.look_at_target",
+                "varOne" : "animation.camel.variantone",
+                "varTwo" : "animation.camel.varianttwo",
+                "varThree" : "animation.camel.variantthree",
+                "varFour" : "animation.camel.variantfour"
+            },
+            "animation_controllers": [
+                { "animal": "controller.animation.camel.general" }
+            ],
+
+
+            "spawn_egg": { 
+                "base_color" : "#264d7c" ,
+                "overlay_color" : "#75108a"
+            }
+        }
+    }
+}

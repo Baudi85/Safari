@@ -1,0 +1,79 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.serval.pose_one": {
+			"loop": true,
+			"bones": {
+				"Leg1": {
+					"rotation": [-15, 0, 0]
+				},
+				"Leg2": {
+					"rotation": [5, 0, 0]
+				},
+				"Leg3": {
+					"rotation": [5, 0, 0]
+				},
+				"Leg4": {
+					"rotation": [-10, 0, 0]
+				},
+				"Head": {
+					"rotation": [20, 0, 0]
+				},
+				"Tail": {
+					"rotation": [15, 0, 0]
+				}
+			}
+		},
+		"animation.serval.pose_two": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"position": [0, -5, 1.8]
+				},
+				"Leg1": {
+					"rotation": [-85, -10, 0],
+					"position": [0.2, 0.9, -1]
+				},
+				"Leg2": {
+					"rotation": [-75, 15, 0],
+					"position": [-0.5, 0.9, 0]
+				},
+				"Leg3": {
+					"rotation": [95, 15, 0]
+				},
+				"Leg4": {
+					"rotation": [90, 0, 0]
+				},
+				"Tail": {
+					"rotation": [60, 0, 0]
+				}
+			}
+		},
+		"animation.serval.pose_three": {
+			"loop": true,
+			"bones": {
+				"Leg1": {
+					"rotation": [-55, 0, -15],
+					"position": [0, 0.8, -0.4]
+				},
+				"Leg2": {
+					"rotation": [10, 0, 0]
+				},
+				"Leg3": {
+					"rotation": [20, 0, 0]
+				},
+				"Leg4": {
+					"rotation": [-25, 0, 0],
+					"position": [0, -0.9, -1.8]
+				},
+				"Head": {
+					"rotation": [0, -30, 0],
+					"position": [0.6, 0, -0.9]
+				},
+				"Tail": {
+					"rotation": [20, 0, 0]
+				}
+			}
+		}
+	}
+}

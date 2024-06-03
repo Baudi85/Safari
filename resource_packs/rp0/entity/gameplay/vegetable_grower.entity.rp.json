@@ -1,0 +1,38 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "gameplay:vegetable_grower",
+            
+            "textures": {
+                "default": "textures/gameplay/vegetable_grower/01.png",
+                "c_01": "textures/gameplay/vegetable_grower/carrot_01.png",
+                "c_02": "textures/gameplay/vegetable_grower/carrot_02.png",
+                "c_03": "textures/gameplay/vegetable_grower/carrot_03.png",
+                "c_04": "textures/gameplay/vegetable_grower/carrot_04.png",
+                "p_01": "textures/gameplay/vegetable_grower/potatoe_01.png",
+                "p_02": "textures/gameplay/vegetable_grower/potatoe_02.png",
+                "p_03": "textures/gameplay/vegetable_grower/potatoe_03.png",
+                "p_04": "textures/gameplay/vegetable_grower/potatoe_04.png",
+                "w_01": "textures/gameplay/vegetable_grower/wheat_01.png",
+                "w_02": "textures/gameplay/vegetable_grower/wheat_02.png",
+                "w_03": "textures/gameplay/vegetable_grower/wheat_03.png",
+                "w_04": "textures/gameplay/vegetable_grower/wheat_04.png"
+            },
+            "geometry": {
+                "default": "geometry.vegetable_grower"
+            },
+            "render_controllers": [
+                "controller.render.vegetable_grower"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+            
+            "spawn_egg": {
+                "base_color": "#022182",
+                "overlay_color": "#5e29ac"
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "tuto:energy_tank",
+            
+            "textures": {
+                "default": "textures/gameplay/energy_tank/energy_tank.png"
+            },
+            "geometry": {
+                "default": "geometry.energy_tank_tuto"
+            },
+            "render_controllers": [
+                "controller.render.one"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+            
+            "animations": {
+                "zero"  : "animation.energy_tank.zero",
+                "one" : "animation.energy_tank.one",
+                "two" : "animation.energy_tank.two",
+                "three" : "animation.energy_tank.three",
+                "four" : "animation.energy_tank.four",
+                "five" : "animation.energy_tank.five",
+                "six" : "animation.energy_tank.six",
+                "seven" : "animation.energy_tank.seven",
+                "eight" : "animation.energy_tank.eight",
+                "nine" : "animation.energy_tank.nine",
+                "ten": "animation.energy_tank.ten"
+            },
+            "animation_controllers": [
+                { "tank": "controller.animation.energy_tank" }
+            ],
+            
+            "spawn_egg": {
+                "base_color": "#1dcf84",
+                "overlay_color": "#50935d"
+            }
+        }
+    }
+}

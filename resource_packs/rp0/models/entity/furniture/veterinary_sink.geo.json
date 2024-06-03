@@ -1,0 +1,44 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.veterinary_sink",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 9,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "sink",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-24, 15, -16], "size": [16.1, 1, 24], "uv": [0, 63]},
+						{"origin": [15.9, 15, -16], "size": [8.1, 1, 24], "uv": [56, 64]},
+						{"origin": [16.2, 11, -10], "size": [6, 4, 12], "uv": [70, 38]},
+						{"origin": [12, 16, -5], "size": [10, 6, 1], "uv": [0, 0]},
+						{"origin": [17, 16, -7.3], "size": [2, 2, 2], "uv": [8, 8]},
+						{"origin": [17, 16, -4.7], "size": [2, 2, 2], "uv": [8, 8]},
+						{"origin": [20, 0, -15], "size": [3, 15, 2], "uv": [0, 32]},
+						{"origin": [20, 0, 5], "size": [3, 15, 2], "uv": [0, 32]},
+						{"origin": [-17, 0, -15], "size": [3, 15, 2], "uv": [0, 32], "mirror": true},
+						{"origin": [-17, 0, 5], "size": [3, 15, 2], "uv": [0, 32], "mirror": true},
+						{"origin": [20, 3, -13], "size": [3, 7, 18], "uv": [0, 88]},
+						{"origin": [-17, 3, -13], "size": [3, 7, 18], "uv": [0, 88], "mirror": true},
+						{"origin": [-14, 1, -15], "size": [34, 5, 1], "uv": [70, 32]},
+						{"origin": [-14, 1, 7], "size": [34, 5, 1], "uv": [70, 32]},
+						{"origin": [-7.9, 15, -16], "size": [23.8, 1, 1.1], "uv": [73, 2]},
+						{"origin": [-7.9, 15, 6.9], "size": [23.8, 1, 1.1], "uv": [73, 0]},
+						{"origin": [-8, 7, -15], "size": [24, 9, 22], "uv": [0, 32]},
+						{"origin": [-8.5, 6, -15.5], "size": [25, 9, 23], "uv": [0, 0]}
+					],
+					"locators": {
+						"particles": [0, 7, 0]
+					}
+				}
+			]
+		}
+	]
+}

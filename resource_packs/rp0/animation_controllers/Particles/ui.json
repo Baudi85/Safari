@@ -1,0 +1,15 @@
+{
+    "format_version" : "1.10.0",
+    "animation_controllers":{
+        "controller.animation.particles.ui": {
+            "initial_state" : "default",
+            "states": {
+                "default": {
+                    "animations" : [
+                        "ui_part"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "format_version" : "1.10.0",
+    "animation_controllers":{
+        "controller.animation.particles.recolor": {
+            "initial_state" : "default",
+            "states": {
+                "default": {
+                    "transitions" : [
+                        {
+							"saddled" : "query.is_saddled"
+						}
+                    ]
+                },
+                "saddled":{
+                    "animations" : [
+                        "recolorAnim"
+                    ],
+                    "transitions" : [
+                        { "default" : "!query.is_saddled" }
+                    ]
+                }
+            }
+        }
+    }
+}

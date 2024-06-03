@@ -1,0 +1,97 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.pangolin.pose_one": {
+			"loop": true,
+			"bones": {
+				"Body_1": {
+					"rotation": [5, 0, 0]
+				},
+				"Body_2": {
+					"rotation": [5, 0, 0]
+				},
+				"Head_1": {
+					"rotation": [-15, 0, 0]
+				},
+				"Head": {
+					"rotation": [-20, 0, 0]
+				},
+				"Leg1": {
+					"rotation": [0, 0, -5]
+				},
+				"Leg3": {
+					"rotation": [-10, 0, 0]
+				}
+			}
+		},
+		"animation.pangolin.pose_two": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"rotation": [0, 0, 80],
+					"position": [2, -2.9, 2]
+				},
+				"Body_0": {
+					"rotation": [-45, 0, 0]
+				},
+				"Body_1": {
+					"rotation": [-70, 0, 0]
+				},
+				"Body_2": {
+					"rotation": [-45, 0, 0]
+				},
+				"Body_3": {
+					"rotation": [0, 5, 0]
+				},
+				"Head_1": {
+					"rotation": [15, 0, 0]
+				},
+				"Head": {
+					"rotation": [25, 0, 10],
+					"position": [0, -0.6, -0.5]
+				},
+				"Leg1": {
+					"rotation": [25, 0, 10]
+				},
+				"Leg2": {
+					"rotation": [60, 0, 0]
+				},
+				"Leg3": {
+					"position": [0, 0, -3]
+				},
+				"Leg4": {
+					"position": [1, 0, -4]
+				}
+			}
+		},
+		"animation.pangolin.pose_three": {
+			"loop": true,
+			"bones": {
+				"Body_1": {
+					"rotation": [0, -25, 0]
+				},
+				"Body_2": {
+					"rotation": [0, -30, 0]
+				},
+				"Body_3": {
+					"rotation": [0, -35, 0]
+				},
+				"Head_1": {
+					"rotation": [0, 25, 0]
+				},
+				"Head": {
+					"rotation": [0, 20, 0]
+				},
+				"Leg1": {
+					"rotation": [-25, 0, 0]
+				},
+				"Leg3": {
+					"rotation": [-15, 0, 0]
+				},
+				"Leg4": {
+					"rotation": [25, 0, 0]
+				}
+			}
+		}
+	}
+}

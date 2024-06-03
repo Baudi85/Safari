@@ -1,0 +1,33 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "tt:spawner",
+            
+            "textures": {
+                "default": "textures/gameplay/box/box.png"
+            },
+            "geometry": {
+                "default": "geometry.box"
+            },
+            "render_controllers": [
+                "controller.render.one"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+            
+            "animations": {
+                "open" : "animation.box.open"
+            },
+            "animation_controllers": [
+                { "box": "controller.animation.box" }
+            ],
+            
+            "spawn_egg": {
+                "base_color": "#3eb0e9",
+                "overlay_color": "#66fb11"
+            }
+        }
+    }
+}

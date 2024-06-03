@@ -1,0 +1,47 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "animal:lion",
+
+
+            "textures": {
+                "male": "textures/safari/lionmale_01.png",
+                "female": "textures/safari/lionfemale_01.png"
+            },
+            "geometry": {
+                "male": "geometry.lionMale",
+                "female": "geometry.lionFemale"
+            },
+            "render_controllers": [
+                { "controller.render.lion.male":   "query.is_sheared == 1" },
+                { "controller.render.lion.female": "query.is_sheared == 0" }
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+            "animations": {
+                "idle": "animation.lionMale.idle",
+                "walk": "animation.lionMale.walk",
+                "look_at_target": "animation.common.look_at_target_half",
+                "sleep":"animation.lionFemale.sleep",
+                "sit":"animation.lionMale.sit",
+
+                "controller.animal": "controller.animation.lion.general"
+            },
+            "scripts": {
+                "animate": [
+                  "controller.animal"
+                ]
+              },
+
+
+            "spawn_egg": {
+                "base_color": "#7f83df",
+                "overlay_color": "#597269"
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        
+        "controller.animation.cloner_tuto": {
+            "initial_state": "default",
+            "states": {
+                
+                "default": {
+                    "transitions": [     
+                        { "running": "query.is_sheared == 1" }
+                    ]
+                },
+                "running" : {
+                    "on_entry": [ "/execute @e[type=armor_stand,name=current] ~ ~ ~ scoreboard players set @s ener 60" ,"/function gameplay/energy_tank/refresh_ui" ],
+                    "transitions": [     
+                        { "updated": "query.is_baby == 1" }
+                    ]
+                },
+                "updated" : {
+                    "on_entry": [ "/function tuto/tuto/next" ]
+                }
+            }
+        }
+    }
+}

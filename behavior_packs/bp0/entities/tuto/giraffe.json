@@ -1,0 +1,136 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "tuto:giraffe",
+        "is_spawnable": false,
+        "is_summonable": true,
+        "is_experimental": false
+
+      },
+      "component_groups": {
+
+        "mulcho:baby":{
+          "minecraft:is_baby": {},
+          "minecraft:timer": {"looping": false,"time": 0.3,"time_down_event": {"event": "evt:reset"}}
+        },
+        "mulcho:sheared":{
+          "minecraft:is_sheared": {},
+          "minecraft:timer": {"looping": false,"time": 0.3,"time_down_event": {"event": "evt:reset"}}
+        },
+        "mulcho:charged":{
+          "minecraft:despawn": {},
+          "minecraft:timer": {"looping": false,"time": 0.3,"time_down_event": {"event": "evt:reset"}}
+        },
+
+        "mulcho:variant_0": {"minecraft:variant": {"value": 0}},
+        "mulcho:variant_1": {"minecraft:variant": {"value": 1}},
+        "mulcho:variant_2": {"minecraft:variant": {"value": 2}},
+
+        "cg:despawn" : {
+          "minecraft:despawn": {}
+        },
+        
+
+        
+        "mulcho:interact":{
+          "minecraft:interact": {
+            "interactions": [
+              {
+                "on_interact": {  "filters": {"all_of": [  {"test": "has_equipment","domain": "hand","subject": "other","value": "gameplay:cotton_bud"} ]}},
+                "use_item": true,
+                "swing": true,
+                "interact_text" : "action.interact.take_dna",
+                "spawn_items": {"table": "loot_tables/dna/tuto.json"},
+                "play_sounds": "random.pop"
+               }
+            ]
+          }
+        }
+      },
+      "components": {
+        "minecraft:type_family": {
+          "family": [ "furniture", "inanimate" ]
+        },
+        "minecraft:damage_sensor":[
+          {
+             "cause":"all",
+             "deals_damage":false
+          }
+        ],
+        "minecraft:collision_box": {
+          "width": 1.1,
+          "height": 2.6
+      },
+        "minecraft:health": {
+          "value": 2,
+          "max": 2
+        },
+        "minecraft:scale": {
+          "value": 1.4
+        },
+        "minecraft:navigation.walk": {
+        },
+        "minecraft:movement.basic": {
+          "max_turn": 0.01
+        },
+        "minecraft:physics": {},
+        
+        "minecraft:pushable": {
+          "is_pushable": false,
+          "is_pushable_by_piston": true
+        }
+      },
+      "events": {
+
+        "minecraft:entity_spawned": {
+          "add": 	{"component_groups": ["mulcho:interact","mulcho:variant_0"]}
+        },
+
+
+        "evt:set_baby": 		{"add": 	{"component_groups": ["mulcho:baby"]}},
+        "evt:remove_baby": 	{"remove": 	{"component_groups": ["mulcho:baby"]}},
+        
+        "evt:set_sheared": 	{"add": 	{"component_groups": ["mulcho:sheared"]}},
+        "evt:remove_sheared": {"remove": 	{"component_groups": ["mulcho:sheared"]}},
+
+        "evt:set_charged": 	{"add": 	{"component_groups": ["mulcho:charged"]}},
+        "evt:remove_charged": {"remove": 	{"component_groups": ["mulcho:charged"]}},
+       
+
+        "evt:reset": 		{"remove": 	{"component_groups": ["mulcho:baby","mulcho:sheared","mulcho:charged"]}},
+
+        "evt:set_good" : {
+          "add": 	{"component_groups": ["cpg:good"]}
+        },
+
+        "despawn" : {
+          "add": {"component_groups": ["cg:despawn"]}
+        },
+
+        "evt:cycle":{
+            "sequence": [
+                {
+                  "add": 	   {"component_groups": [ "mulcho:sheared"]}
+                },
+                {
+                  "filters": { "test": "is_variant", "value": 0},
+                  "remove":  {"component_groups": [ "mulcho:variant_0" ]},
+                  "add": 	   {"component_groups": [ "mulcho:variant_1" ]}
+                },
+                {
+                  "filters": { "test": "is_variant", "value": 1},
+                  "remove":  {"component_groups": [ "mulcho:variant_1" ]},
+                  "add": 	   {"component_groups": [ "mulcho:variant_2" ]}
+                },
+                {
+                  "filters": { "test": "is_variant", "value": 2},
+                  "remove":  {"component_groups": [ "mulcho:variant_2" ]},
+                  "add": 	   {"component_groups": [ "mulcho:variant_0" ]}
+                }
+            ]
+        }
+      }
+    }
+  }
+  

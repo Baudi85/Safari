@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.jeepone.walk": {
+			"loop": true,
+			"bones": {
+				"Wheel_0": {
+					"rotation": ["-query.anim_time*360", 0, 0]
+				},
+				"Wheel_3": {
+					"rotation": ["-query.anim_time*360", 0, 0]
+				},
+				"Body_1": {
+					"position": [0, "math.sin(query.anim_time*800)*0.5", 0]
+				}
+			},
+			"particle_effects": {
+                "0.0": [
+                    {
+                        "effect": "dirt_particles",
+                        "locator": "wheel_loc_0"
+                    },
+                    {
+                        "effect": "dirt_particles",
+                        "locator": "wheel_loc_1"
+                    }
+                ]
+            }
+		}
+	}
+}

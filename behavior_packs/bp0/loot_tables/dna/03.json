@@ -1,0 +1,28 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "dna:camel",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "name": "gameplay:cotton_bud",
+                    "type": "item",
+                    "weight": 4,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 0
+                            }
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

@@ -1,0 +1,351 @@
+{
+  "namespace": "how_to_play",
+
+  "how_to_play_screen@how_to_play_common.screen_base": {
+    "$section_content_panels": "how_to_play.section_content_panels",
+    "$selector_stack_panel": "how_to_play.selector_stack_panel",
+    "$header_safezone_control": "common_store.store_top_bar_filler",
+    "$header_bar_control": "common_store.store_top_bar",
+    "$fill_alpha": 1.0,
+    "$is_full_screen_layout": true
+    
+  },
+
+  "selector_stack_panel": {
+    "type": "stack_panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "orientation": "vertical",
+    "$default_selector_toggle_index": 0,
+    "controls": [
+      {
+        "how_to_play_selector_pane": {
+          "type": "stack_panel",
+          "controls": [
+            {
+              "padding_0": {
+                "type": "panel",
+                "size": [ 0, 6 ]
+              }
+            },
+
+
+            { "about_us_buton@how_to_play.about_us_buton":      { "$toggle_group_forced_index": 3 } },
+            
+            { "map_category@how_to_play_common.topic_category": { "$category": "map" } },
+            { "map_button@how_to_play.map_button":              { "$toggle_group_forced_index": 4 } },
+            { "mines_button@how_to_play.base_button":           { "$toggle_group_forced_index": 5 } },
+            { "mines_button@how_to_play.mines_button":          { "$toggle_group_forced_index": 6 } },
+            { "gameplay_category@how_to_play_common.topic_category": { "$category": "gameplay" }},
+
+            { "animals_button@how_to_play.animals_button":      { "$toggle_group_forced_index": 7 } },
+            { "dna_button@how_to_play.dna_button":              { "$toggle_group_forced_index": 8 } },
+            { "energy_button@how_to_play.energy_button":        { "$toggle_group_forced_index": 9 } },
+            { "ores_button@how_to_play.ores_button":  { "$toggle_group_forced_index": 10 } },
+            { "craftings_button@how_to_play.craftings_button":  { "$toggle_group_forced_index": 11 } },
+            { "gettingstarted_button@how_to_play.gettingstarted_button":  { "$toggle_group_forced_index": 12 } },
+            {
+              "padding_1@how_to_play_common.padding": {
+                "size": [ 0, 10 ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "section_content_panels": {
+    "type": "stack_panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [ "100% - 5px", "100%c + 5px" ],
+    "offset": [ 2, 0 ],
+    "controls": [
+      {
+        "general_tips_sections": {
+          "type": "stack_panel",
+          "controls": [
+            {
+              "section_contents_header@how_to_play_common.section_contents_header": {}
+            },
+            { "about_us_section@how_to_play.about_us_section": {} },
+            { "map_section@how_to_play.map_section": {} },
+            { "base_section@how_to_play.base_section": {} },
+            { "mines_section@how_to_play.mines_section": {} },
+            { "animals_section@how_to_play.animals_section": {} },
+            { "dna_section@how_to_play.dna_section": {} },
+            { "energy_section@how_to_play.energy_section": {} },
+            { "ores_section@how_to_play.ores_section": {} },
+            { "craftings_section@how_to_play.craftings_section": {} },
+            { "gettingstarted_section@how_to_play.gettingstarted_section": {} },
+            {
+              "section_contents_footer@how_to_play_common.section_contents_footer": {}
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "about_us_buton@how_to_play_common.section_toggle_button": {
+    "$section_topic": "about_us"
+  },
+  "about_us_section@how_to_play_common.main_sections" : {
+    "bindings": [  { "binding_type": "view", "source_control_name": "about_us_button_toggle", "source_property_name": "#toggle_state", "target_property_name": "#visible" } ],
+    "controls": [
+      { "image_addoninfo_1@how_to_play_common.image": { "texture": "textures/ui/pack_logo", "size": [ "100%", "100px" ] } },
+      { "padding_2@how_to_play_common.padding": {} },
+      
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.about_us.text.team_name" } },
+      { "image_addoninfo_1@how_to_play_common.image": { "texture": "textures/ui/pg_logo",  "size": [ "100%", "100px" ]  } },
+      { "head@how_to_play_common.header":                { "$text": "howtoplay.about_us.twitter.name" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.about_us.twitter.at" } },
+      { "head@how_to_play_common.header":                { "$text": "howtoplay.about_us.insta.name" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.about_us.insta.at" } },
+      { "head@how_to_play_common.header":                { "$text": "howtoplay.about_us.web.name" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.about_us.web.at" } },
+      { "head@how_to_play_common.header":                { "$text": "howtoplay.about_us.yt.name" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.about_us.yt.at" } },
+
+      { "padding_2@how_to_play_common.padding": {} },
+      { "padding_2@how_to_play_common.padding": {} },
+      { "head@how_to_play_common.header":                { "$text": "howtoplay.about_us.creators.title"  } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.about_us.creators.1" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.about_us.creators.2" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.about_us.creators.3" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.about_us.creators.4" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.about_us.creators.5" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.about_us.creators.6" } }
+    ]
+  },
+
+
+
+  "map_button@how_to_play_common.section_toggle_button": {
+    "$section_topic": "map"
+  },
+  "map_section@how_to_play_common.main_sections" : {
+    "bindings": [  { "binding_type": "view", "source_control_name": "map_button_toggle", "source_property_name": "#toggle_state", "target_property_name": "#visible" } ],
+    "controls": [
+      { "head@how_to_play_common.header":                { "$text": "howtoplay.map.overview" } },
+      { "image_addoninfo_1@how_to_play_common.image":    { "texture": "textures/ui/map", "size": [ "100%", "200px" ] } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "head@how_to_play_common.header":                { "$text": "howtoplay.map.title.01"  } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.map.description.01" } },
+      { "image_addoninfo_1@how_to_play_common.image":    { "texture": "textures/ui/map_biomes", "size": [ "100%", "200px" ] } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.map.description.savanna.color" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.map.description.messa.color" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.map.description.desert.color" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.map.description.swamp.color" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "head@how_to_play_common.header":    { "$text": "howtoplay.map.title.02"  } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.map.description.main_base.01" } },
+      { "image_addoninfo_1@how_to_play_common.image":    { "texture": "textures/ui/main_base", "size": [ "100%", "200px" ] } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.map.description.main_base.02" } }
+      
+    ]
+  },
+  
+  
+  "base_button@how_to_play_common.section_toggle_button": {
+    "$section_topic": "base"
+  },
+  "base_section@how_to_play_common.main_sections" : {
+    "bindings": [  { "binding_type": "view", "source_control_name": "base_button_toggle", "source_property_name": "#toggle_state", "target_property_name": "#visible" } ],
+    "controls": [
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.base.description.main" } },
+      { "image_addoninfo_1@how_to_play_common.image": { "texture": "textures/ui/main_base_plan",  "size": [ "100%", "200px" ]  } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.base.list.01" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.base.list.02" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.base.list.03" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.base.list.04" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.base.list.05" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.base.list.06" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.base.list.07" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.base.list.08" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "head@how_to_play_common.header":    { "$text": "howtoplay.base.description.01.title"  } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.base.description.01.descr" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "head@how_to_play_common.header":    { "$text": "howtoplay.base.description.02.title"  } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.base.description.02.descr" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "head@how_to_play_common.header":    { "$text": "howtoplay.base.description.03.title"  } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.base.description.03.descr" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "head@how_to_play_common.header":    { "$text": "howtoplay.base.description.04.title"  } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.base.description.04.descr" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "head@how_to_play_common.header":    { "$text": "howtoplay.base.description.05.title"  } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.base.description.05.descr" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "head@how_to_play_common.header":    { "$text": "howtoplay.base.description.06.title"  } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.base.description.06.descr" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "head@how_to_play_common.header":    { "$text": "howtoplay.base.description.07.title"  } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.base.description.07.descr" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "head@how_to_play_common.header":    { "$text": "howtoplay.base.description.08.title"  } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.base.description.08.descr" } }
+
+    ]
+  },
+  
+  
+  "mines_button@how_to_play_common.section_toggle_button": {
+    "$section_topic": "mines"
+  },
+  "mines_section@how_to_play_common.main_sections" : {
+    "bindings": [  { "binding_type": "view", "source_control_name": "mines_button_toggle", "source_property_name": "#toggle_state", "target_property_name": "#visible" } ],
+    "controls": [
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.mines.description" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.mines.emerald" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.mines.gold" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.mines.iron" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.mines.coal" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.mines.description.enter" } }
+      
+    ]
+  },
+  
+  "animals_button@how_to_play_common.section_toggle_button": {
+    "$section_topic": "animals"
+  },
+  "animals_section@how_to_play_common.main_sections" : {
+    "bindings": [  { "binding_type": "view", "source_control_name": "animals_button_toggle", "source_property_name": "#toggle_state", "target_property_name": "#visible" } ],
+    "controls": [
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.description" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.01" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.02" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.03" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.04" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.05" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.06" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.07" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.08" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.09" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.10" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.11" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.12" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.13" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.14" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.15" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.16" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.17" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.18" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.19" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.20" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.21" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.22" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.23" } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.animals.list.24" } }
+    ]
+  },
+
+
+
+  "dna_button@how_to_play_common.section_toggle_button": {
+    "$section_topic": "dna"
+  },
+  "dna_section@how_to_play_common.main_sections" : {
+    "bindings": [  { "binding_type": "view", "source_control_name": "dna_button_toggle", "source_property_name": "#toggle_state", "target_property_name": "#visible" } ],
+    "controls": [
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.dna.description.01" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.dna.description.02" } }
+    ]
+  },
+
+
+
+  "energy_button@how_to_play_common.section_toggle_button": {
+    "$section_topic": "energy"
+  },
+  "energy_section@how_to_play_common.main_sections" : {
+    "bindings": [  { "binding_type": "view", "source_control_name": "energy_button_toggle", "source_property_name": "#toggle_state", "target_property_name": "#visible" } ],
+    "controls": [
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.energy.description.01" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.energy.description.02" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.energy.description.03" } }
+    ]
+  },
+  
+  
+  "ores_button@how_to_play_common.section_toggle_button": {
+    "$section_topic": "ores"
+  },
+  "ores_section@how_to_play_common.main_sections" : {
+    "bindings": [  { "binding_type": "view", "source_control_name": "ores_button_toggle", "source_property_name": "#toggle_state", "target_property_name": "#visible" } ],
+    "controls": [
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.ores.description" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "head@how_to_play_common.header":    { "$text": "howtoplay.ores.alu.0"  } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.ores.alu.description" } },
+      { "image_addoninfo_1@how_to_play_common.image":    { "texture": "textures/ui/alu", "size": [ "100%", "150px" ] } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "padding_2@how_to_play_common.padding": {} }   ,
+
+
+      { "head@how_to_play_common.header":    { "$text": "howtoplay.ores.meteor.0"  } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.ores.meteor.description" } },
+      { "image_addoninfo_1@how_to_play_common.image":    { "texture": "textures/ui/meteor", "size": [ "100%", "150px" ] } }
+    ]
+  },
+  
+  
+  "craftings_button@how_to_play_common.section_toggle_button": {
+    "$section_topic": "craftings"
+  },
+  "craftings_section@how_to_play_common.main_sections" : {
+    "bindings": [  { "binding_type": "view", "source_control_name": "craftings_button_toggle", "source_property_name": "#toggle_state", "target_property_name": "#visible" } ],
+    "controls": [
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.craftings.description" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "image_addoninfo_1@how_to_play_common.image":    { "texture": "textures/ui/craft_0", "size": [ "100%", "150px" ] } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.craftings.craft.0" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "image_addoninfo_1@how_to_play_common.image":    { "texture": "textures/ui/craft_1", "size": [ "100%", "150px" ] } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.craftings.craft.1" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "image_addoninfo_1@how_to_play_common.image":    { "texture": "textures/ui/craft_2", "size": [ "100%", "150px" ] } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.craftings.craft.2" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "image_addoninfo_1@how_to_play_common.image":    { "texture": "textures/ui/craft_3", "size": [ "100%", "150px" ] } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.craftings.craft.3" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "image_addoninfo_1@how_to_play_common.image":    { "texture": "textures/ui/craft_4", "size": [ "100%", "150px" ] } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.craftings.craft.4" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "image_addoninfo_1@how_to_play_common.image":    { "texture": "textures/ui/craft_5", "size": [ "100%", "150px" ] } },
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.craftings.craft.5" } }
+    ]
+  },
+
+  "gettingstarted_button@how_to_play_common.section_toggle_button": {
+    "$section_topic": "gettingstarted"
+  },
+  "gettingstarted_section@how_to_play_common.main_sections" : {
+    "bindings": [  { "binding_type": "view", "source_control_name": "gettingstarted_button_toggle", "source_property_name": "#toggle_state", "target_property_name": "#visible" } ],
+    "controls": [
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.gettingstarted.description.01" } },
+      { "padding_2@how_to_play_common.padding": {} }   ,
+      { "para@how_to_play_common.paragraph": { "$text": "howtoplay.gettingstarted.description.02" } }
+    ]
+  }
+}

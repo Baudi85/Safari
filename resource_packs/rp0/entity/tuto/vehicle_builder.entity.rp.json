@@ -1,0 +1,39 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "tuto:vehicle_builder",
+            
+            "textures": {
+                "default": "textures/gameplay/vehicle_builder/vehicle_builder.png"
+            },
+            "geometry": {
+                "default": "geometry.vehicle_builder_tuto"
+            },
+            "render_controllers": [
+                "controller.render.one"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+            
+            
+            "animations": {
+                "idle" : "animation.vehicle_builder.idle",
+                "run" : "animation.vehicle_builder.run"
+            },
+            "animation_controllers": [
+                { "vehicle_builder": "controller.animation.vehicle_builder" }
+            ],
+            
+            "particle_effects": {
+                "explode_p": "p:explode"
+            },
+            
+            "spawn_egg": {
+                "base_color": "#5e6367",
+                "overlay_color": "#365d94"
+            }
+        }
+    }
+}

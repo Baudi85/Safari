@@ -1,0 +1,25 @@
+{
+    "format_version" : "1.10.0",
+    "animation_controllers":{
+        "controller.animation.furniture.flash": {
+            "initial_state" : "default",
+            "states": {
+                "default": {
+                    "transitions" : [
+                        {
+							"saddled" : "query.is_illager_captain"
+						}
+                    ]
+                },
+                "saddled":{
+                    "animations" : [
+                        "flash_particle"
+                    ],
+                    "transitions" : [
+                        { "default" : "!query.is_illager_captain" }
+                    ]
+                }
+            }
+        }
+    }
+}

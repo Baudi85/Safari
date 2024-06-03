@@ -1,0 +1,111 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.giraffe.idle": {
+			"loop": true,
+			"bones": {
+				"Giraffe": {
+					"rotation": [0, 0, "math.sin(query.anim_time*100)*2"]
+				},
+				"body": {
+					"rotation": [0, 0, 0]
+				},
+				"tail": {
+					"rotation": ["math.sin(query.anim_time*150)*4", 0, 0]
+				},
+				"Neck1": {
+					"rotation": ["math.sin(query.anim_time*80)*2", 0, 0]
+				},
+				"Neck4": {
+					"rotation": ["math.sin(query.anim_time*80)*4", 0, 0]
+				},
+				"Neck2": {
+					"rotation": ["math.cos(query.anim_time*80)*4", 0, 0]
+				}
+			}
+		},
+		"animation.giraffe.walk": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, 0, "math.sin(query.anim_time*450)*5"]
+				},
+				"leg1": {
+					"rotation": ["math.sin(query.anim_time*450+70)*20", 0, 0]
+				},
+				"leg1_1": {
+					"rotation": ["math.abs(math.sin(query.anim_time*150+35)*10)", 0, 0]
+				},
+				"leg3": {
+					"rotation": ["math.sin(query.anim_time*450)*20", 0, 0]
+				},
+				"leg1_3": {
+					"rotation": ["math.abs(math.sin(query.anim_time*150)*10)", 0, 0]
+				},
+				"leg4": {
+					"rotation": ["math.sin(query.anim_time*450 + 140)*20", 0, 0]
+				},
+				"leg1_4": {
+					"rotation": ["math.abs(math.sin(query.anim_time*150 + 70)*10)", 0, 0]
+				},
+				"leg2": {
+					"rotation": ["math.sin(query.anim_time*450 +210)*20", 0, 0]
+				},
+				"leg1_2": {
+					"rotation": ["math.abs(math.sin(query.anim_time*150 + 85)*10)", 0, 0]
+				},
+				"Neck1": {
+					"rotation": ["math.sin(query.anim_time*450)*5", 0, "-math.sin(query.anim_time*300)*7"]
+				},
+				"Neck4": {
+					"rotation": ["-math.sin(query.anim_time*450)*2", 0, 0]
+				},
+				"Head": {
+					"rotation": ["math.sin(query.anim_time*450)*4", 0, 0]
+				}
+			}
+		},
+		"animation.giraffe.sleep": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, 0, "math.sin(query.anim_time*110)*3"],
+					"position": [0, -14.1, 6]
+				},
+				"tail": {
+					"rotation": ["math.sin(query.anim_time*160)*5", 0, 0]
+				},
+				"leg1": {
+					"rotation": [-60, 0, 0]
+				},
+				"leg1_1": {
+					"rotation": [145, 0, 0]
+				},
+				"leg3": {
+					"rotation": [-60, 0, 0]
+				},
+				"leg1_3": {
+					"rotation": [140, 0, 0]
+				},
+				"leg4": {
+					"rotation": [-65, 0, 0]
+				},
+				"leg1_4": {
+					"rotation": [140, 0, 0]
+				},
+				"leg2": {
+					"rotation": [-60, 0, 0]
+				},
+				"leg1_2": {
+					"rotation": [140, 0, 0]
+				},
+				"Neck4": {
+					"rotation": [35, 0, 0]
+				},
+				"Neck2": {
+					"rotation": ["40 + math.sin(query.anim_time*100)*5", 0, 0]
+				}
+			}
+		}
+	}
+}

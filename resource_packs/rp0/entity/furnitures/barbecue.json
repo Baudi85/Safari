@@ -1,0 +1,50 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "furniture:barbecue",
+
+            "geometry": {
+                "default": "geometry.barbecue"
+            },
+            "materials": {
+                "default": "bat"
+            },
+            "render_controllers": [
+                "controller.render.three"
+            ],
+            "textures": {
+                "one": "textures/furniture/barbecue/01.png",
+                "two": "textures/furniture/barbecue/02.png",
+                "three": "textures/furniture/barbecue/03.png"
+            },
+
+
+
+            "animations": {
+                "recolor_particle": "animation.particles.recolor_furn",
+                "rotate_particle": "animation.particles.rotate_furn",
+                "bbq_close" : "animation.barbecue.close",
+                "bbq_open" : "animation.barbecue.open"
+            },
+            "animation_controllers": [
+                { "rotate": "controller.animation.particles.furniture_rotate" },
+                { "recolor": "controller.animation.particles.furniture_recolor" },
+                { "open_close": "controller.animation.furniture.barbecue" }
+            ],
+
+
+
+
+            "particle_effects": {
+                "recolor_p": "p:recolor",
+                "rotate_p": "p:rotate",
+                "bbq_p" : "p:smoke"
+            },
+
+            "spawn_egg": {
+                "texture": "barbecue"
+            }
+        }
+    }
+}

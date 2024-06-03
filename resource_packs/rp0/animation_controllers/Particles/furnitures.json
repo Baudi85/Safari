@@ -1,0 +1,41 @@
+{
+    "format_version" : "1.10.0",
+    "animation_controllers":{
+        "controller.animation.particles.furniture_rotate": {
+            "initial_state" : "default",
+            "states": {
+                "default": {
+                    "transitions" : [
+                        {   "rotate" : "query.is_baby == 1"   }
+                    ]
+                },
+                "rotate":{
+                    "animations" : [   
+                        "rotate_particle"   
+                    ],
+                    "transitions" : [
+                        { "default" : "query.is_baby == 0" }
+                    ]
+                }
+            }
+        },
+        "controller.animation.particles.furniture_recolor": {
+            "initial_state" : "default",
+            "states": {
+                "default": {
+                    "transitions" : [
+                        {   "recolor" : "query.is_sheared == 1"   }
+                    ]
+                },
+                "recolor":{
+                    "animations" : [   
+                        "recolor_particle"   
+                    ],
+                    "transitions" : [
+                        { "default" : "query.is_sheared == 0" }
+                    ]
+                }
+            }
+        }
+    }
+}

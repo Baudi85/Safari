@@ -1,0 +1,407 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        
+        "description": {
+            "identifier": "gameplay:energy_tank",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:boat",
+            "animations": {
+                "updater":          "controller.animation.energy_tank"
+            },
+            "scripts": {
+                "animate": ["updater"]
+            }
+        },
+        
+        "component_groups": {
+            
+            "cg:sensor" : {
+                "minecraft:environment_sensor": {
+                    "triggers": [
+                        {
+                            "filters": {  "all_of": [ { "test": "has_tag", "subject": "self", "value": "ten" , "operator" : "=="} ] },
+                            "event": "evt:set_10"
+                        },
+                        {
+                            "filters": {  "all_of": [ { "test": "has_tag", "subject": "self", "value": "nine" , "operator" : "=="} ] },
+                            "event": "evt:set_9"
+                        },
+                        {
+                            "filters": {  "all_of": [ { "test": "has_tag", "subject": "self", "value": "eight" , "operator" : "=="} ] },
+                            "event": "evt:set_8"
+                        },
+                        {
+                            "filters": {  "all_of": [ { "test": "has_tag", "subject": "self", "value": "seven" , "operator" : "=="} ] },
+                            "event": "evt:set_7"
+                        },
+                        {
+                            "filters": {  "all_of": [ { "test": "has_tag", "subject": "self", "value": "six" , "operator" : "=="} ] },
+                            "event": "evt:set_6"
+                        },
+                        {
+                            "filters": {  "all_of": [ { "test": "has_tag", "subject": "self", "value": "five" , "operator" : "=="} ] },
+                            "event": "evt:set_5"
+                        },
+                        {
+                            "filters": {  "all_of": [ { "test": "has_tag", "subject": "self", "value": "four" , "operator" : "=="} ] },
+                            "event": "evt:set_4"
+                        },
+                        {
+                            "filters": {  "all_of": [ { "test": "has_tag", "subject": "self", "value": "three" , "operator" : "=="} ] },
+                            "event": "evt:set_3"
+                        },
+                        {
+                            "filters": {  "all_of": [ { "test": "has_tag", "subject": "self", "value": "two" , "operator" : "=="} ] },
+                            "event": "evt:set_2"
+                        },
+                        {
+                            "filters": {  "all_of": [ { "test": "has_tag", "subject": "self", "value": "one" , "operator" : "=="} ] },
+                            "event": "evt:set_1"
+                        },
+                        {
+                            "filters": {  "all_of": [ { "test": "has_tag", "subject": "self", "value": "zero" , "operator" : "=="} ] },
+                            "event": "evt:set_0"
+                        }
+                    ]
+                }
+            },
+            
+            
+            "cg:interact" : {
+                "minecraft:interact": {
+                    "interactions" : [
+                        {
+                            "on_interact": {
+                                "filters": {"all_of": [    {"test": "has_equipment","domain": "hand","subject": "other","value": "gameplay:energy_update"} ,
+                                                           { "test": "is_mark_variant", "value": 4 , "operator": "!="}, 
+                                                           {"test": "has_component", "subject": "self", "operator": "!=", "value": "minecraft:is_sheared" } ]},
+                                "event": "evt:update"
+                            },
+                            "use_item": true,
+                            "swing": true,
+                            "interact_text" : "action.interact.update_energy"
+                        }
+                    ]
+                }
+            },
+            
+            
+            "cg:update" : {
+                "minecraft:is_sheared" : {},
+                "minecraft:timer": {
+                    "time": 0.25,
+                    "time_down_event": {
+                        "event": "evt:reset_t"
+                    }
+                }
+            },
+            
+            
+            "cg:max_40" : {
+                "minecraft:mark_variant" : {"value" : 0 }
+            },
+            "cg:max_60" : {
+                "minecraft:mark_variant" : {"value" : 1 }
+            },
+            "cg:max_90" : {
+                "minecraft:mark_variant" : {"value" : 2 }
+            },
+            "cg:max_120" : {
+                "minecraft:mark_variant" : {"value" : 3 }
+            },
+            "cg:max_150" : {
+                "minecraft:mark_variant" : {"value" : 4 }
+            },
+
+            
+            
+            "cg:0" :   {  "minecraft:variant" : { "value" : 0 }  },
+            "cg:10" :  {  "minecraft:variant" : { "value" : 1 }  },
+            "cg:20" :  {  "minecraft:variant" : { "value" : 2 }  },
+            "cg:30" :  {  "minecraft:variant" : { "value" : 3 }  },
+            "cg:40" :  {  "minecraft:variant" : { "value" : 4 }  },
+            "cg:50" :  {  "minecraft:variant" : { "value" : 5 }  },
+            "cg:60" :  {  "minecraft:variant" : { "value" : 6 }  },
+            "cg:70" :  {  "minecraft:variant" : { "value" : 7 }  },
+            "cg:80" :  {  "minecraft:variant" : { "value" : 8 }  },
+            "cg:90" :  {  "minecraft:variant" : { "value" : 9 }  },
+            "cg:100" : {  "minecraft:variant" : { "value" : 10 } }
+        },
+        
+        "components": {
+            "minecraft:type_family": {   "family": [ "furniture", "inanimate" ]    },
+            "minecraft:collision_box": {
+                "width": 1,
+                "height": 2
+            },
+            "minecraft:health": {
+                "value": 2,
+                "max": 2
+            },
+            "minecraft:rideable" : {
+                "seat_count" : 0,
+                "interact_text" : ""
+              },
+            "minecraft:scale": {  "value": 1  },
+            "minecraft:navigation.walk": { },
+            "minecraft:movement.basic": {   "max_turn": 0.01   },
+            "minecraft:physics": {},
+            "minecraft:is_stackable": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": true
+            }
+        },
+        
+        "events": {
+            
+            "minecraft:entity_spawned": {
+                "add" : { "component_groups" : ["cg:0" , "cg:sensor" , "cg:interact" , "cg:max_40"] }
+            },
+            
+            "evt:reset_t" :  {
+                "remove" : { "component_groups" : ["cg:update"] }
+            },
+            
+            "evt:update": {
+                "sequence": [
+                    {
+                        "add" : { "component_groups" : ["cg:update"] }
+                    },
+                    {
+                        "filters": { "test": "is_mark_variant", "value": 0},
+                        "remove":  {   "component_groups": [ "cg:max_40" ]},
+                        "add":        {"component_groups": [ "cg:max_60" ]}
+                    },
+                    {
+                        "filters": { "test": "is_mark_variant", "value": 1},
+                        "remove":  {   "component_groups": [ "cg:max_60" ]},
+                        "add":        {"component_groups": [ "cg:max_90" ]}
+                    },
+                    {
+                        "filters": { "test": "is_mark_variant", "value": 2},
+                        "remove":  {   "component_groups": [ "cg:max_90" ]},
+                        "add":        {"component_groups": [ "cg:max_120" ]}
+                    },
+                    {
+                        "filters": { "test": "is_mark_variant", "value": 3},
+                        "remove":  {   "component_groups": [ "cg:max_120" ]},
+                        "add":        {"component_groups": [ "cg:max_150" ]}
+                    }
+                ]
+            },
+            
+            
+            "evt:reset" : {
+                "remove" : { "component_groups" : 
+                    [
+                        "cg:0",
+                        "cg:10",
+                        "cg:20",
+                        "cg:30",
+                        "cg:40",
+                        "cg:50",
+                        "cg:60",
+                        "cg:70",
+                        "cg:80",
+                        "cg:90",
+                        "cg:100"
+                    ] 
+                }
+            },
+            
+            
+            
+            "evt:set_0" : {
+                "add" : { "component_groups" : ["cg:0"] },
+                "remove" : { "component_groups" : 
+                    [
+                        "cg:10",
+                        "cg:20",
+                        "cg:30",
+                        "cg:40",
+                        "cg:50",
+                        "cg:60",
+                        "cg:70",
+                        "cg:80",
+                        "cg:90",
+                        "cg:100"
+                    ] 
+                }
+            },
+            "evt:set_1" : {
+                "add" : { "component_groups" : ["cg:10"] },
+                "remove" : { "component_groups" : 
+                    [
+                        "cg:0",
+                        "cg:20",
+                        "cg:30",
+                        "cg:40",
+                        "cg:50",
+                        "cg:60",
+                        "cg:70",
+                        "cg:80",
+                        "cg:90",
+                        "cg:100"
+                    ] 
+                }
+            },
+            "evt:set_2" : {
+                "add" : { "component_groups" : ["cg:20"] },
+                "remove" : { "component_groups" : 
+                    [
+                        "cg:0",
+                        "cg:10",
+                        "cg:30",
+                        "cg:40",
+                        "cg:50",
+                        "cg:60",
+                        "cg:70",
+                        "cg:80",
+                        "cg:90",
+                        "cg:100"
+                    ] 
+                }
+            },
+            "evt:set_3" : {
+                "add" : { "component_groups" : ["cg:30"] },
+                "remove" : { "component_groups" : 
+                    [
+                        "cg:0",
+                        "cg:10",
+                        "cg:20",
+                        "cg:40",
+                        "cg:50",
+                        "cg:60",
+                        "cg:70",
+                        "cg:80",
+                        "cg:90",
+                        "cg:100"
+                    ] 
+                }
+            },
+            "evt:set_4" : {
+                "add" : { "component_groups" : ["cg:40"] },
+                "remove" : { "component_groups" : 
+                    [
+                        "cg:0",
+                        "cg:10",
+                        "cg:20",
+                        "cg:30",
+                        "cg:50",
+                        "cg:60",
+                        "cg:70",
+                        "cg:80",
+                        "cg:90",
+                        "cg:100"
+                    ] 
+                }
+            },
+            "evt:set_5" : {
+                "add" : { "component_groups" : ["cg:50"] },
+                "remove" : { "component_groups" : 
+                    [
+                        "cg:0",
+                        "cg:10",
+                        "cg:20",
+                        "cg:30",
+                        "cg:40",
+                        "cg:60",
+                        "cg:70",
+                        "cg:80",
+                        "cg:90",
+                        "cg:100"
+                    ] 
+                }
+            },
+            "evt:set_6" : {
+                "add" : { "component_groups" : ["cg:60"] },
+                "remove" : { "component_groups" : 
+                    [
+                        "cg:0",
+                        "cg:10",
+                        "cg:20",
+                        "cg:30",
+                        "cg:40",
+                        "cg:50",
+                        "cg:70",
+                        "cg:80",
+                        "cg:90",
+                        "cg:100"
+                    ] 
+                }
+            },
+            "evt:set_7" : {
+                "add" : { "component_groups" : ["cg:70"] },
+                "remove" : { "component_groups" : 
+                    [
+                        "cg:0",
+                        "cg:10",
+                        "cg:20",
+                        "cg:30",
+                        "cg:40",
+                        "cg:50",
+                        "cg:60",
+                        "cg:80",
+                        "cg:90",
+                        "cg:100"
+                    ] 
+                }
+            },
+            "evt:set_8" : {
+                "add" : { "component_groups" : ["cg:80"] },
+                "remove" : { "component_groups" : 
+                    [
+                        "cg:0",
+                        "cg:10",
+                        "cg:20",
+                        "cg:30",
+                        "cg:40",
+                        "cg:50",
+                        "cg:60",
+                        "cg:70",
+                        "cg:90",
+                        "cg:100"
+                    ] 
+                }
+            },
+            "evt:set_9" : {
+                "add" : { "component_groups" : ["cg:90"] },
+                "remove" : { "component_groups" : 
+                    [
+                        "cg:0",
+                        "cg:10",
+                        "cg:20",
+                        "cg:30",
+                        "cg:40",
+                        "cg:50",
+                        "cg:60",
+                        "cg:70",
+                        "cg:80",
+                        "cg:100"
+                    ] 
+                }
+            },
+            "evt:set_10" : {
+                "add" : { "component_groups" : ["cg:100"] },
+                "remove" : { "component_groups" : 
+                    [
+                        "cg:0",
+                        "cg:10",
+                        "cg:20",
+                        "cg:30",
+                        "cg:40",
+                        "cg:50",
+                        "cg:60",
+                        "cg:70",
+                        "cg:80",
+                        "cg:90"
+                    ] 
+                }
+            }
+        }
+    }
+}

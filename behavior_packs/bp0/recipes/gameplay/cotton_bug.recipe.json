@@ -1,0 +1,31 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "create:cotton_bud"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "groups": [
+            "tools"
+        ],
+        "pattern": [
+            "  l",
+            " s ",
+            "l  "
+        ],
+        "key": {
+            "s": {
+                "item": "minecraft:stick"
+            },
+            "l": {
+                "item": "minecraft:sweet_berries"
+            }
+        },
+        "result": {
+            "item": "gameplay:cotton_bud",
+            "count": 4
+        }
+    }
+}

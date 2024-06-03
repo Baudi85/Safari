@@ -1,0 +1,46 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "furniture:bench_0",
+
+            "geometry": {
+                "default": "geometry.bench_0"
+            },
+            "materials": {
+                "default": "bat"
+            },
+            "render_controllers": [
+                "controller.render.three"
+            ],
+            "textures": {
+                "one": "textures/furniture/bench_0/01.png",
+                "two": "textures/furniture/bench_0/02.png",
+                "three": "textures/furniture/bench_0/03.png"
+            },
+
+
+
+            "animations": {
+                "recolor_particle": "animation.particles.recolor_furn",
+                "rotate_particle": "animation.particles.rotate_furn"
+            },
+            "animation_controllers": [
+                { "rotate": "controller.animation.particles.furniture_rotate" },
+                { "recolor": "controller.animation.particles.furniture_recolor" }
+            ],
+
+
+
+
+            "particle_effects": {
+                "recolor_p": "p:recolor",
+                "rotate_p": "p:rotate"
+            },
+
+            "spawn_egg": {
+                "texture": "bench_0"
+            }
+        }
+    }
+}

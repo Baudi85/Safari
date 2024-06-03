@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        
+        "controller.animation.pixelbiest.spawn": {
+            "initial_state": "default",
+            "states": {
+                
+                "default": {
+                    "transitions": [     
+                        { "spawned": "query.is_illager_captain == true" }
+                    ]
+                },
+                "spawned" : {
+                    "on_entry":[    
+                        "/tellraw @p {\"rawtext\":[{\"translate\":\"trophy.message.spawned\"}]}",
+                        "/tellraw @p {\"rawtext\":[{\"translate\":\"trophy.message.insta\"}]}",
+                        "/tellraw @p {\"rawtext\":[{\"translate\":\"trophy.message.twitter\"}]}"
+                    ],
+                    "transitions": [     
+                        { "default": "query.is_illager_captain == false" }
+                    ]
+                }
+            }
+        }
+    }
+}

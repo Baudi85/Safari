@@ -1,0 +1,79 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        
+        "description": {
+            "identifier": "gameplay:box",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:boat"
+        },
+        
+        "component_groups": {
+            "cpg:interact" : {
+            },
+            
+            "cpg:has_arrow" : {
+                "minecraft:is_sheared" : {},
+                "minecraft:timer": {"looping": false,"time": 15.0 ,"time_down_event": {"event": "evt:remove_arrow"}}
+            },
+
+            "cpg:kill_self" : {
+                "minecraft:is_illager_captain" : {
+                    
+                }
+            }
+        },
+        
+        "components": {
+            "minecraft:type_family": {   "family": [ "furniture", "inanimate" ]    },
+            "minecraft:collision_box": {
+                "width": 1,
+                "height": 0.75
+            },
+            "minecraft:inventory": {
+                "container_type": "minecart_chest",
+                "inventory_size": 27,
+                "can_be_siphoned_from": true,
+                "private" : false
+            },
+            "minecraft:rideable" : {
+                "seat_count" : 0,
+                "interact_text" : ""
+              },
+            "minecraft:item_hopper" : {},
+            "minecraft:health": {
+                "value": 2,
+                "max": 2
+            },
+            "minecraft:nameable" : {
+                  
+            },
+            "minecraft:scale": {  "value": 1  },
+            "minecraft:navigation.walk": { },
+            "minecraft:movement.basic": {   "max_turn": 0.01   },
+            "minecraft:physics": {},
+            "minecraft:is_stackable": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": true
+            }
+        },
+        
+        "events": {
+            "minecraft:entity_spawned": {
+                "add" : { "component_groups" : ["cpg:interact"] }
+            },
+            "evt:set_arrow" : {
+                "add": {"component_groups": ["cpg:has_arrow"]}
+            },
+            "evt:remove_arrow" : {
+                "remove": {"component_groups": ["cpg:has_arrow"]}
+            },
+            "evt:die" : {
+                "add" : { "component_groups" : ["cpg:kill_self"] }
+            }
+        }
+    }
+}

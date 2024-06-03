@@ -1,0 +1,168 @@
+{
+    "animation_controllers": {
+        "controller.animation.energy_tank": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "zero": "query.variant == 0"
+                        },
+                        {
+                            "one": "query.variant == 1"
+                        },
+                        {
+                            "two": "query.variant == 2"
+                        },
+                        {
+                            "three": "query.variant == 3"
+                        },
+                        {
+                            "four": "query.variant == 4"
+                        },
+                        {
+                            "five": "query.variant == 5"
+                        },
+                        {
+                            "six": "query.variant == 6"
+                        },
+                        {
+                            "seven": "query.variant == 7"
+                        },
+                        {
+                            "eight": "query.variant == 8"
+                        },
+                        {
+                            "nine": "query.variant == 9"
+                        },
+                        {
+                            "ten": "query.variant == 10"
+                        }
+                    ]
+                },
+                "eight": {
+                    "animations": [
+                        "eight"
+                    ],
+                    "blend_transition": 0.4,
+                    "transitions": [
+                        {
+                            "default": "query.variant != 8"
+                        }
+                    ]
+                },
+                "five": {
+                    "animations": [
+                        "five"
+                    ],
+                    "blend_transition": 0.4,
+                    "transitions": [
+                        {
+                            "default": "query.variant != 5"
+                        }
+                    ]
+                },
+                "four": {
+                    "animations": [
+                        "four"
+                    ],
+                    "blend_transition": 0.4,
+                    "transitions": [
+                        {
+                            "default": "query.variant != 4"
+                        }
+                    ]
+                },
+                "ten": {
+                    "animations": [
+                        "ten"
+                    ],
+                    "blend_transition": 0.4,
+                    "transitions": [
+                        {
+                            "default": "query.variant != 10"
+                        }
+                    ]
+                },
+                "nine": {
+                    "animations": [
+                        "nine"
+                    ],
+                    "blend_transition": 0.4,
+                    "transitions": [
+                        {
+                            "default": "query.variant != 9"
+                        }
+                    ]
+                },
+                "seven": {
+                    "animations": [
+                        "seven"
+                    ],
+                    "blend_transition": 0.4,
+                    "transitions": [
+                        {
+                            "default": "query.variant != 7"
+                        }
+                    ]
+                },
+                "six": {
+                    "animations": [
+                        "six"
+                    ],
+                    "blend_transition": 0.4,
+                    "transitions": [
+                        {
+                            "default": "query.variant != 6"
+                        }
+                    ]
+                },
+                "one": {
+                    "animations": [
+                        "one"
+                    ],
+                    "blend_transition": 0.4,
+                    "transitions": [
+                        {
+                            "default": "query.variant != 1"
+                        }
+                    ]
+                },
+                "three": {
+                    "animations": [
+                        "three"
+                    ],
+                    "blend_transition": 0.4,
+                    "transitions": [
+                        {
+                            "default": "query.variant != 3"
+                        }
+                    ]
+                },
+                "two": {
+                    "animations": [
+                        "two"
+                    ],
+                    "blend_transition": 0.4,
+                    "transitions": [
+                        {
+                            "default": "query.variant != 2"
+                        }
+                    ]
+                },
+                "zero": {
+                    "animations": [
+                        "zero"
+                    ],
+                    "blend_transition": 0.4,
+                    "transitions": [
+                        {
+                            "default": "query.variant != 0"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "format_version": "1.10.0"
+}

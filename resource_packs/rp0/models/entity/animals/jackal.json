@@ -1,0 +1,123 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.jackal",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "Jackal",
+					"pivot": [0, 0, 0],
+					"locators": {
+						"particles": [0, 5, 0]
+					}
+				},
+				{
+					"name": "Body",
+					"parent": "Jackal",
+					"pivot": [0, 10, 0],
+					"cubes": [
+						{"origin": [-3.5, 9, -7], "size": [7, 5, 8], "pivot": [0, 5, 0], "rotation": [5, 0, 0], "uv": [0, 0]},
+						{"origin": [-2.5, 12, -3], "size": [5, 4, 4], "pivot": [0, 5, 0], "rotation": [45, 0, 0], "uv": [20, 13]},
+						{"origin": [-3, 9, -0.57641], "size": [6, 5, 8], "pivot": [0.5, 5, 0.42359], "rotation": [-5, 0, 0], "uv": [0, 13]}
+					]
+				},
+				{
+					"name": "Head",
+					"parent": "Body",
+					"pivot": [0, 12, -8],
+					"cubes": [
+						{"origin": [-1.2, 15.8, -8.6], "size": [3, 4, 1], "pivot": [0, 5, 0], "rotation": [10, 0, 15], "uv": [35, 0]},
+						{"origin": [-1.8, 15.8, -8.6], "size": [3, 4, 1], "pivot": [0, 5, 0], "rotation": [10, 0, -15], "uv": [14, 26]},
+						{"origin": [-3, 11.7, -10.5], "size": [6, 5, 5], "pivot": [0, 5, 0], "rotation": [10, 0, 0], "uv": [23, 23]},
+						{"origin": [-2, 14.5, -12.95], "size": [4, 2, 5], "pivot": [0, 5, 0], "rotation": [18, 0, 0], "uv": [22, 0]},
+						{"origin": [-1.5, 14, -11.95], "size": [3, 1, 4], "pivot": [0, 5, 0], "rotation": [21, 0, 0], "uv": [34, 17]}
+					]
+				},
+				{
+					"name": "Tail",
+					"parent": "Body",
+					"pivot": [-0.25, 11.90834, 7.61464],
+					"cubes": [
+						{"origin": [-1.35, 3.2, 8.52359], "size": [2.2, 6, 1], "pivot": [0.5, 5, -1.47641], "rotation": [15, 0, 0], "uv": [8, 40]},
+						{"origin": [-1.25, 3.10834, 8.61464], "size": [2, 3, 1], "uv": [40, 22]}
+					]
+				},
+				{
+					"name": "Leg1",
+					"parent": "Body",
+					"pivot": [0.5, 9.6, 6.62359],
+					"cubes": [
+						{"origin": [0.5, 7, 4.32359], "size": [3, 5, 4], "uv": [10, 31]},
+						{"origin": [1.4, 2.27784, 5.84789], "size": [2, 5, 2], "pivot": [0.5, 5, 0.42359], "rotation": [10, 0, 0], "uv": [36, 36]}
+					]
+				},
+				{
+					"name": "Leg1_1",
+					"parent": "Leg1",
+					"pivot": [2.4, 3.4, 6.92359],
+					"cubes": [
+						{"origin": [1.9, -0.86055, 6.32967], "size": [1, 4, 1], "pivot": [0.5, 5, 0.42359], "rotation": [5, 0, 0], "uv": [30, 7]}
+					]
+				},
+				{
+					"name": "Leg2",
+					"parent": "Body",
+					"pivot": [-0.5, 9.6, 6.62359],
+					"cubes": [
+						{"origin": [-3.5, 7, 4.32359], "size": [3, 5, 4], "uv": [0, 26]},
+						{"origin": [-3.4, 2.27784, 5.84789], "size": [2, 5, 2], "pivot": [-0.5, 5, 0.42359], "rotation": [10, 0, 0], "uv": [0, 35]}
+					]
+				},
+				{
+					"name": "Leg1_2",
+					"parent": "Leg2",
+					"pivot": [-2.4, 3.4, 6.92359],
+					"cubes": [
+						{"origin": [-2.9, -0.86055, 6.32967], "size": [1, 4, 1], "pivot": [-0.5, 5, 0.42359], "rotation": [5, 0, 0], "uv": [22, 0]}
+					]
+				},
+				{
+					"name": "Leg3",
+					"parent": "Body",
+					"pivot": [0.5, 10.6, -4.77641],
+					"cubes": [
+						{"origin": [0.8, 7, -6.37641], "size": [3, 5, 3], "uv": [34, 7]},
+						{"origin": [1.7, 3.1, -5.97641], "size": [2, 5, 2], "uv": [0, 13]}
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "Leg3",
+					"pivot": [2.5, 3.4, -5.07641],
+					"cubes": [
+						{"origin": [2.2, -0.53664, -6.07737], "size": [1, 4, 2], "pivot": [0.5, 5, -12.57641], "rotation": [3, 0, 0], "uv": [20, 40]}
+					]
+				},
+				{
+					"name": "Leg4",
+					"parent": "Body",
+					"pivot": [-0.5, 10.6, -4.77641],
+					"cubes": [
+						{"origin": [-3.8, 7, -6.37641], "size": [3, 5, 3], "uv": [24, 33]},
+						{"origin": [-3.7, 3.1, -5.97641], "size": [2, 5, 2], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "bone2",
+					"parent": "Leg4",
+					"pivot": [-2.5, 3.4, -5.07641],
+					"cubes": [
+						{"origin": [-3.2, -0.53664, -6.07737], "size": [1, 4, 2], "pivot": [-0.5, 5, -12.57641], "rotation": [3, 0, 0], "uv": [14, 40]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.vehicle_console",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-7, 0, -7], "size": [14, 2, 14], "uv": [0, 0]},
+						{"origin": [-6, 2, -6], "size": [12, 1, 12], "uv": [0, 16]},
+						{"origin": [-3, 3, -3], "size": [6, 12, 7], "uv": [39, 42]},
+						{"origin": [-2, 0, 4], "size": [4, 14, 4], "uv": [0, 43]}
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "root",
+					"pivot": [0, 15.97412, 0.09659],
+					"rotation": [-15, 0, 0],
+					"cubes": [
+						{"origin": [-6, 13.28287, -5.50291], "size": [12, 3, 11], "pivot": [0, 15.97412, 0.09659], "rotation": [36.5, 0, 0], "uv": [0, 29]},
+						{"origin": [-6.25, 14.53287, 3.24709], "size": [12.5, 3, 3], "pivot": [0, 15.97412, 0.09659], "rotation": [36.5, 0, 0], "uv": [35, 29]}
+					]
+				}
+			]
+		}
+	]
+}

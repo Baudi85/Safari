@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        
+        "controller.animation.solar_panel_tuto": {
+            "initial_state": "default",
+            "states": {
+                
+                "default": {
+                    "transitions": [     
+                        { "small": "query.variant == 1" }
+                    ]
+                },
+                "small" : {
+                    "on_entry": [ "/function tuto/tuto/next" ],
+                    "transitions": [     
+                        { "default_again": "query.variant == 0" }
+                    ]
+                },
+                "default_again" : {
+                    "on_entry": [ "/function tuto/tuto/next" ],
+                    "transitions": [     
+                        { "big": "query.variant == 2" }
+                    ]
+                },
+                "big" : {
+                    "on_entry": [ "/function tuto/tuto/next" ]
+                }
+            }
+        }
+    }
+}

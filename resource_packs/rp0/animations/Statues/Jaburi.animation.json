@@ -1,0 +1,105 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.jaburi.pose_one": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"rotation": [10, 0, 0]
+				},
+				"Wing1": {
+					"rotation": [0, 0, -35]
+				},
+				"Wing2": {
+					"rotation": [0, 0, 45]
+				},
+				"Neck1": {
+					"rotation": [0, 0, 10]
+				},
+				"Head": {
+					"rotation": [-70, 0, 0]
+				},
+				"Leg1": {
+					"rotation": [-20, 0, 0]
+				},
+				"leg1_1": {
+					"rotation": [35, 0, 0]
+				},
+				"Leg2": {
+					"rotation": [0, 0, 0]
+				},
+				"leg1_2": {
+					"rotation": [10, 0, 0]
+				}
+			}
+		},
+		"animation.jaburi.pose_two": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"rotation": [50, 0, 0]
+				},
+				"Wing1": {
+					"rotation": [0, 0, -10]
+				},
+				"Wing2": {
+					"rotation": [0, 0, 40]
+				},
+				"Neck1": {
+					"rotation": [55, 0, 0],
+					"position": [0, -0.5, -1.5]
+				},
+				"Neck2": {
+					"rotation": [15, 0, 0]
+				},
+				"Head": {
+					"rotation": [-75, 0, 0]
+				},
+				"Leg1": {
+					"rotation": [-55, 0, 0]
+				},
+				"leg1_1": {
+					"rotation": [10, 0, 0]
+				},
+				"Leg2": {
+					"rotation": [-55, 0, 0]
+				},
+				"leg1_2": {
+					"rotation": [5, 0, 0]
+				}
+			}
+		},
+		"animation.jaburi.pose_three": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"position": [0, -0.9, 0]
+				},
+				"Wing1": {
+					"rotation": [0, 0, -15]
+				},
+				"Tail": {
+					"rotation": [25, 0, 0]
+				},
+				"Neck2": {
+					"rotation": [60, 0, 0]
+				},
+				"Head": {
+					"rotation": [-25, 0, 0]
+				},
+				"Leg1": {
+					"rotation": [-35, 0, -10]
+				},
+				"leg1_1": {
+					"rotation": [40, 0, 0]
+				},
+				"Leg2": {
+					"rotation": [25, 0, 0]
+				},
+				"leg1_2": {
+					"rotation": [10, 0, 0]
+				}
+			}
+		}
+	}
+}

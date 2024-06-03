@@ -1,0 +1,141 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.elephant.pose_one": {
+			"loop": true,
+			"bones": {
+				"Head": {
+					"rotation": [-20, 0, -5]
+				},
+				"Trompe1": {
+					"rotation": [0, 0, -10]
+				},
+				"Trompe2": {
+					"rotation": [-15, 0, 15]
+				},
+				"Trompe3": {
+					"rotation": [-25, 0, 10]
+				},
+				"Trompe4": {
+					"rotation": [-25, 0, 10]
+				},
+				"Leg1": {
+					"rotation": [-40, 0, 0]
+				},
+				"Leg1_1": {
+					"rotation": [35, 0, 0]
+				},
+				"Leg2": {
+					"rotation": [5, 0, 0]
+				},
+				"Leg1_2": {
+					"rotation": [5, 0, 0]
+				},
+				"Leg3": {
+					"rotation": [-15, 0, 0]
+				},
+				"Leg1_3": {
+					"rotation": [15, 0, 0],
+					"position": [0, 0.6, 0]
+				},
+				"Leg4": {
+					"rotation": [5, 0, 0]
+				},
+				"Leg1_4": {
+					"rotation": [10, 0, 0],
+					"position": [0, 0.7, 0]
+				},
+				"Tail": {
+					"rotation": [10, 0, 0]
+				}
+			}
+		},
+		"animation.elephant.pose_two": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"position": [0, -6, 0]
+				},
+				"Head": {
+					"rotation": [20, 0, 0]
+				},
+				"Trompe2": {
+					"rotation": [10, 0, 0]
+				},
+				"Trompe3": {
+					"rotation": [45, 0, 0]
+				},
+				"Trompe4": {
+					"rotation": [-15, 0, 0]
+				},
+				"Leg1": {
+					"rotation": [-20, 0, -10]
+				},
+				"Leg1_1": {
+					"rotation": [105, 0, 0]
+				},
+				"Leg2": {
+					"rotation": [0, 0, 15]
+				},
+				"Leg1_2": {
+					"rotation": [90, 0, 0]
+				},
+				"Leg3": {
+					"rotation": [-30, 0, -5]
+				},
+				"Leg1_3": {
+					"rotation": [115, 0, 0]
+				},
+				"Leg4": {
+					"rotation": [-20, 0, 5]
+				},
+				"Leg1_4": {
+					"rotation": [115, 0, 0]
+				}
+			}
+		},
+		"animation.elephant.pose_three": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"rotation": [-15, 0, 0],
+					"position": [0, -3.8, 0]
+				},
+				"Head": {
+					"rotation": [-15, 5, -5],
+					"position": [0, -0.4, 0]
+				},
+				"Defence1": {
+					"rotation": [-10, 0, 0]
+				},
+				"Trompe2": {
+					"rotation": [30, 0, 0]
+				},
+				"Trompe3": {
+					"rotation": [35, 0, 0]
+				},
+				"Trompe4": {
+					"rotation": [75, 0, 0]
+				},
+				"Leg1": {
+					"rotation": [15, 0, 0]
+				},
+				"Leg1_2": {
+					"rotation": [10, 0, 0]
+				},
+				"Leg3": {
+					"rotation": [-25, 0, 0]
+				},
+				"Leg1_3": {
+					"rotation": [130, 0, 0]
+				},
+				"Leg4": {
+					"rotation": [-20, 0, 0]
+				},
+				"Leg1_4": {
+					"rotation": [120, 0, 0]
+				}
+			}
+		}
+	}
+}

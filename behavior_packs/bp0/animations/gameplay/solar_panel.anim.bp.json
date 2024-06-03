@@ -1,0 +1,28 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.solar_panel.give_normal": {
+            "animation_length": 25.2,
+            "loop" : true,
+            "timeline": {
+                "25": [
+                    "/function gameplay/solar_panel/add_normal"
+                ]
+            }
+        },
+
+        "animation.solar_panel.give_advanced": {
+            "animation_length": 15.2,
+            "loop" : true,
+            "timeline": {
+                "15": [
+                    "/function gameplay/solar_panel/add_advanced"
+                ]
+            }
+        }
+
+
+
+
+    }
+}

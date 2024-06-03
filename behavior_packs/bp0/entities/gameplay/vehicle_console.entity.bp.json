@@ -1,0 +1,76 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        
+        "description": {
+            "identifier": "gameplay:vehicle_console",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:npc"
+        },
+        
+        "component_groups": {
+            
+            "cg:sensor" : {
+                "minecraft:environment_sensor": {
+                    "triggers": [
+                    ]
+                }
+            },
+
+            "cg:despawn" : {
+                "minecraft:despawn": {}
+            }
+        },
+        
+        "components": {
+            "minecraft:type_family": {   "family": [ "furniture", "inanimate" ]    },
+            "minecraft:collision_box": {
+                "width": 1,
+                "height": 1
+            },
+            "minecraft:health": {
+                "value": 2,
+                "max": 2
+            },
+            "minecraft:rideable" : {
+                "seat_count" : 0,
+                "interact_text" : ""
+            },
+            "minecraft:scale": {  "value": 1  },
+            "minecraft:navigation.walk": { },
+            "minecraft:movement.basic": {   "max_turn": 0.01   },
+            "minecraft:physics": {},
+            "minecraft:is_stackable": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:npc": {
+                "npc_data": {
+                    "portrait_offsets": {
+                        "translate": [-7, 10, 0],
+                        "scale": [1.5, 1.5, 1.5]
+                    },
+                    "picker_offsets": {
+                        "translate": [0, 20, 0],
+                        "scale": [1.7, 1.7, 1.7]
+                    },
+                    "skin_list":[
+                        {  "variant": 0 }
+                    ]
+                }
+            }
+        },
+        
+        "events": {
+            "minecraft:entity_spawned": {
+                "add" : { "component_groups" : ["cg:sensor"] }
+            },
+            "despawn" : {
+                "add": {"component_groups": ["cg:despawn"]}
+            }
+        }
+    }
+}

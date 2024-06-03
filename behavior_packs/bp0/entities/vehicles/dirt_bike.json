@@ -1,0 +1,140 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+      "description": {
+          "identifier": "vehicle:dirt_bike",
+          "is_spawnable": true,
+          "is_summonable": true,
+          "is_experimental": false,
+          "animations":{
+            "recolor" : "controller.animation.recolor"
+          },
+          "scripts": {
+            "animate": [ "recolor" ]
+          }
+      },
+      "component_groups": {
+        "new:one": {   "minecraft:variant": {   "value": 0}   },
+        "new:two": {   "minecraft:variant": {   "value": 1}   },
+        "new:three": {   "minecraft:variant": {   "value": 2}   },
+        "new:four": {   "minecraft:variant": {   "value": 3}   },
+        "new:five": {   "minecraft:variant": {   "value": 4}   },
+
+        "new:saddled":{  
+          "minecraft:is_saddled":{}, 
+          "minecraft:timer": {"looping": false,"time": 0.1,"time_down_event": {"event": "evt:reset"}}
+        }
+        
+      },
+      "components": {
+            "minecraft:interact": [
+              {
+              "on_interact": {
+                "filters": {"all_of": [	  {"test": "has_equipment","domain": "hand","subject": "other","value": "magma_cream"}]},
+                "event": "evt:cycle"
+              },
+              "use_item": false,
+              "play_sounds" : "random.click",
+              "swing": true,
+              "interact_text" : "action.interact.recolor"
+              }
+          ],
+          "minecraft:navigation.walk": {
+              "can_float": true
+          },
+          "minecraft:movement.basic": {},
+          "minecraft:movement": {
+              "value": 0.3
+          },
+          "minecraft:loot": {
+            "table": "loot_tables/vehicles/dirt_bike.json"
+          },
+          "minecraft:knockback_resistance": {
+              "value": 3.0
+          },
+          "minecraft:behavior.float": {
+              "priority": 0
+          },
+          "minecraft:jump.static": {},
+          "minecraft:can_climb": {},
+          "minecraft:health": {
+              "value": 20,
+              "max": 20
+          },
+          "minecraft:scale": {
+              "value": 0.6
+          },
+          "minecraft:fall_damage": {
+              "value": 0.0
+          },
+          "minecraft:rideable": {
+            "seat_count": 1,
+            "priority": 0,
+            "interact_text": "action.interact.mount",
+            "family_types": [
+              "player"
+            ],
+            "seats": [
+              {
+                "position": [ 0, 1, -0.4 ],
+                "min-rider_count": 0,
+                "max-rider_count": 0
+              }
+            ]
+        },
+          "minecraft:input_ground_controlled": {},
+          "minecraft:behavior.player_ride_tamed": {},
+          "minecraft:collision_box": {
+              "width": 1,
+              "height": 1.0
+          },
+          "minecraft:physics": {}
+      },
+      "events": {
+        "minecraft:entity_spawned": {
+          "randomize": [
+            {  "weight": 5,    "add": {   "component_groups": [ "new:one" ]  }},
+            {  "weight": 5,    "add": {   "component_groups": [ "new:two" ]  }},
+            {  "weight": 5,    "add": {   "component_groups": [ "new:three" ]  }},
+            {  "weight": 5,    "add": {   "component_groups": [ "new:four" ]  }},
+            {  "weight": 5,    "add": {   "component_groups": [ "new:five" ]  }}
+          ]
+        },
+        "evt:reset":{
+           "remove":  {"component_groups": [ "new:saddled" ]}
+        },
+        "evt:cycle":{
+          "sequence": [
+            {
+              "add": 	   {"component_groups": [ "new:saddled" ]}
+            },
+            {
+            "filters": { "test": "is_variant", "value": 0},
+            "remove":  {"component_groups": [ "new:one" ]},
+            "add": 	   {"component_groups": [ "new:two" ]}
+            },
+            {
+            "filters": { "test": "is_variant", "value": 1},
+            "remove":  {"component_groups": [ "new:two" ]},
+            "add": 	   {"component_groups": [ "new:three" ]}
+            },
+            {
+            "filters": { "test": "is_variant", "value": 2},
+            "remove":  {"component_groups": [ "new:three" ]},
+            "add": 	   {"component_groups": [ "new:four" ]}
+            },
+            {
+            "filters": { "test": "is_variant", "value": 3},
+            "remove":  {"component_groups": [ "new:four" ]},
+            "add": 	   {"component_groups": [ "new:five" ]}
+            },
+            {
+            "filters": { "test": "is_variant", "value": 4},
+            "remove":  {"component_groups": [ "new:five" ]},
+            "add": 	   {"component_groups": [ "new:one" ]}
+            }
+          ]
+        }
+      }
+  }
+}

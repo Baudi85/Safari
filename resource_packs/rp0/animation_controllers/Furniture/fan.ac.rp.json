@@ -1,0 +1,31 @@
+{
+    "format_version" : "1.10.0",
+    "animation_controllers":{
+        "controller.animation.furniture.fan": {
+            "initial_state" : "open",
+
+            "states": {
+                "closed": {
+                    "transitions" : [
+                        {
+							"open" : "!query.is_illager_captain"
+						}
+                    ]
+                },
+                "open":{
+                    "animations" : [   
+                        "fan_on"   
+                    ],
+                    "transitions" : [
+                        {
+							"closed" : "query.is_illager_captain"
+						}
+                    ]
+                }
+            }
+
+
+
+        }
+    }
+}

@@ -1,0 +1,136 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.snake.pose_one": {
+			"loop": true,
+			"bones": {
+				"Snake": {
+					"rotation": [-8, 0, 0],
+					"position": [0, -1.7, 0]
+				},
+				"Head": {
+					"rotation": [5, 15, 0]
+				},
+				"Art_0": {
+					"rotation": [-5, 10, 0]
+				},
+				"Art_1": {
+					"rotation": [0, -10, 0]
+				},
+				"Art_2": {
+					"rotation": [10, 0, 0]
+				},
+				"Art_3": {
+					"rotation": [5, -10, 0]
+				},
+				"Art_4": {
+					"rotation": [0, 5, 0]
+				},
+				"Art_5": {
+					"rotation": [0, 15, 0]
+				},
+				"Art_6": {
+					"rotation": [0, 20, 0]
+				},
+				"Art_7": {
+					"rotation": [0, -25, 0]
+				},
+				"Art_8": {
+					"rotation": [0, -15, 0]
+				},
+				"Art_9": {
+					"rotation": [0, -15, 0]
+				},
+				"Art_10": {
+					"rotation": [0, -5, 0]
+				}
+			}
+		},
+		"animation.snake.pose_two": {
+			"loop": true,
+			"bones": {
+				"Head": {
+					"rotation": [-20, 0, 0]
+				},
+				"Art_0": {
+					"rotation": [0, 10, 0]
+				},
+				"Art_1": {
+					"rotation": [0, 30, 0]
+				},
+				"Art_2": {
+					"rotation": [0, 20, 0]
+				},
+				"Art_3": {
+					"rotation": [0, -45, 0]
+				},
+				"Art_4": {
+					"rotation": [0, -45, 0]
+				},
+				"Art_5": {
+					"rotation": [0, -35, 0]
+				},
+				"Art_6": {
+					"rotation": [0, 15, 0]
+				},
+				"Art_7": {
+					"rotation": [0, 20, 0]
+				},
+				"Art_8": {
+					"rotation": [0, 25, 0]
+				},
+				"Art_9": {
+					"rotation": [0, 30, 0]
+				},
+				"Art_10": {
+					"rotation": [0, 20, 0]
+				}
+			}
+		},
+		"animation.snake.pose_three": {
+			"loop": true,
+			"bones": {
+				"Snake": {
+					"rotation": [-65, 0, -15],
+					"position": [-0.7, -16.6, 5.1]
+				},
+				"Head": {
+					"rotation": [35, 0, 0]
+				},
+				"Art_0": {
+					"rotation": [0, -20, 0]
+				},
+				"Art_1": {
+					"rotation": [50, 0, 55]
+				},
+				"Art_2": {
+					"rotation": [35, 45, 0]
+				},
+				"Art_3": {
+					"rotation": [0, 25, 0]
+				},
+				"Art_4": {
+					"rotation": [0, 45, 0]
+				},
+				"Art_5": {
+					"rotation": [0, 30, 0]
+				},
+				"Art_6": {
+					"rotation": [0, 45, 0]
+				},
+				"Art_7": {
+					"rotation": [0, 80, 0]
+				},
+				"Art_8": {
+					"rotation": [0, 50, 0]
+				},
+				"Art_9": {
+					"rotation": [0, 55, 0]
+				},
+				"Art_10": {
+					"rotation": [0, 85, 0]
+				}
+			}
+		}
+	}
+}

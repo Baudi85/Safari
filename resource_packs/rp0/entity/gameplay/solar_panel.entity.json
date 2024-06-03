@@ -1,0 +1,38 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "gameplay:solar_panel",
+
+            "geometry": {
+                "default": "geometry.solar_panel"
+            },
+            "materials": {
+                "default": "bat"
+            },
+            "render_controllers": [
+                "controller.render.three"
+            ],
+            "textures": {
+                "one":   "textures/gameplay/solar_panel/off.png",
+                "two":   "textures/gameplay/solar_panel/normal.png",
+                "three": "textures/gameplay/solar_panel/advanced.png"
+            },
+
+
+
+            
+            "animations": {
+                "windsock_anim" : "animation.solar_panel.idle"
+            },
+            "animation_controllers": [
+                { "windsock": "controller.animation.furniture.windsock" }
+
+            ],
+
+            "spawn_egg": {
+                "texture": "solar_panel"
+            }
+        }
+    }
+}

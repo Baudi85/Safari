@@ -1,0 +1,41 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "animal:giraffe",
+
+
+            "textures": {
+                "default": "textures/safari/giraffe_01.png"
+            },
+            "geometry": {
+                "default": "geometry.giraffe"
+            },
+            "render_controllers": [
+                "controller.render.oneSaddleSadleTwo"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            "animations": {
+                "idle": "animation.giraffe.idle",
+                "walk": "animation.giraffe.walk",
+                "look_at_target": "animation.common.look_at_target",
+                "sleep": "animation.giraffe.sleep"
+            },
+            "animation_controllers": [
+                { "animal": "controller.animation.giraffe.general" }
+            ],
+
+
+            "spawn_egg": {
+                "base_color": "#bfa817",
+                "overlay_color": "#533288"
+            }
+            
+        }
+    }
+}

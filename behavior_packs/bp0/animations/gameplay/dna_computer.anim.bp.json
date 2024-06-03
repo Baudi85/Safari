@@ -1,0 +1,20 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        
+        "animation.dna_computer_run": {
+            "animation_length": 3.2,
+            "loop" : false,
+            "timeline": {
+                "0.0" :  [ "@s evt:set_color_1"],
+                "0.5" :  [ "@s evt:set_color_2"],
+                "1.0" :  [ "@s evt:set_color_3"],
+                "1.5" :  [ "@s evt:set_color_4"],
+                "2.0" :  [ "@s evt:set_color_5"],
+                "2.5" :  [ "@s evt:set_color_6"],
+                "3.0" :  [ "@s evt:set_color_0"]
+                  
+            }
+        }
+    }
+}

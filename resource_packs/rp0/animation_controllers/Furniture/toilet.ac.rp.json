@@ -1,0 +1,36 @@
+{
+    "format_version" : "1.10.0",
+    "animation_controllers":{
+        "controller.animation.furniture.toilet": {
+            "initial_state" : "open",
+
+            "states": {
+                "closed": {
+                    "animations" : [   
+                        "toilet_open"   
+                    ],
+                    "blend_transition" : 0.5,
+                    "transitions" : [
+                        {
+							"open" : "query.is_illager_captain"
+						}
+                    ]
+                },
+                "open":{
+                    "animations" : [   
+                        "toilet_close"   
+                    ],
+                    "blend_transition" : 0.5,
+                    "transitions" : [
+                        {
+							"closed" : "!query.is_illager_captain"
+						}
+                    ]
+                }
+            }
+
+
+
+        }
+    }
+}

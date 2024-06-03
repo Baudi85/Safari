@@ -1,0 +1,37 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "animal:piranha",
+
+
+            "textures": {
+                "default": "textures/safari/piranha_01.png"
+            },
+            "geometry": {
+                "default": "geometry.piranha"
+            },
+            "render_controllers": [
+                "controller.render.one"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            "animations": {
+                "swim": "animation.piranha.swim",
+                "flop": "animation.piranha.flop"
+            },
+            "animation_controllers": [
+                { "general": "controller.animation.piranha.general" }
+            ],
+            
+            "spawn_egg": {
+                "base_color": "#776519",
+                "overlay_color": "#bb6dff"
+            }            
+        }
+    }
+}

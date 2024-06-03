@@ -1,0 +1,40 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "animal:elephant",
+
+
+            "textures": {
+                "default": "textures/safari/elephant_01.png"
+            },
+            "geometry": {
+                "default": "geometry.elephant"
+            },
+            "render_controllers": [
+                "controller.render.oneChestSaddle"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            "animations": {
+                "idle": "animation.elephant.idle",
+                "walk": "animation.elephant.walk",
+                "look_at_target": "animation.common.look_at_target",
+                "variantOne": "animation.elephant.variantOne"
+            },
+            "animation_controllers": [
+                { "animal": "controller.animation.elephant.general" }
+            ],
+
+
+            "spawn_egg": {
+                "base_color": "#db9947",
+                "overlay_color": "#248979"
+            }            
+        }
+    }
+}

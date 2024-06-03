@@ -1,0 +1,30 @@
+{
+    "animation_controllers": {
+        "controller.animation.cloner": {
+            "initial_state": "idle",
+            "states": {
+                "idle": {
+                    "animations": [
+                        "idle"
+                    ],
+                    "transitions": [
+                        {
+                            "run": "query.is_sheared"
+                        }
+                    ]
+                },
+                "run": {
+                    "animations": [
+                        "run"
+                    ],
+                    "transitions": [
+                        {
+                            "idle": "!query.is_sheared"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "format_version": "1.10.0"
+}

@@ -1,0 +1,50 @@
+{
+    "format_version" : "1.10.0",
+    "animation_controllers":{
+        "controller.animation.lion.general": {
+
+            "initial_state" : "default",
+            "states": {
+
+                "default": {
+                    "animations" : [
+                        "idle",
+                        "look_at_target",
+                        {
+                            "walk" : "query.modified_move_speed>0.01"
+                        }
+                    ],
+                    "blend_transition" : 0.5,
+                    "transitions" : [
+                        {
+                            "sleep" : "query.is_sleeping == 1 && query.is_tamed == 1"
+                        },
+                        {
+                            "sit" : "query.is_sleeping == 1 && query.is_tamed == 0"
+                        }
+                    ]
+                },
+
+                "sleep":{
+                    "animations" : [ "sleep" ],
+                    "blend_transition" : 0.5,
+					"transitions" : [
+						{
+							"default" : "!query.is_sleeping"
+						}
+					]
+                },
+                "sit":{
+                    "animations" : [ "sit" ],
+                    "blend_transition" : 0.5,
+					"transitions" : [
+						{
+							"default" : "!query.is_sleeping"
+						}
+					]
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.solar_panel.idle": {
+			"loop": true,
+			"bones": {
+				"Panel": {
+					"rotation": [ "math.sin(query.time_stamp / 40)*60" , 0, 0]
+				}
+			}
+		}
+	}
+}

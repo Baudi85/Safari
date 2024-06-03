@@ -1,0 +1,27 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "gameplay:vegetable_console",
+            
+            "textures": {
+                "default": "textures/gameplay/vehicle_console/vehicle_console.png"
+            },
+            "geometry": {
+                "default": "geometry.vehicle_console"
+            },
+            "render_controllers": [
+                "controller.render.one"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+            
+            
+            "spawn_egg": {
+                "base_color": "#022182",
+                "overlay_color": "#5e29ac"
+            }
+        }
+    }
+}

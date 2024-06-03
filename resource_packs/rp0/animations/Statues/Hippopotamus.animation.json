@@ -1,0 +1,85 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.hippopotamus.pose_one": {
+			"loop": true,
+			"bones": {
+				"Leg1": {
+					"rotation": [5, 0, 5]
+				},
+				"Leg2": {
+					"rotation": [-10, 0, 0]
+				},
+				"Leg4": {
+					"rotation": [5, 0, 0]
+				},
+				"Neck1": {
+					"rotation": [-20, -5, 0]
+				},
+				"Head": {
+					"rotation": [-25, -10, 0]
+				},
+				"Jaw": {
+					"rotation": [35, 0, 0],
+					"position": [0, 0, 0.4]
+				}
+			}
+		},
+		"animation.hippopotamus.pose_two": {
+			"loop": true,
+			"bones": {
+				"Leg1": {
+					"rotation": [-10, 0, 0]
+				},
+				"Leg2": {
+					"rotation": [5, 0, 0]
+				},
+				"Leg3": {
+					"rotation": [15, 0, 0]
+				},
+				"Neck1": {
+					"rotation": [40, 0, 0],
+					"position": [0, -0.5, 0]
+				},
+				"Head": {
+					"rotation": [-5, 0, 0]
+				},
+				"Jaw": {
+					"rotation": [5, 0, 0]
+				},
+				"Tail1": {
+					"rotation": [10, 0, 0]
+				}
+			}
+		},
+		"animation.hippopotamus.pose_three": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"rotation": [1, 0, 0],
+					"position": [0, -4, 0]
+				},
+				"Leg1": {
+					"rotation": [-85, 40, 0]
+				},
+				"Leg2": {
+					"rotation": [-90, -30, 0]
+				},
+				"Leg3": {
+					"rotation": [75, 0, 85],
+					"position": [0, -2.8, 0]
+				},
+				"Leg4": {
+					"rotation": [65, 0, -70],
+					"position": [-0.5, -3.2, -0.5]
+				},
+				"Head": {
+					"rotation": [-5, -25, 0]
+				},
+				"Jaw": {
+					"rotation": [10, 0, 0]
+				}
+			}
+		}
+	}
+}

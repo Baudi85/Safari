@@ -1,0 +1,61 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "vehicle:jeep_1",
+
+            
+            "scripts": {
+                "pre_animation": [
+                    "variable.speed = 8;",
+                    "variable.amplitude = 20;"
+                ]
+            },
+
+        
+            "textures": {
+                "one" : "textures/vehicles/jeep_1/jeep_0.png",
+                "two" : "textures/vehicles/jeep_1/jeep_1.png",
+                "three" : "textures/vehicles/jeep_1/jeep_2.png",
+                "four" : "textures/vehicles/jeep_1/jeep_3.png",
+                "five" : "textures/vehicles/jeep_1/jeep_4.png",
+                "six" : "textures/vehicles/jeep_1/jeep_5.png",
+                "seven" : "textures/vehicles/jeep_1/jeep_6.png"
+            },
+            "geometry": {
+                "default": "geometry.jeeptwo"
+            },
+            "render_controllers": [
+                "controller.render.seven"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+            "animations": {
+                "recolorAnim": "animation.particles.recolor",
+                "walk": "animation.jeeptwo.walk",
+                "steeringwheel": "animation.steeringwheel.turn.z"
+            },
+            "animation_controllers": [
+                { "recolor": "controller.animation.particles.recolor" },
+                { "general": "controller.animation.jeep_1.general" },
+                { "whell" : "controller.animation.steeringwheel.general"}
+            ],
+
+
+
+
+            "particle_effects": {
+                "rotation_particles": "p:recolor",
+                "dirt_particles": "p:dirt"
+            },
+
+            "spawn_egg": {
+                "texture": "jeep_1"
+            }
+            
+        }
+    }
+}

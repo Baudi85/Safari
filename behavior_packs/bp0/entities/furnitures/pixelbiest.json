@@ -1,0 +1,69 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "furniture:pixelbiest",
+        "is_spawnable": true,
+        "is_summonable": true,
+        "is_experimental": false,
+        "scripts": {
+          "animate": ["spawn_controller"]
+        },
+        "animations": {
+          "spawn_controller": "controller.animation.pixelbiest.spawn"
+        }
+      },
+      "component_groups": {
+        "spawn_cg" :{
+            "minecraft:is_illager_captain": {},
+            "minecraft:timer": {
+              "looping": false,
+              "time":0.5 ,
+              "time_down_event" : {"event": "remove_spawned"}
+            }
+        }
+
+      
+      },
+      "components": {
+        "minecraft:type_family": {
+          "family": [ "furniture", "inanimate" ]
+        },
+        "minecraft:collision_box": {
+          "width": 0.4,
+          "height": 1.5
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/furnitures/pixelbiest.json"
+        },
+        "minecraft:health": {
+          "value": 2,
+          "max": 2
+        },
+        "minecraft:scale": {
+          "value": 0.4
+        },
+        "minecraft:navigation.walk": {
+        },
+        "minecraft:movement.basic": {
+          "max_turn": 0.01
+        },
+        "minecraft:physics": {},
+        
+        "minecraft:pushable": {
+          "is_pushable": false,
+          "is_pushable_by_piston": true
+        }
+      },
+      "events": {
+
+        "minecraft:entity_spawned": {
+          "add": 	{"component_groups": [ "spawn_cg" ]}
+        },
+        "remove_spawned" : {
+          "remove": {"component_groups": ["spawn_cg"]}
+        }
+    }
+  }
+}
+  

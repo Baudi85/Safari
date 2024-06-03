@@ -1,0 +1,41 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "animal:gazelle",
+
+
+            "textures": {
+                "default": "textures/safari/gazelle_01.png"
+            },
+            "geometry": {
+                "default": "geometry.gazelle"
+            },
+            "render_controllers": [
+                "controller.render.oneSaddle"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            "animations": {
+                "idle": "animation.gazelle.idle",
+                "walk": "animation.gazelle.walk",
+                "look_at_target": "animation.common.look_at_target",
+                "varOne" : "animation.gazelle.variantone",
+                "varTwo" : "animation.gazelle.varianttwo"
+            },
+            "animation_controllers": [
+                { "animal": "controller.animation.gazelle.general" }
+            ],
+
+
+            "spawn_egg": { 
+                "base_color" : "#daa4ce" ,
+                "overlay_color" : "#1d4cba"
+            }
+        }
+    }
+}

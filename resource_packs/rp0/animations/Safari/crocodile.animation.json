@@ -1,0 +1,95 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.crocodile.walk": {
+			"loop": true,
+			"bones": {
+				"Art2": {
+					"rotation": [0, "0+math.sin(query.anim_time*160)*6", 0]
+				},
+				"Art3": {
+					"rotation": [0, "0+math.cos(query.anim_time*160)*6", 0]
+				},
+				"Leg3": {
+					"rotation": [0, "0+math.cos(query.anim_time*250)*30", 0]
+				},
+				"Leg4": {
+					"rotation": [0, "math.cos(query.anim_time*250+300)*30", 0]
+				},
+				"Art4": {
+					"rotation": [0, "0+math.sin(query.anim_time*160)*6", 0]
+				},
+				"Art5": {
+					"rotation": [0, "0+math.cos(query.anim_time*160)*6", 0]
+				},
+				"Art1": {
+					"rotation": [0, "0+math.sin(query.anim_time*160)*6", 0]
+				},
+				"Leg1": {
+					"rotation": [0, "math.cos(query.anim_time*250+300)*30", 0]
+				},
+				"Leg2": {
+					"rotation": [0, "0+math.cos(query.anim_time*250)*30", 0]
+				},
+				"Head": {
+					"rotation": [0, "0+math.cos(query.anim_time*160)*6", 0]
+				},
+				"JawBottom": {
+					"rotation": ["math.cos(query.anim_time*260)*6", 0, 0]
+				}
+			}
+		},
+		"animation.crocodile.idle": {
+			"loop": true,
+			"bones": {
+				"Art2": {
+					"rotation": [0, "math.sin(query.anim_time*80)*6", 0]
+				},
+				"Art3": {
+					"rotation": [0, "math.cos(query.anim_time*80)*6", 0]
+				},
+				"Art4": {
+					"rotation": [0, "math.sin(query.anim_time*80)*6", 0]
+				},
+				"Art5": {
+					"rotation": [0, "math.cos(query.anim_time*80)*6", 0]
+				},
+				"Art1": {
+					"rotation": [0, "math.cos(query.anim_time*80)*6", 0]
+				},
+				"Head": {
+					"rotation": [0, "math.sin(query.anim_time*80)*6", 0]
+				},
+				"JawBottom": {
+					"rotation": ["math.cos(query.anim_time*100)*6", 0, 0]
+				}
+			}
+		},
+		"animation.crocodile.variantone": {
+			"animation_length": 1.08,
+			"bones": {
+				"Head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4333": [-10, 0, 0],
+						"1.0833": [0, 0, 0]
+					}
+				},
+				"JawTop": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.6833": [-25, 0, 0],
+						"1.0833": [0, 0, 0]
+					}
+				},
+				"JawBottom": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.6833": [20, 0, 0],
+						"1.0833": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,465 @@
+{
+  "entity_sounds": {
+    "entities": {
+        
+
+        "gameplay:box": {
+            "volume": 1,
+            "pitch": [  0.9,  1.1 ],
+            "events": {
+                "death": "random.pop"
+            }
+        },
+
+
+
+
+        "vehicle:new_boat": {
+          "volume": 1.0,
+          "pitch": [ 0.7, 0.9],
+          "events": {
+              "swim": "vehicle.boat.walk",
+              "hurt": "vehicle.boat.hurt",
+              "death": "vehicle.boat.death"
+          }
+        },
+        "vehicle:hang_glider": {
+          "volume": 1.0,
+          "pitch": [ 0.7, 0.9],
+          "events": {
+              "hurt": "vehicle.boat.hurt",
+              "death": "vehicle.boat.death"
+          }
+        },
+
+
+      //
+      //   --  camel  --
+      //   
+      "animal:camel": {
+        "volume": 1.0,
+        "pitch": [  0.8,  1.2 ],
+        "events": {
+          "ambient": "animal.camel.ambiant",
+          "hurt": "animal.camel.hurt",
+          "death": "animal.camel.death"
+        }
+      },
+      
+
+      "vehicle:helicopter": {
+        "volume": 1.0,
+        "pitch": [  0.8,  1.2 ],
+        "events": {
+          "hurt": "helicopter.hurt",
+          "death": "helicopter.death"
+        }
+      },
+      "vehicle:plane": {
+        "volume": 1.0,
+        "pitch": [  0.8,  1.2 ],
+        "events": {
+          "hurt": "vehicle.plane.hurt",
+          "death": "vehicle.plane.death"
+        }
+      },
+
+      //
+      //   --  crocodile  --
+      //   
+      "animal:crocodile": {
+        "volume": 1.0,
+        "pitch": [  0.8,  1.2 ],
+        "events": {
+          "ambient": "animal.crocodile.ambiant",
+          "hurt": "animal.crocodile.hurt",
+          "death": "animal.crocodile.death"
+        }
+      },
+
+      //
+      //   --  snake  --
+      //   
+      "animal:snake": {
+        "volume": 1.0,
+        "pitch": [  0.8,  1.2 ],
+        "events": {
+          "ambient": "animal.snake.ambiant",
+          "hurt": "animal.snake.hurt",
+          "death": "animal.snake.attack"
+        }
+      },
+
+      //
+      //   --  rhinoceros  --
+      //   
+      "animal:rhinoceros": {
+        "volume": 1.0,
+        "pitch": [  0.8,  1.2 ],
+        "events": {
+          "ambient": "animal.rhinoceros.ambiant",
+          "hurt": "animal.rhinoceros.hurt",
+          "death": "animal.rhinoceros.death"
+        }
+      },
+
+      //
+      //   --  elephant  --
+      //   
+      "animal:elephant": {
+        "volume": 1.0,
+        "pitch": [  0.8,  1.2 ],
+        "events": {
+          "ambient": "animal.elephant.ambiant",
+          "hurt": "animal.elephant.hurt",
+          "death": "animal.elephant.death"
+        }
+      },
+
+      
+
+      //
+      //   --  lion  --
+      //   
+      "animal:lion": {
+        "volume": 1.0,
+        "pitch": [  0.8,  1.2 ],
+        "events": {
+          "ambient": "animal.lion.ambiant",
+          "hurt": "animal.lion.hurt",
+          "death": "animal.lion.death"
+        }
+      },
+
+
+
+
+
+      //
+      //   --  zebra  --
+      // 
+      "animal:zebra": {
+        "volume": 0.8,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.horse.idle",
+          "death": "mob.horse.death",
+          "hurt": "mob.horse.hit",
+          "mad": "mob.horse.angry"   
+        }
+      },
+
+
+
+
+      //
+      //   --  hyena  --
+      // 
+      "animal:hyena": {
+        "volume": 0.8,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "animal.hyena.ambiant",
+          "death": "animal.hyena.death",
+          "hurt": "animal.hyena.hurt"
+        }
+      },
+
+
+      //
+      //   --  baboon  --
+      // 
+      "animal:babbon": {
+        "volume": 0.8,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "animal.baboon.ambiant",
+          "death": "animal.baboon.death",
+          "hurt": "animal.baboon.hurt"
+        }
+      },
+
+
+      //
+      //   --  jackal  --
+      // 
+      "animal:jackal": {
+        "volume": 0.8,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "death": "animal.jackal.death",
+          "hurt": "animal.jackal.hurt"
+        }
+      },
+
+
+      //
+      //   --  fennec  --
+      // 
+      "animal:fennec": {
+        "volume": 0.8,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.fox.ambient",
+          "hurt": "mob.fox.hurt",
+          "death": "mob.fox.death"
+        }
+      },
+
+
+      //
+      //   --  porcupine  --
+      // 
+      "animal:porcupine": {
+        "volume": 0.8,
+        "pitch": [ 0.6, 0.9 ],
+        "events": {
+          "ambient": "mob.fox.ambient",
+          "hurt": "mob.fox.hurt",
+          "death": "mob.fox.death"
+        }
+      },
+
+
+      //
+      //   --  pangolin  --
+      // 
+      "animal:pangolin": {
+        "volume": 0.8,
+        "pitch": [ 1.1, 1.6 ],
+        "events": {
+          "ambient": "mob.fox.ambient",
+          "hurt": "mob.fox.hurt",
+          "death": "mob.fox.death"
+        }
+      },
+
+      //
+      //   --  meerkat  --
+      // 
+      "animal:meerkat": {
+        "volume": 0.8,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.fox.ambient",
+          "hurt": "mob.fox.hurt",
+          "death": "mob.fox.death"
+        }
+      },
+
+
+      //
+      //   --  hippopotamus  --
+      // 
+      "animal:hippopotamus": {
+        "volume": 0.8,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "animal.hippopotamus.ambiant",
+          "hurt": "animal.hippopotamus.hurt",
+          "death": "animal.hippopotamus.death"
+        }
+      },
+
+
+      //
+      //   --  serval  --
+      // 
+      "animal:serval": {
+        "volume": 0.8,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.ocelot.idle",
+          "hurt": "mob.cat.hit",
+          "death": "mob.ocelot.death"
+        }
+      },
+
+
+      //
+      //   --  warthor  --
+      // 
+      "animal:warthog": {
+        "volume": 0.8,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.pig.say",
+          "hurt": "mob.pig.say",
+          "death": "mob.pig.death"
+        }
+      },
+
+
+      //
+      //   --  buffalo  --
+      // 
+      "animal:buffalo": {
+        "volume": 0.8,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "animal.buffalo.ambiant",
+          "hurt": "animal.buffalo.hurt",
+          "death": "animal.buffalo.death"
+        }
+      },
+    
+
+
+      //
+      //   --  ostrich  --
+      // 
+      "animal:ostrich": {
+        "volume": 0.8,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "animal.ostrich.ambiant",
+          "hurt": "animal.ostrich.death",
+          "death": "animal.ostrich.death"
+        }
+      },
+    
+
+
+      //
+      //   --  vulture  --
+      // 
+      "animal:vulture": {
+        "volume": 0.8,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "animal.vulture.ambiant",
+          "hurt": "animal.vulture.hurt",
+          "death": "animal.vulture.death"
+        }
+      },
+    
+
+
+      //
+      //   --  jaburi  --
+      // 
+      "animal:jaburi": {
+        "volume": 0.8,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "animal.jaburi.ambiant",
+          "hurt": "animal.jaburi.hurt",
+          "death": "animal.jaburi.death"
+        }
+      },
+
+
+      //
+      //   --  giraffe  --
+      // 
+      "animal:giraffe": {
+        "volume": 0.8,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "death": "mob.horse.donkey.death",
+          "hurt": "mob.horse.donkey.hit"
+        }
+      },
+
+      //
+      //   --  giraffe  --
+      // 
+      "animal:gazelle": {
+        "volume": 0.8,
+        "pitch": [ 1.1, 1.6 ],
+        "events": {
+          "hurt": {
+            "sound": "mob.panda.hurt",
+            "volume": 0.82
+          },
+          "death": {
+            "sound": "mob.panda.death",
+            "volume": 0.82
+          }
+        }
+      },
+
+
+      //
+      //   --  piranha  --
+      //
+      "animal:piranha": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+    
+      
+
+
+      //
+      //   --  jeep_0  --
+      //
+      "vehicle:jeep_0": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.1],
+        "events": {
+          "step": "vehicle.jeep_0.walk",
+          "hurt": "vehicle.jeep_0.hurt",
+          "death": "vehicle.jeep_0.death"
+        }
+      },
+      
+
+
+      //
+      //   --  jeep_1  --
+      //
+      "vehicle:jeep_1": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.1],
+        "events": {
+          "step": "vehicle.jeep_1.walk",
+          "hurt": "vehicle.jeep_1.hurt",
+          "death": "vehicle.jeep_1.death"
+        }
+      },
+
+
+      //
+      //   --  quad  --
+      //
+      "vehicle:quad": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.1],
+        "events": {
+          "step": "vehicle.quad.walk",
+          "hurt": "vehicle.quad.hurt",
+          "death": "vehicle.quad.death"
+        }
+      },
+
+      //
+      //   --  dirt_bike  --
+      //
+      "vehicle:dirt_bike": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.1],
+        "events": {
+          "step": "vehicle.moto_cross.walk",
+          "hurt": "vehicle.moto_cross.hurt",
+          "death": "vehicle.moto_cross.death"
+        }
+      }
+
+    }
+  }
+}

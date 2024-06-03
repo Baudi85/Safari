@@ -1,0 +1,122 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.meerkat.pose_one": {
+			"loop": true,
+			"bones": {
+				"Head": {
+					"rotation": [-20, 0, 0],
+					"position": [0, -0.6, 0]
+				},
+				"Arm1": {
+					"rotation": [0, 0, -10]
+				},
+				"Arm1_1": {
+					"rotation": [-20, 0, -20]
+				},
+				"Arm2": {
+					"rotation": [10, 0, 15]
+				},
+				"Arm1_2": {
+					"rotation": [-40, 0, 0]
+				},
+				"Tail": {
+					"rotation": [15, 0, 0]
+				},
+				"Leg1": {
+					"rotation": [10, 0, 0],
+					"position": [0, 0, 0.2]
+				},
+				"Leg1_1": {
+					"rotation": [-10, 0, 0]
+				}
+			}
+		},
+		"animation.meerkat.pose_two": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"position": [0, -2, 5]
+				},
+				"Chess": {
+					"rotation": [90, 0, 0]
+				},
+				"Head": {
+					"rotation": [-95, 0, -25],
+					"position": [-0.9, 0.2, 0]
+				},
+				"Arm1": {
+					"rotation": [-90, 0, 0],
+					"position": [1.7, 0, 1.6]
+				},
+				"Arm2": {
+					"rotation": [-100, 0, 0],
+					"position": [-1.4, -1.4, 1.2]
+				},
+				"Arm1_2": {
+					"rotation": [-10, 0, 0]
+				},
+				"Tail": {
+					"rotation": [-35, 0, 0],
+					"position": [0, -0.5, -0.6]
+				},
+				"Leg1": {
+					"rotation": [10, 0, 5],
+					"position": [0.6, 2.2, 0]
+				},
+				"Leg2": {
+					"rotation": [-20, 0, -5],
+					"position": [-0.5, 2, 0]
+				},
+				"Leg1_2": {
+					"rotation": [20, 0, 0]
+				}
+			}
+		},
+		"animation.meerkat.pose_three": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"position": [0, -0.8, 0]
+				},
+				"Chess": {
+					"rotation": [15, 0, 0]
+				},
+				"Head": {
+					"rotation": [0, 0, 10],
+					"position": [0.3, -0.5, 0]
+				},
+				"Arm1": {
+					"rotation": [-25, 0, 10],
+					"position": [0.8, 0, 0.6]
+				},
+				"Arm1_1": {
+					"rotation": [-35, 0, 0]
+				},
+				"Arm2": {
+					"rotation": [-15, 0, 0],
+					"position": [-0.3, 0, 0]
+				},
+				"Arm1_2": {
+					"rotation": [-5, 0, 0]
+				},
+				"Tail": {
+					"rotation": [15, 20, 0]
+				},
+				"Leg1": {
+					"rotation": [15, 0, 0],
+					"position": [0, 0.6, 0.2]
+				},
+				"Leg1_1": {
+					"rotation": [-10, 0, 0]
+				},
+				"Leg2": {
+					"rotation": [-25, 0, 0]
+				},
+				"Leg1_2": {
+					"rotation": [20, 0, 0]
+				}
+			}
+		}
+	}
+}

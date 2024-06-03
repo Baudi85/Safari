@@ -1,0 +1,33 @@
+{
+    "format_version" : "1.10.0",
+    "animation_controllers":{
+        "controller.animation.snake.general": {
+            "initial_state" : "default",
+            "states": {
+                "default": {
+                    "animations" : [
+                        "idle",
+                        "look_at_target"
+                    ],
+                    "blend_transition" : 0.5,
+                    "transitions" : [
+                        {
+							"walk" : "query.modified_move_speed>0.01"
+						}
+                    ]
+                },
+                "walk":{
+                    "animations" : [
+                        "walk"
+                    ],
+                    "blend_transition" : 0.6,
+                    "transitions" : [
+                        {
+							"default" : "query.modified_move_speed<=0.01"
+						}
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "vehicle:dirt_bike",
+
+            
+            "scripts": {
+                "pre_animation": [
+                    "variable.speed = 5;",
+                    "variable.amplitude = 10;"
+                ]
+            },
+
+            "textures": {
+                "one" : "textures/vehicles/moto_cross/motocross_01.png",
+                "two" : "textures/vehicles/moto_cross/motocross_02.png",
+                "three" : "textures/vehicles/moto_cross/motocross_03.png",
+                "four" : "textures/vehicles/moto_cross/motocross_04.png",
+                "five" : "textures/vehicles/moto_cross/motocross_05.png"
+            },
+            "geometry": {
+                "default": "geometry.motocross"
+            },
+            "render_controllers": [
+                "controller.render.five"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            
+            "animations": {
+                "recolorAnim": "animation.particles.recolor",
+                "walk" : "animation.motocross.walk",
+                "steeringwheel": "animation.steeringwheel.turn.y"
+            },
+            "animation_controllers": [
+                { "recolor": "controller.animation.particles.recolor" },
+                { "general": "controller.animation.dirt_bike.general" },
+                { "whell" : "controller.animation.steeringwheel.general"}
+            ],
+
+
+
+
+            "particle_effects": {
+                "rotation_particles": "p:recolor",
+                "dirt_particles": "p:dirt"
+            },
+
+            "spawn_egg": {
+                "texture": "dirt_bike"
+            }
+            
+        }
+    }
+}

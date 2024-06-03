@@ -1,0 +1,22 @@
+{
+    "animation_controllers": {
+        "controller.animation.box": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "open": "query.is_sheared==true"
+                        }
+                    ]
+                },
+                "open": {
+                    "animations": [
+                        "open"
+                    ]
+                }
+            }
+        }
+    },
+    "format_version": "1.10.0"
+}

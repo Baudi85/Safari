@@ -1,0 +1,42 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "animal:zebra",
+
+
+            "textures": {
+                "default": "textures/safari/zebra_01.png"
+            },
+            "geometry": {
+                "default": "geometry.zebra"
+            },
+            "render_controllers": [
+                "controller.render.oneSaddle"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            "animations": {
+                "idle": "animation.zebra.idle",
+                "walk": "animation.zebra.walk",
+                "look_at_target": "animation.common.look_at_target",
+                "varOne" : "animation.zebra.variantone",
+                "varTwo" : "animation.zebra.varianttwo"
+            },
+            "animation_controllers": [
+                { "animal": "controller.animation.zebra.general" }
+            ],
+
+
+            "spawn_egg": {
+                "base_color": "#873ed4",
+                "overlay_color": "#7368a3"
+            }
+            
+        }
+    }
+}

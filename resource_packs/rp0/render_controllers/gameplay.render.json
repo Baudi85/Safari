@@ -1,0 +1,68 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.dna_analiser": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ],
+            "part_visibility": [ { "dna*": "query.is_sheared" } ]
+        },
+        "controller.render.dna_computer": {
+            "arrays": {
+                "textures": {
+                    "Array.skins": [
+                        "Texture.Default",
+                        "Texture.One",
+                        "Texture.Two",
+                        "Texture.Three",
+                        "Texture.Four",
+                        "Texture.Five",
+                        "Texture.Six"
+                    ]
+                }
+            },
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [ "Array.skins[query.skin_id]" ],
+            "part_visibility": [ { "dna*": "query.is_sheared" } ]
+        },
+        "controller.render.vegetable_grower": {
+            "arrays": {
+                "textures": {
+                    "Array.skins": [
+                        "Texture.W_01",
+                        "Texture.W_02",
+                        "Texture.W_03",
+                        "Texture.W_04",
+                        "Texture.C_01",
+                        "Texture.C_02",
+                        "Texture.C_03",
+                        "Texture.C_04",
+                        "Texture.P_01",
+                        "Texture.P_02",
+                        "Texture.P_03",
+                        "Texture.P_04"
+                    ]
+                }
+            },
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [ "query.is_sheared == false ? Texture.Default : Array.skins[(query.variant - 1) + ((query.mark_variant - 1) * 4)]" ],
+            "part_visibility": [ { "dna*": "query.is_sheared" } ]
+        }
+    }
+}

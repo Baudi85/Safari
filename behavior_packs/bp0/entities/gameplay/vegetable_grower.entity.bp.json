@@ -1,0 +1,92 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        
+        "description": {
+            "identifier": "gameplay:vegetable_grower",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:boat",
+            "animations" : {
+                "ac" : "controller.animation.vegetable_grower",
+                "compute" : "animation.vegetable_grower.run"
+            },
+            "scripts" : {
+                "animate" : [
+                    "ac"
+                ]
+            }
+        },
+        
+        "component_groups": {
+            "cpg:default" : {  "minecraft:variant" : { "value" : 0 } , "minecraft:mark_variant" : { "value" : 0 }  },
+            "cpg:one" :     {  "minecraft:variant" : { "value" : 1 }  },
+            "cpg:two" :     {  "minecraft:variant" : { "value" : 2 }  },
+            "cpg:three" :   {  "minecraft:variant" : { "value" : 3 }  },
+            "cpg:four" :    {  "minecraft:variant" : { "value" : 4 }  },
+
+
+            "cpg:wheat" :  { "minecraft:mark_variant" : { "value" : 1 } },
+            "cpg:carrot" : { "minecraft:mark_variant" : { "value" : 2 } },
+            "cpg:potato" : { "minecraft:mark_variant" : { "value" : 3 } },
+
+            "cpg:run" : { "minecraft:is_sheared" : {} }
+        },
+        
+        "components": {
+            "minecraft:type_family": {   "family": [ "furniture", "inanimate" ]    },
+            "minecraft:collision_box": {
+                "width": 1,
+                "height": 1
+            },
+            "minecraft:health": {
+                "value": 2,
+                "max": 2
+            },
+            "minecraft:rideable" : {
+                "seat_count" : 0,
+                "interact_text" : ""
+            },
+            "minecraft:scale": {  "value": 1  },
+            "minecraft:navigation.walk": { },
+            "minecraft:movement.basic": {   "max_turn": 0.01   },
+            "minecraft:physics": {},
+            "minecraft:is_stackable": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": true
+            }
+        },
+        
+        "events": {
+            "minecraft:entity_spawned": {
+                "add" : { "component_groups" : ["cpg:default"] }
+            },
+            "run_wheat" : {
+                "add" : {"component_groups" : ["cpg:wheat"  , "cpg:run" , "cpg:one" ]},
+                "remove" : {"component_groups" : [ "cpg:default"]}
+            },
+            "run_carrots" : {
+                "add" : {"component_groups" : ["cpg:carrot" , "cpg:run" , "cpg:one" ]},
+                "remove" : {"component_groups" : [ "cpg:default"]}
+            },
+            "run_potatoes" : {
+                "add" : {"component_groups" : ["cpg:potato" , "cpg:run" , "cpg:one" ]},
+                "remove" : {"component_groups" : [ "cpg:default"]}
+            },
+            "reset_color" : {
+                "remove" : {"component_groups" : [ "cpg:one" , "cpg:two" , "cpg:three", "cpg:four"]}
+            },
+            "reset" : {
+                "remove" : { "component_groups" : [ "cpg:one" , "cpg:two" , "cpg:three", "cpg:four" , "cpg:run" , "cpg:carrot" , "cpg:potato" , "cpg:wheat"]},
+                "add"    : { "component_groups":  [ "cpg:default" ]}
+            },
+
+            "set_one"   : {  "add" : {"component_groups" : ["cpg:one"   ]} , "remove" : {"component_groups" : ["cpg:two" , "cpg:three", "cpg:four" ]}},
+            "set_two"   : {  "add" : {"component_groups" : ["cpg:two"   ]} , "remove" : {"component_groups" : [ "cpg:one" ,"cpg:three", "cpg:four" ]}},
+            "set_three" : {  "add" : {"component_groups" : ["cpg:three" ]} , "remove" : {"component_groups" : [ "cpg:one" , "cpg:two" , "cpg:four" ]}},
+            "set_four"  : {  "add" : {"component_groups" : ["cpg:four"  ]} , "remove" : {"component_groups" : [ "cpg:one" , "cpg:two" , "cpg:three"]}}
+        }
+    }
+}

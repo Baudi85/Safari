@@ -1,0 +1,48 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "statue:crocodile",
+
+
+            "textures": {
+                "default": "textures/safari/crocodile_01.png"
+            },
+            "geometry": {
+                "default": "geometry.crocodile"
+            },
+            "render_controllers": [
+                "controller.render.one"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            "animations": {
+                "pose_one":   "animation.crocodile.pose_one",
+                "pose_two":   "animation.crocodile.pose_two",
+                "pose_three": "animation.crocodile.pose_three",
+                "recolor_particle": "animation.particles.recolor_furn",
+                "rotate_particle": "animation.particles.rotate_furn"
+
+            },
+            "animation_controllers": [
+                { "statue": "controller.animation.statue.general" },
+                { "rotate": "controller.animation.particles.furniture_rotate" },
+                { "recolor": "controller.animation.particles.furniture_recolor" }
+            ],
+
+
+            "particle_effects": {
+                "recolor_p": "p:recolor",
+                "rotate_p": "p:rotate"
+            },
+            "spawn_egg": {
+                "base_color": "#c36ea9",
+                "overlay_color": "#4f89c1"
+            }
+        }
+    }
+}

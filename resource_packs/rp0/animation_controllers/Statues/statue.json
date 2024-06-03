@@ -1,0 +1,24 @@
+{
+    "format_version" : "1.10.0",
+    "animation_controllers":{
+        "controller.animation.statue.general": {
+
+            "initial_state" : "default",
+            "states": {
+                "default": {
+                    "animations" : [
+                        {
+                            "pose_one" : "query.variant == 0"
+                        },
+                        {
+                            "pose_two" : "query.variant == 1"
+                        },
+                        {
+                            "pose_three" : "query.variant == 2"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

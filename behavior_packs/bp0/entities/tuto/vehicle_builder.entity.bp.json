@@ -1,0 +1,79 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        
+        "description": {
+            "identifier": "tuto:vehicle_builder",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:boat",
+            "animations": {
+                "anim":          "controller.animation.vehicle_builder"
+            },
+            "scripts": {
+                "animate": ["anim"]
+            }
+        },
+        
+        "component_groups": {
+            
+            "cg:sensor" : {
+                "minecraft:environment_sensor": {
+                    "triggers": [
+                        {
+                            "filters": {  "all_of": [ { "test": "has_tag", "subject": "self", "value": "run" , "operator" : "=="} ] },
+                            "event": "evt:set_sheared"
+                        },
+                        {
+                            "filters": {  "all_of": [ { "test": "has_tag", "subject": "self", "value": "run" , "operator" : "!="} ] },
+                            "event": "evt:reset"
+                        }
+                    ]
+                }
+            },
+            
+            "cg:is_sheared" : {
+                "minecraft:is_sheared" : {},
+                "minecraft:timer": {"looping": false,"time": 1,"time_down_event": {"event": "evt:reset"}}
+            }
+        },
+        
+        "components": {
+            "minecraft:type_family": {   "family": [ "furniture", "inanimate" ]    },
+            "minecraft:collision_box": {
+                "width": 2,
+                "height": 0.3
+            },
+            "minecraft:health": {
+                "value": 2,
+                "max": 2
+            },
+            "minecraft:rideable" : {
+                "seat_count" : 0,
+                "interact_text" : ""
+              },
+            "minecraft:scale": {  "value": 1  },
+            "minecraft:navigation.walk": { },
+            "minecraft:movement.basic": {   "max_turn": 0.01   },
+            "minecraft:physics": {},
+            "minecraft:is_stackable": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": true
+            }
+        },
+        
+        "events": {
+            "minecraft:entity_spawned": {
+                "add" : { "component_groups" : ["cg:sensor"] }
+            },
+            "evt:reset" : {
+                "remove" : { "component_groups" : ["cg:is_sheared"] }
+            },
+            "evt:set_sheared" : {
+                "add" : { "component_groups" : ["cg:is_sheared"] }
+            }
+        }
+    }
+}

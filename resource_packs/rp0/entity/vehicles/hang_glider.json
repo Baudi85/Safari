@@ -1,0 +1,54 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "vehicle:hang_glider",
+
+            
+            "scripts": {
+                "pre_animation": [
+                    "variable.speed = 5;",
+                    "variable.amplitude = 10;"
+                ]
+            },
+
+            "textures": {
+                "one" : "textures/vehicles/hang_glider/hang_glider_01.png",
+                "two" : "textures/vehicles/hang_glider/hang_glider_02.png",
+                "three" : "textures/vehicles/hang_glider/hang_glider_03.png",
+                "four" : "textures/vehicles/hang_glider/hang_glider_04.png",
+                "five" : "textures/vehicles/hang_glider/hang_glider_05.png",
+                "six" : "textures/vehicles/hang_glider/hang_glider_06.png"
+            },
+            "geometry": {
+                "default": "geometry.hang_glider"
+            },
+            "render_controllers": [
+                "controller.render.six"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+
+            "animations": {
+                "recolorAnim": "animation.particles.recolor"
+            },
+            "animation_controllers": [
+                { "recolor": "controller.animation.particles.recolor" }
+            ],
+
+
+
+
+            "particle_effects": {
+                "rotation_particles": "p:recolor"
+            },
+            "spawn_egg": {
+                "texture": "hang_glider"
+            }
+        }
+    }
+}

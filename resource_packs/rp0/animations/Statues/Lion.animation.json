@@ -1,0 +1,120 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.lion.pose_one": {
+			"loop": true,
+			"bones": {
+				"Leg_0": {
+					"rotation": [-15, 0, -5]
+				},
+				"Leg_0_1": {
+					"rotation": [30, 0, 0]
+				},
+				"Leg_1": {
+					"rotation": [30, 20, 0]
+				},
+				"Leg_1_1": {
+					"rotation": [10, 0, 0]
+				},
+				"Leg_2": {
+					"rotation": [-15, 0, 0]
+				},
+				"Leg_2_1": {
+					"rotation": [15, 0, 0]
+				},
+				"Leg_3": {
+					"rotation": [10, 0, 0]
+				},
+				"Leg_3_1": {
+					"rotation": [5, 0, 0]
+				},
+				"Neck_0": {
+					"rotation": [0, 15, 0]
+				},
+				"Head": {
+					"rotation": [-10, 5, 0]
+				},
+				"Tail": {
+					"rotation": [20, 0, 0]
+				},
+				"Tail_1": {
+					"rotation": [0, 0, -20]
+				}
+			}
+		},
+		"animation.lion.pose_two": {
+			"loop": true,
+			"bones": {
+				"Leg_0": {
+					"rotation": [-80, -10, 0],
+					"position": [0, -2, 0]
+				},
+				"Leg_1": {
+					"rotation": [-80, 10, 0]
+				},
+				"Leg_2": {
+					"rotation": [70, 0, 0]
+				},
+				"Leg_2_1": {
+					"rotation": [15, 0, 0],
+					"position": [0, 0, 0.3]
+				},
+				"Leg_3": {
+					"rotation": [85, 15, 0],
+					"position": [0, -2.3, 0.8]
+				},
+				"Leg_3_1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0.7]
+				},
+				"Neck_0": {
+					"rotation": [0, -5, 0]
+				},
+				"Head": {
+					"rotation": [0, -15, 0]
+				},
+				"Tail": {
+					"rotation": [40, 0, 0]
+				},
+				"LionFemale": {
+					"position": [0, -8, 0]
+				}
+			}
+		},
+		"animation.lion.pose_three": {
+			"loop": true,
+			"bones": {
+				"Leg_0": {
+					"rotation": [-5, -15, 0]
+				},
+				"Leg_0_1": {
+					"rotation": [5, 0, 0]
+				},
+				"Leg_1": {
+					"rotation": [-15, 0, 10]
+				},
+				"Leg_1_1": {
+					"rotation": [15, 0, 0]
+				},
+				"Leg_2": {
+					"rotation": [-5, 0, 0]
+				},
+				"Leg_2_1": {
+					"rotation": [5, 0, 0]
+				},
+				"Leg_3": {
+					"rotation": [25, 0, 0]
+				},
+				"Leg_3_1": {
+					"rotation": [25, 0, 0]
+				},
+				"Neck_0": {
+					"rotation": [0, -15, 0]
+				},
+				"Head": {
+					"rotation": [0, -15, 0]
+				}
+			}
+		}
+	}
+}

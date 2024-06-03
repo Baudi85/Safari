@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        
+        "controller.animation.dna_analiser_tuto": {
+            "initial_state": "default",
+            "states": {
+                
+                "default": {
+                    "transitions": [     
+                        { "updated": "query.is_baby == 1" }
+                    ]
+                },
+                "updated" : {
+                    "on_entry": [ "/function tuto/tuto/next" ]
+                }
+            }
+        }
+    }
+}

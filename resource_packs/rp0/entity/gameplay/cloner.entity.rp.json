@@ -1,0 +1,34 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "gameplay:cloner",
+            
+            "textures": {
+                "default": "textures/gameplay/cloner/cloner.png"
+            },
+            "geometry": {
+                "default": "geometry.cloner"
+            },
+            "render_controllers": [
+                "controller.render.one"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+            
+            "animations": {
+                "run"  : "animation.cloner.run",
+                "idle" : "animation.cloner.idle"
+            },
+            "animation_controllers": [
+                { "ac_run": "controller.animation.cloner" }
+            ],
+
+            "spawn_egg": {
+                "base_color": "#945b57",
+                "overlay_color": "#c4dbb8"
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "format_version" : "1.10.0",
+    "animation_controllers":{
+        "controller.animation.vulture.general": {
+
+            "initial_state" : "default",
+            "states": {
+
+                "default": {
+                    "animations" : [
+                        "idle",
+                        "look_at_target",
+                        {
+                            "walk" : "query.modified_move_speed>0.1"
+                        }
+                    ],
+                    "transitions" : [
+                        {
+                            "fly" : "!query.is_on_ground"
+                        }
+                    ]
+                },
+
+                "fly":{
+                    "animations" : [ "fly" ],
+					"transitions" : [
+						{
+							"default" : "query.is_on_ground"
+						}
+					]
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "gameplay:timer",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "animations": {
+                "timer":          "controller.animation.timer",
+                "compute_timer":  "animation.compute_timer"
+                
+            },
+            "scripts": {
+                "animate": ["timer"]
+            }
+        },
+        "component_groups": {
+            
+        },
+        "components": {
+            "minecraft:type_family": {
+                "family": [
+                    "furniture",
+                    "inanimate"
+                ]
+            },
+            "minecraft:collision_box": {
+                "width": 1,
+                "height": 1
+            },
+            "minecraft:health": {
+                "value": 50,
+                "max": 50
+            },
+            "minecraft:scale": {
+                "value": 1
+            },
+            "minecraft:navigation.walk": {
+                
+            },
+            "minecraft:movement.basic": {
+                "max_turn": 0.01
+            },
+            "minecraft:physics": {
+                
+            },
+            "minecraft:is_stackable": {
+                
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:nameable": {
+                
+            }
+        },
+        "events": {
+            
+        }
+    }
+}

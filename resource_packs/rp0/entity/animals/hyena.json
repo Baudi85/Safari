@@ -1,0 +1,41 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "animal:hyena",
+
+
+            "textures": {
+                "default": "textures/safari/hyena_01.png"
+            },
+            "geometry": {
+                "default": "geometry.hyena"
+            },
+            "render_controllers": [
+                "controller.render.one"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            "animations": {
+                "idle": "animation.hyena.idle",
+                "walk": "animation.hyena.walk",
+                "look_at_target": "animation.common.look_at_target",
+                "variantOne" : "animation.hyena.variantone",
+                "variantTwo" : "animation.hyena.varianttwo"
+            },
+            "animation_controllers": [
+                { "animal": "controller.animation.hyena.general" }
+            ],
+
+
+            "spawn_egg": { 
+                "base_color" : "#2e2f12" ,
+                "overlay_color" : "#a2a053"
+            }
+        }
+    }
+}

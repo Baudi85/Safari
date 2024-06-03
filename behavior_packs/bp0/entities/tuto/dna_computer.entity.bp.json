@@ -1,0 +1,239 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        
+        "description": {
+            "identifier": "tuto:dna_computer",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:boat",
+            "animations" : {
+                "run" : "controller.animation.dna_computer.run_animation",
+                "running" : "animation.dna_computer_run",
+                "tuto" : "controller.animation.dna_analiser_tuto"
+            },
+            "scripts": {
+                "animate": ["run" , "tuto"]
+            }
+        },
+        
+        "component_groups": {
+            "cg:denied" : {
+              "minecraft:is_tamed": {}
+            },
+            "cg:interact" : {
+                "minecraft:interact": {
+                    "interactions" : [
+                        {
+                          "on_interact": { 
+                            "filters": { "all_of": [ {"test": "has_equipment","domain": "hand","subject": "other","value": "dna_good:giraffe"},
+                                                     {"test": "has_component", "subject": "self", "operator": "!=", "value": "minecraft:is_sheared" },
+                                                     {"test": "has_component", "subject": "self", "operator": "!=", "value": "minecraft:is_illager_captain" } ]},
+                            "event": "evt:ask_08"
+                          },
+                          "use_item": true, "swing": true, "interact_text" : "action.interact.analyse" , "play_sounds" : [ "random.click" ]
+                        }
+                    ]
+                }
+            },
+            "cg:ask" : {
+                "minecraft:is_illager_captain" : {}
+            },
+            "cg:var_01" : {"minecraft:variant" : {"value" : 1}},
+            "cg:var_02" : {"minecraft:variant" : {"value" : 2}},
+            "cg:var_03" : {"minecraft:variant" : {"value" : 3}},
+            "cg:var_04" : {"minecraft:variant" : {"value" : 4}},
+            "cg:var_05" : {"minecraft:variant" : {"value" : 5}},
+            "cg:var_06" : {"minecraft:variant" : {"value" : 6}},
+            "cg:var_07" : {"minecraft:variant" : {"value" : 7}},
+            "cg:var_08" : {"minecraft:variant" : {"value" : 8}},
+            "cg:var_09" : {"minecraft:variant" : {"value" : 9}},
+            "cg:var_10" : {"minecraft:variant" : {"value" : 10}},
+            "cg:var_11" : {"minecraft:variant" : {"value" : 11}},
+            "cg:var_12" : {"minecraft:variant" : {"value" : 12}},
+            "cg:var_13" : {"minecraft:variant" : {"value" : 13}},
+            "cg:var_14" : {"minecraft:variant" : {"value" : 14}},
+            "cg:var_15" : {"minecraft:variant" : {"value" : 15}},
+            "cg:var_16" : {"minecraft:variant" : {"value" : 16}},
+            "cg:var_17" : {"minecraft:variant" : {"value" : 17}},
+            "cg:var_18" : {"minecraft:variant" : {"value" : 18}},
+            "cg:var_19" : {"minecraft:variant" : {"value" : 19}},
+            "cg:var_20" : {"minecraft:variant" : {"value" : 20}},
+            "cg:var_21" : {"minecraft:variant" : {"value" : 21}},
+            "cg:var_22" : {"minecraft:variant" : {"value" : 22}},
+            "cg:var_23" : {"minecraft:variant" : {"value" : 23}},
+            "cg:var_24" : {"minecraft:variant" : {"value" : 24}},
+
+            "cg:is_finished": {
+                "minecraft:is_baby": {},
+                "minecraft:timer": {
+                  "looping": false,
+                  "time": 0.2,
+                  "time_down_event": { "event": "evt:reset_finished" }
+                }
+            },
+    
+    
+            "cg:run" : {
+                "minecraft:is_sheared" : {},
+                "minecraft:timer": {"looping": false,"time": 3.0 ,"time_down_event": {"event": "evt:is_finished"}}
+            },
+
+
+            "cg:color_0" : { "minecraft:skin_id" : { "value" : 0 } },
+            "cg:color_1" : { "minecraft:skin_id" : { "value" : 1 } },
+            "cg:color_2" : { "minecraft:skin_id" : { "value" : 2 } },
+            "cg:color_3" : { "minecraft:skin_id" : { "value" : 3 } },
+            "cg:color_4" : { "minecraft:skin_id" : { "value" : 4 } },
+            "cg:color_5" : { "minecraft:skin_id" : { "value" : 5 } },
+            "cg:color_6" : { "minecraft:skin_id" : { "value" : 6 } }
+
+        },
+        
+        "components": {
+            "minecraft:type_family": {   "family": [ "furniture", "inanimate" ]    },
+            "minecraft:collision_box": {
+                "width": 1,
+                "height": 2
+            },
+            "minecraft:health": {
+                "value": 2,
+                "max": 2
+            },
+            "minecraft:rideable" : {
+              "seat_count" : 0,
+              "interact_text" : ""
+            },
+            "minecraft:scale": {  "value": 1  },
+            "minecraft:navigation.walk": { },
+            "minecraft:movement.basic": {   "max_turn": 0.01   },
+            "minecraft:physics": {},
+            "minecraft:is_stackable": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": true
+            }
+        },
+
+        "events": {
+            "minecraft:entity_spawned": {
+              "add": { "component_groups": [ "cg:interact" ] }
+            },
+            "evt:is_finished": {
+               "add": { "component_groups": [ "cg:is_finished" ] },
+               "remove": { "component_groups": [ "cg:run" ] }
+            },
+            "evt:reset_finished": {
+               "remove": { "component_groups": [ "cg:is_finished" ] }
+            },
+            "evt:reset": {
+                "remove": {
+                  "component_groups": [
+                    "cg:run",
+                    "cg:ask",
+                    "cg:var_01",
+                    "cg:var_02",
+                    "cg:var_03",
+                    "cg:var_04",
+                    "cg:var_05",
+                    "cg:var_06",
+                    "cg:var_07",
+                    "cg:var_08",
+                    "cg:var_09",
+                    "cg:var_10",
+                    "cg:var_11",
+                    "cg:var_12",
+                    "cg:var_13",
+                    "cg:var_14",
+                    "cg:var_15",
+                    "cg:var_16",
+                    "cg:var_17",
+                    "cg:var_18",
+                    "cg:var_19",
+                    "cg:var_20",
+                    "cg:var_21",
+                    "cg:var_22",
+                    "cg:var_23",
+                    "cg:var_24"
+                  ]
+                }
+              },
+              "evt:remove_deny": {
+                "remove": { "component_groups": [ "cg:denied" ] }
+              },
+              "evt:accept": {
+                "add": { "component_groups": [ "cg:run" ] },
+                "remove": { "component_groups": [ "cg:ask" ] }
+              },
+              "evt:deny": {
+                "remove": {
+                  "component_groups": [
+                    "cg:run",
+                    "cg:ask",
+                    "cg:var_01",
+                    "cg:var_02",
+                    "cg:var_03",
+                    "cg:var_04",
+                    "cg:var_05",
+                    "cg:var_06",
+                    "cg:var_07",
+                    "cg:var_08",
+                    "cg:var_09",
+                    "cg:var_10",
+                    "cg:var_11",
+                    "cg:var_12",
+                    "cg:var_13",
+                    "cg:var_14",
+                    "cg:var_15",
+                    "cg:var_16",
+                    "cg:var_17",
+                    "cg:var_18",
+                    "cg:var_19",
+                    "cg:var_20",
+                    "cg:var_21",
+                    "cg:var_22",
+                    "cg:var_23",
+                    "cg:var_24"
+                  ]
+                },
+                "add": { "component_groups": [ "cg:denied" ] }
+              },
+
+    
+              "evt:ask_01": { "add": { "component_groups": [ "cg:ask", "cg:var_01" ] } },
+              "evt:ask_02": { "add": { "component_groups": [ "cg:ask", "cg:var_02" ] } },
+              "evt:ask_03": { "add": { "component_groups": [ "cg:ask", "cg:var_03" ] } },
+              "evt:ask_04": { "add": { "component_groups": [ "cg:ask", "cg:var_04" ] } },
+              "evt:ask_05": { "add": { "component_groups": [ "cg:ask", "cg:var_05" ] } },
+              "evt:ask_06": { "add": { "component_groups": [ "cg:ask", "cg:var_06" ] } },
+              "evt:ask_07": { "add": { "component_groups": [ "cg:ask", "cg:var_07" ] } },
+              "evt:ask_08": { "add": { "component_groups": [ "cg:run", "cg:var_08" ] } },
+              "evt:ask_09": { "add": { "component_groups": [ "cg:ask", "cg:var_09" ] } },
+              "evt:ask_10": { "add": { "component_groups": [ "cg:ask", "cg:var_10" ] } },
+              "evt:ask_11": { "add": { "component_groups": [ "cg:ask", "cg:var_11" ] } },
+              "evt:ask_12": { "add": { "component_groups": [ "cg:ask", "cg:var_12" ] } },
+              "evt:ask_13": { "add": { "component_groups": [ "cg:ask", "cg:var_13" ] } },
+              "evt:ask_14": { "add": { "component_groups": [ "cg:ask", "cg:var_14" ] } },
+              "evt:ask_15": { "add": { "component_groups": [ "cg:ask", "cg:var_15" ] } },
+              "evt:ask_16": { "add": { "component_groups": [ "cg:ask", "cg:var_16" ] } },
+              "evt:ask_17": { "add": { "component_groups": [ "cg:ask", "cg:var_17" ] } },
+              "evt:ask_18": { "add": { "component_groups": [ "cg:ask", "cg:var_18" ] } },
+              "evt:ask_19": { "add": { "component_groups": [ "cg:ask", "cg:var_19" ] } },
+              "evt:ask_20": { "add": { "component_groups": [ "cg:ask", "cg:var_20" ] } },
+              "evt:ask_21": { "add": { "component_groups": [ "cg:ask", "cg:var_21" ] } },
+              "evt:ask_22": { "add": { "component_groups": [ "cg:ask", "cg:var_22" ] } },
+              "evt:ask_23": { "add": { "component_groups": [ "cg:ask", "cg:var_23" ] } },
+              "evt:ask_24": { "add": { "component_groups": [ "cg:ask", "cg:var_24" ] } },
+
+
+              "evt:set_color_0" : {"add" : { "component_groups": [ "cg:color_0" ] , "remove" : {"component_groups": [ "cg:color_1","cg:color_2","cg:color_3","cg:color_4","cg:color_5","cg:color_6" ]}}},
+              "evt:set_color_1" : {"add" : { "component_groups": [ "cg:color_1" ] , "remove" : {"component_groups": [ "cg:color_0","cg:color_2","cg:color_3","cg:color_4","cg:color_5","cg:color_6" ]}}},
+              "evt:set_color_2" : {"add" : { "component_groups": [ "cg:color_2" ] , "remove" : {"component_groups": [ "cg:color_1","cg:color_0","cg:color_3","cg:color_4","cg:color_5","cg:color_6" ]}}},
+              "evt:set_color_3" : {"add" : { "component_groups": [ "cg:color_3" ] , "remove" : {"component_groups": [ "cg:color_1","cg:color_2","cg:color_0","cg:color_4","cg:color_5","cg:color_6" ]}}},
+              "evt:set_color_4" : {"add" : { "component_groups": [ "cg:color_4" ] , "remove" : {"component_groups": [ "cg:color_1","cg:color_2","cg:color_3","cg:color_0","cg:color_5","cg:color_6" ]}}},
+              "evt:set_color_5" : {"add" : { "component_groups": [ "cg:color_5" ] , "remove" : {"component_groups": [ "cg:color_1","cg:color_2","cg:color_3","cg:color_4","cg:color_0","cg:color_6" ]}}},
+              "evt:set_color_6" : {"add" : { "component_groups": [ "cg:color_6" ] , "remove" : {"component_groups": [ "cg:color_1","cg:color_2","cg:color_3","cg:color_4","cg:color_5","cg:color_0" ]}}}
+        }
+    }
+}

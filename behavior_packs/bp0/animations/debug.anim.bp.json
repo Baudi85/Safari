@@ -1,0 +1,18 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+
+
+
+      "animation.test_events": {
+        "timeline": {
+          "1.0": "/say heyyy",
+          "2.0": [ "/say heyyy" ]
+        },
+        "animation_length": 5.0
+      }
+
+
+      
+    }
+  }

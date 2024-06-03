@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.windsock.idle": {
+			"loop": true,
+			"bones": {
+				"bone2": {
+					"rotation": [0, "math.sin(query.anim_time*150)*10", "math.cos(query.anim_time*200)*3"]
+				},
+				"bone3": {
+					"rotation": ["math.cos(query.anim_time*120)*5", "math.cos(query.anim_time*120)*10", 0]
+				},
+				"bone4": {
+					"rotation": [0, "math.sin(query.anim_time*130)*10", 0]
+				}
+			}
+		}
+	}
+}

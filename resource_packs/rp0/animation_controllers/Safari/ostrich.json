@@ -1,0 +1,43 @@
+{
+    "format_version" : "1.10.0",
+    "animation_controllers":{
+        "controller.animation.ostrich.general": {
+            "initial_state" : "default",
+            "states": {
+                "default": {
+                    "animations" : [
+                        "idle",
+                        "look_at_target",
+                        {
+                            "walk" : "query.modified_move_speed"
+                        }
+                    ],
+                    "blend_transition" : 0.4,
+                    "transitions" : [
+						{
+							"sleep" : "query.is_sleeping"
+						}
+                    ]
+                },
+                "sleep" : {
+					"animations" : [ "varTwo" ],
+					"blend_transition" : 0.3,
+					"transitions" : [
+						{
+							"leave_sleep" : "!query.is_sleeping"
+						}
+					]
+                },
+                "leave_sleep" : {
+					"animations" : [ "varThree" ],
+					"blend_transition" : 0.3,
+					"transitions" : [
+						{
+							"default" : "query.all_animations_finished"
+						}
+					]
+                }
+            }
+        }
+    }
+}

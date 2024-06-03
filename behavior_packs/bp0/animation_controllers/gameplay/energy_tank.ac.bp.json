@@ -1,0 +1,23 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        
+        "controller.animation.energy_tank": {
+            "initial_state": "default",
+            "states": {
+                
+                "default": {
+                    "transitions": [     
+                        { "update": "query.is_sheared == true" }
+                    ]
+                },
+                "update" : {
+                    "on_entry":[    "/function gameplay/energy_tank/update"],
+                    "transitions": [     
+                        { "default": "query.is_sheared == false" }
+                    ]
+                }
+            }
+        }
+    }
+}

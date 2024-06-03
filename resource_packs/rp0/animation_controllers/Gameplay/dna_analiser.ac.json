@@ -1,0 +1,31 @@
+{
+    "animation_controllers": {
+        "controller.animation.dna_analiser": {
+            "initial_state": "idle",
+            "states": {
+                "idle": {
+                    "animations": [
+                        "idle"
+                    ],
+                    "transitions": [
+                        {
+                            "run": "query.is_sheared"
+                        }
+                    ]
+                },
+                "run": {
+                    "animations": [
+                        "run"
+                    ],
+                    "blend_transition": 0.5,
+                    "transitions": [
+                        {
+                            "idle": "!query.is_sheared"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "format_version": "1.10.0"
+}

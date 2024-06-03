@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.steeringwheel.turn.x": {
+			"loop": true,
+			"bones": {
+				"steeringwheel": {
+					"rotation": ["-query.yaw_speed/3", 0 , 0]
+				}
+			}
+		},
+		"animation.steeringwheel.turn.y": {
+			"loop": true,
+			"bones": {
+				"steeringwheel": {
+					"rotation": [0, "query.yaw_speed/3", 0]
+				}
+			}
+		},
+		"animation.steeringwheel.turn.z": {
+			"loop": true,
+			"bones": {
+				"steeringwheel": {
+					"rotation": [0, 0, "-query.yaw_speed/3"]
+				}
+			}
+		}
+	}
+}

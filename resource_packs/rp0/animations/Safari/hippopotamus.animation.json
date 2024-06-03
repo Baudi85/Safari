@@ -1,0 +1,120 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.hippopotamus.idle": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"rotation": [0, 0, "math.sin(query.anim_time*80)*2"]
+				},
+				"Neck1": {
+					"rotation": ["math.sin(query.anim_time*90)*4", 0, 0]
+				},
+				"Head": {
+					"rotation": ["math.sin(query.anim_time*90)*4", 0, 0]
+				},
+				"Tail1": {
+					"rotation": [0, 0, "math.sin(query.anim_time*120)*8"]
+				},
+				"Jaw": {
+					"rotation": ["math.abs(math.sin(query.anim_time*90)*10)", 0, 0]
+				}
+			}
+		},
+		"animation.hippopotamus.walk": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"rotation": ["math.sin(query.anim_time*400)*4", 0, 0]
+				},
+				"Leg1": {
+					"rotation": ["-5+math.sin(query.anim_time*400-100)*20", 0, 0]
+				},
+				"Leg2": {
+					"rotation": ["-5+math.sin(query.anim_time*400-300)*20", 0, 0]
+				},
+				"Leg3": {
+					"rotation": ["-5+math.sin(query.anim_time*400)*20", 0, 0]
+				},
+				"Leg4": {
+					"rotation": ["-5+math.sin(query.anim_time*400-200)*20", 0, 0]
+				},
+				"Neck1": {
+					"rotation": ["-math.sin(query.anim_time*400)*4", 0, 0]
+				},
+				"Head": {
+					"rotation": ["-math.sin(query.anim_time*400)*4", 0, 0]
+				},
+				"Jaw": {
+					"rotation": ["math.abs(math.sin(query.anim_time*120)*10)", 0, 0]
+				}
+			}
+		},
+		"animation.hippopotamus.variantone": {
+			"animation_length": 1.16,
+			"bones": {
+				"Body": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4833": [0, 0, -5],
+						"0.9167": [0, 0, 0]
+					}
+				},
+				"Neck1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4833": [-15, 0, 0],
+						"0.9167": [0, 0, 0]
+					}
+				},
+				"Head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4833": [-20, 0, 0],
+						"0.9167": [0, 0, 0]
+					}
+				},
+				"Tail1": {
+					"rotation": [0, 0, "math.sin(query.anim_time*120)*8"]
+				},
+				"Jaw": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.3167": [30, 0, 0],
+						"0.5167": [19.29, 0, 0],
+						"0.6833": [25.72, 0, 0],
+						"0.9167": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.hippopotamus.varianttwo": {
+			"animation_length": 1.16,
+			"bones": {
+				"Neck1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.6": [20, 0, 0],
+						"0.8833": [-30, 0, 0],
+						"1.1667": [0, 0, 0]
+					}
+				},
+				"Head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.6": [5, 0, 0],
+						"0.8833": [-2.5, 0, 0],
+						"1.1667": [0, 0, 0]
+					}
+				},
+				"Jaw": {
+					"rotation": {
+						"0.4333": [0, 0, 0],
+						"0.9167": [45, 0, 0],
+						"1.1667": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

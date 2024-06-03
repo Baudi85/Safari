@@ -1,0 +1,55 @@
+{
+    "animation_controllers": {
+        "controller.animation.human_scientist_01_general": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "dlg_dlg_0": "query.mark_variant == 1"
+                        }
+                    ]
+                },
+                "dlg_dlg_0": {
+                    "transitions": [
+                        {
+                            "dlg_dlg_1": "query.mark_variant == 2"
+                        }
+                    ]
+                },
+                "dlg_dlg_1": {
+                    "on_entry": [
+                        "/say Oh! Hey! Do you have a minute? [click me to start the dialogue]"
+                    ],
+                    "transitions": [
+                        {
+                            "dlg_dlg_2": "query.mark_variant == 3"
+                        },
+                        {
+                            "dlg_dlg_3": "query.mark_variant == 4"
+                        }
+                    ]
+                },
+                "dlg_dlg_2": {
+                    "on_entry": [
+                        "/say Ok.. Have a nice day!"
+                    ],
+                    "transitions": [
+                        {
+                            "dlg_dlg_1": "query.mark_variant == 2"
+                        }
+                    ]
+                },
+                "dlg_dlg_3": {
+                    "animations": [
+                        "animation_dlg_dlg_3"
+                    ],
+                    "on_entry": [
+                        "/say Thanks for listening!"
+                    ]
+                }
+            }
+        }
+    },
+    "format_version": "1.10.0"
+}

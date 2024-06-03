@@ -1,0 +1,41 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "animal:babbon",
+
+            
+
+            "textures": {
+                "default": "textures/safari/baboon_01.png"
+            },
+            "geometry": {
+                "default": "geometry.baboon"
+            },
+            "render_controllers": [
+                "controller.render.one"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            "animations": {
+                "idle": "animation.baboon.idle",
+                "walk": "animation.baboon.walk",
+                "look_at_target": "animation.common.look_at_target"
+            },
+            "animation_controllers": [
+                { "animal": "controller.animation.babbon.general" }
+            ],
+
+
+            "spawn_egg": {
+                "base_color": "#ee532a",
+                "overlay_color": "#51d3af"
+            }
+            
+        }
+    }
+}

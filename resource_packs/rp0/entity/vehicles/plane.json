@@ -1,0 +1,61 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "vehicle:plane",
+
+            
+            "scripts": {
+                "pre_animation": [
+                    "variable.speed = 8;",
+                    "variable.amplitude = 20;"
+                ]
+            },
+
+            "textures": {
+                "one" : "textures/vehicles/plane/plane_01.png",
+                "two" : "textures/vehicles/plane/plane_02.png",
+                "three" : "textures/vehicles/plane/plane_03.png",
+                "four" : "textures/vehicles/plane/plane_04.png",
+                "five" : "textures/vehicles/plane/plane_05.png",
+                "six" : "textures/vehicles/plane/plane_06.png",
+                "seven" : "textures/vehicles/plane/plane_07.png"
+            },
+            "geometry": {
+                "default": "geometry.plane"
+            },
+            "render_controllers": [
+                "controller.render.seven"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            
+            "animations": {
+                "recolorAnim": "animation.particles.recolor",
+                "walk" : "animation.plane.fly",
+                "steeringwheel": "animation.steeringwheel.turn.z"
+            },
+            "animation_controllers": [
+                { "recolor": "controller.animation.particles.recolor" },
+                { "motion": "controller.animation.quad.general" },
+                { "whell" : "controller.animation.steeringwheel.general"}
+            ],
+
+
+
+
+            "particle_effects": {
+                "rotation_particles": "p:recolor"
+            },
+
+            "spawn_egg": {
+                "texture": "plane"
+            }
+            
+        }
+    }
+}

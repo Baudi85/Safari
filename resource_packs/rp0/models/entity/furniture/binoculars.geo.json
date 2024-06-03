@@ -1,0 +1,109 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.binoculars",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "binoculars",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-1, 20.5, -1], "size": [2, 1, 2], "uv": [15, 3]},
+						{"origin": [-1, 21.5, -1], "size": [2, 2, 2], "uv": [0, 5]},
+						{"origin": [-1, 23.5, -1], "size": [2, 1, 2], "uv": [15, 0]},
+						{"origin": [-0.5, 26.2, -3], "size": [1, 3, 4], "uv": [22, 24]},
+						{"origin": [0.25, 24.5, -6], "size": [3, 3, 9], "uv": [0, 0]},
+						{"origin": [-3.25, 24.5, -6], "size": [3, 3, 9], "uv": [0, 0], "mirror": true},
+						{"origin": [0.05, 24.2, -8], "size": [3.4, 3.6, 2], "uv": [4, 14]},
+						{"origin": [-3.45, 24.2, -8], "size": [3.4, 3.6, 2], "uv": [4, 14], "mirror": true},
+						{"origin": [0.45, 22.9, 10.45], "size": [2, 2, 3], "pivot": [0, 0, 0], "rotation": [20, 0, 0], "uv": [14, 14]},
+						{"origin": [-2.45, 22.9, 10.45], "size": [2, 2, 3], "pivot": [0, 0, 0], "rotation": [20, 0, 0], "uv": [14, 14], "mirror": true},
+						{"origin": [0.7, 23.4, 13.45], "size": [1, 1, 2], "pivot": [0, 0, 0], "rotation": [20, 0, 0], "uv": [4, 19]},
+						{"origin": [-1.7, 23.4, 13.45], "size": [1, 1, 2], "pivot": [0, 0, 0], "rotation": [20, 0, 0], "uv": [4, 19], "mirror": true},
+						{"origin": [13.5, 16.9, -0.5], "size": [3, 1, 1], "pivot": [0, 0, 0], "rotation": [0, 0, -45], "uv": [15, 6]}
+					],
+					"locators": {
+						"particles": [0, 6, 0]
+					}
+				},
+				{
+					"name": "bone",
+					"parent": "binoculars",
+					"pivot": [0, 0, 0.05],
+					"cubes": [
+						{"origin": [-0.5, 0, -6.2], "size": [1, 22, 1], "pivot": [0.5, 0, -6.2], "rotation": [-15, 0, 0], "uv": [0, 12]}
+					]
+				},
+				{
+					"name": "bone2",
+					"parent": "binoculars",
+					"pivot": [0, 0, 0.05],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [-0.5, 0, -6.2], "size": [1, 22, 1], "pivot": [0.5, 0, -6.2], "rotation": [-15, 0, 0], "uv": [0, 12]}
+					]
+				},
+				{
+					"name": "bone3",
+					"parent": "binoculars",
+					"pivot": [0, 0, 0.05],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{"origin": [-0.5, 0, -6.2], "size": [1, 22, 1], "pivot": [0.5, 0, -6.2], "rotation": [-15, 0, 0], "uv": [0, 12]}
+					]
+				},
+				{
+					"name": "bone4",
+					"parent": "binoculars",
+					"pivot": [0, 0, 0.05],
+					"rotation": [0, -90, 0],
+					"cubes": [
+						{"origin": [-0.5, 0, -6.2], "size": [1, 22, 1], "pivot": [0.5, 0, -6.2], "rotation": [-15, 0, 0], "uv": [0, 12]}
+					]
+				},
+				{
+					"name": "bone5",
+					"parent": "binoculars",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-3, 6, -3], "size": [6, 1, 1], "pivot": [0, 0, 0], "rotation": [0, -45, 0], "uv": [4, 12]}
+					]
+				},
+				{
+					"name": "bone6",
+					"parent": "binoculars",
+					"pivot": [0, 0, 0],
+					"rotation": [0, -90, 0],
+					"cubes": [
+						{"origin": [-3, 6, -3], "size": [6, 1, 1], "pivot": [0, 0, 0], "rotation": [0, -45, 0], "uv": [4, 12]}
+					]
+				},
+				{
+					"name": "bone7",
+					"parent": "binoculars",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [-3, 6, -3], "size": [6, 1, 1], "pivot": [0, 0, 0], "rotation": [0, -45, 0], "uv": [4, 12]}
+					]
+				},
+				{
+					"name": "bone8",
+					"parent": "binoculars",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{"origin": [-3, 6, -3], "size": [6, 1, 1], "pivot": [0, 0, 0], "rotation": [0, -45, 0], "uv": [4, 12]}
+					]
+				}
+			]
+		}
+	]
+}

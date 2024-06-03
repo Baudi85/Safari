@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"geometry.chair_0": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 2,
+		"visible_bounds_height": 2,
+		"visible_bounds_offset": [0, 0, 0],
+		"bones": [
+			{
+				"name": "bone",
+				"pivot": [0, 0, 2],
+				"cubes": [
+					{"origin": [-4.4, 8, -4], "size": [9, 1, 8], "uv": [0, 0]},
+					{"origin": [-4, 2, -1], "size": [8, 1, 1], "uv": [0, 19]}
+				],
+				"locators": {
+					"particles": [0, 6, 0]
+				}
+			},
+			{
+				"name": "bone2",
+				"parent": "bone",
+				"pivot": [0, 0, 2],
+				"rotation": [-30, 0, 0],
+				"cubes": [
+					{"origin": [-5, -2, -2], "size": [1, 12, 1], "uv": [0, 21]},
+					{"origin": [4, -2, -2], "size": [1, 12, 1], "uv": [18, 19]}
+				]
+			},
+			{
+				"name": "bone4",
+				"parent": "bone2",
+				"pivot": [0, 0, 2],
+				"rotation": [15, 0, 0],
+				"cubes": [
+					{"origin": [-5.1, 10.43572, 0.69041], "size": [10.2, 9, 1], "uv": [0, 9]}
+				]
+			},
+			{
+				"name": "bone3",
+				"parent": "bone",
+				"pivot": [0, 0, 2],
+				"rotation": [40, 0, 0],
+				"cubes": [
+					{"origin": [-5.2, -0.8, 3], "size": [1, 11, 1], "uv": [8, 21]},
+					{"origin": [4.3, -0.8, 3], "size": [1, 11, 1], "uv": [4, 21]}
+				]
+			}
+		]
+	}
+}

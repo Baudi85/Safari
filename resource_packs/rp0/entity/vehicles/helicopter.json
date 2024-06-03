@@ -1,0 +1,57 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "vehicle:helicopter",
+
+            
+            "scripts": {
+                "pre_animation": [
+                    "variable.speed = 8;",
+                    "variable.amplitude = 20;"
+                ]
+            },
+
+            "textures": {
+                "one" : "textures/vehicles/helicopter/01.png",
+                "two" : "textures/vehicles/helicopter/02.png",
+                "three" : "textures/vehicles/helicopter/03.png",
+                "four" : "textures/vehicles/helicopter/04.png",
+                "five" : "textures/vehicles/helicopter/05.png"
+            },
+            "geometry": {
+                "default": "geometry.helicopter"
+            },
+            "render_controllers": [
+                "controller.render.five"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            
+            "animations": {
+                "recolorAnim": "animation.particles.recolor",
+                "walk" : "animation.helicopter.fly"
+            },
+            "animation_controllers": [
+                { "recolor": "controller.animation.particles.recolor" },
+                { "motion": "controller.animation.quad.general" }
+            ],
+
+
+
+
+            "particle_effects": {
+                "rotation_particles": "p:recolor"
+            },
+
+            "spawn_egg": {
+                "texture": "helicopter"
+            }
+            
+        }
+    }
+}

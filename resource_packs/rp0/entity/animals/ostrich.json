@@ -1,0 +1,42 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "animal:ostrich",
+
+
+            "textures": {
+                "default": "textures/safari/ostrich_01.png"
+            },
+            "geometry": {
+                "default": "geometry.ostrich"
+            },
+            "render_controllers": [
+                "controller.render.oneSaddle"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            "animations": {
+                "idle": "animation.ostrich.idle",
+                "walk": "animation.ostrich.walk",
+                "look_at_target": "animation.common.look_at_target",
+                "varOne" : "animation.ostrich.variantone",
+                "varTwo" : "animation.ostrich.varianttwo",
+                "varThree" : "animation.ostrich.variantthree"
+            },
+            "animation_controllers": [
+                { "animal": "controller.animation.ostrich.general" }
+            ],
+
+
+            "spawn_egg": { 
+                "base_color" : "#b7528c" ,
+                "overlay_color" : "#cafa57"
+            }
+        }
+    }
+}

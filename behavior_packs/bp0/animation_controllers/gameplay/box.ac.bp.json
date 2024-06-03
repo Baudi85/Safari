@@ -1,0 +1,39 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        
+        "controller.animation.is_alive": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [     
+                        { "clicked": "query.is_sheared" }
+                    ]
+                },
+                "clicked": {
+                    "on_entry":[
+                        "/playsound random.click @a ~ ~ ~ 1 1"
+                    ],
+                    "transitions": [     
+                        { "open": "query.is_illager_captain" }
+                    ]
+                },
+                "open" : {
+                    "on_entry":[
+                        "/kill @s"
+                    ],
+                    "transitions": [     
+                        { "is_dead": "!query.is_alive" }
+                    ]
+                },
+                
+                "is_dead": {
+                    "on_entry":[
+                        "/tp @s ~ ~+2000 ~"
+                    ]
+                }
+            }
+        }
+    }
+}
+

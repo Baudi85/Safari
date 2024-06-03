@@ -1,0 +1,587 @@
+{
+    "safari.music": {
+        "category": "music",
+        "sounds": [
+            {
+                "name": "sounds/musics/one",
+                "stream": false,
+                "volume": 0.4
+            },
+            {
+                "name": "sounds/musics/two",
+                "stream": false,
+                "volume": 0.4
+            },
+            {
+                "name": "sounds/musics/three",
+                "stream": false,
+                "volume": 0.4
+            },
+            {
+                "name": "sounds/musics/four",
+                "stream": false,
+                "volume": 0.4
+            }
+        ]
+    },
+
+    "safari.intro" : {
+        "category": "music",
+        "sounds": [
+            {
+                "name": "sounds/musics/intro",
+                "stream": false,
+                "volume": 0.4
+            }
+        ]
+    },
+
+
+    "fx.computer": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/fx/computer"
+        ]
+    },
+    "fx.analyser": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/fx/analyser"
+        ]
+    },
+    "fx.clone": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/fx/clone"
+        ]
+    },
+    "fx.boat" : {
+        "category": "neutral",
+        "sounds" : [
+            "sounds/fx/boat"
+        ]
+    },
+    "fx.vehicle" : {
+        "category": "neutral",
+        "sounds" : [
+            "sounds/fx/vehicle"
+        ]
+    },
+    "fx.vegetable" : {
+        "category": "neutral",
+        "sounds" : [
+            "sounds/fx/vegetable"
+        ]
+    },
+
+
+
+
+
+
+
+
+
+    //
+    //   --  camel  --
+    //    
+    "animal.camel.ambiant": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/camel/camel.ambiant.00",
+            "sounds/safari/camel/camel.ambiant.01"
+        ]
+    },
+    "animal.camel.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/camel/camel.die.00"
+        ]
+    },
+    "animal.camel.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/camel/camel.hurt.00"
+        ]
+    },
+
+
+
+
+
+
+    //
+    //   --  crocodile  --
+    //    
+    "animal.crocodile.ambiant": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/crocodile/crocodile.ambiant.01",
+            "sounds/safari/crocodile/crocodile.ambiant.02"
+        ]
+    },
+    "animal.crocodile.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/crocodile/crocodile.die.00"
+        ]
+    },
+    "animal.crocodile.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/crocodile/crocodile.hurt.00"
+        ]
+    },
+
+    //
+    //   --  snake  --
+    //    
+    "animal.snake.ambiant": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/snake/snake.ambiant.01",
+            "sounds/safari/snake/snake.ambiant.02"
+        ]
+    },
+    "animal.snake.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/snake/snake.hurt.01"
+        ]
+    },
+    "animal.snake.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/snake/snake.hurt.01"
+        ]
+    },
+    "animal.snake.attack": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/snake/snake.attack.01"
+        ]
+    },
+
+
+
+    //
+    //   --  rhinoceros  --
+    //    
+    "animal.rhinoceros.ambiant": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/rhinoceros/rhinoceros.ambiant.01",
+            "sounds/safari/rhinoceros/rhinoceros.ambiant.02"
+        ]
+    },
+    "animal.rhinoceros.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/rhinoceros/rhinoceros.ambiant.00"
+        ]
+    },
+    "animal.rhinoceros.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/rhinoceros/rhinoceros.hurt.02"
+        ]
+    },
+
+    "vehicle.plane.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/plane/hurt"
+        ]
+    },
+    "vehicle.plane.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/plane/death"
+        ]
+    },
+    "vehicle.plane.fly": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/plane/fly"
+        ]
+    },
+
+    
+    "helicopter.walk":{
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/helicopter/walk"
+        ]
+    },
+    "helicopter.death":{
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/helicopter/death"
+        ]
+    },
+    "helicopter.hurt":{
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/helicopter/hurt"
+        ]
+    },
+
+
+    //
+    //   --  elephant  --
+    //    
+    "animal.elephant.ambiant": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/elephant/elephant.ambiant.01"
+        ]
+    },
+    "animal.elephant.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/elephant/elephant.death.01"
+        ]
+    },
+    "animal.elephant.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/elephant/elephant.hurt.01"
+        ]
+    },
+
+
+
+    //
+    //   --  lion  --
+    //    
+    "animal.lion.ambiant": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/lion/lion.ambiant.01",
+            "sounds/safari/lion/lion.ambiant.02",
+            "sounds/safari/lion/lion.ambiant.03"
+        ]
+    },
+    "animal.lion.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/lion/lion.die.01"
+        ]
+    },
+    "animal.lion.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/lion/lion.hurt.01"
+        ]
+    },
+
+    //
+    //   --  hyena  --
+    //    
+    "animal.hyena.ambiant": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/hyena/hyena.ambiant.01",
+            "sounds/safari/hyena/hyena.ambiant.02",
+            "sounds/safari/hyena/hyena.ambiant.03"
+        ]
+    },
+    "animal.hyena.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/hyena/hyena.death.01"
+        ]
+    },
+    "animal.hyena.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/hyena/hyena.hurt.01"
+        ]
+    },
+
+
+
+    //
+    //   --  baboon  --
+    //    
+    "animal.baboon.ambiant": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/baboon/baboon.ambiant.01",
+            "sounds/safari/baboon/baboon.ambiant.02",
+            "sounds/safari/baboon/baboon.ambiant.03",
+            "sounds/safari/baboon/baboon.ambiant.04"
+        ]
+    },
+    "animal.baboon.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/baboon/baboon.death.01"
+        ]
+    },
+    "animal.baboon.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/baboon/baboon.hurt.01"
+        ]
+    },
+
+
+
+    //
+    //   --  jackal  --
+    //    
+    "animal.jackal.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/jackal/jackal.death.01"
+        ]
+    },
+    "animal.jackal.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/jackal/jackal.hurt.01"
+        ]
+    },
+
+
+
+    //
+    //   --  hippopotamus  --
+    //    
+    "animal.hippopotamus.ambiant": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/hippopotamus/hippopotamus.ambiant.01"
+        ]
+    },
+    "animal.hippopotamus.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/hippopotamus/hippopotamus.death.01"
+        ]
+    },
+    "animal.hippopotamus.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/hippopotamus/hippopotamus.hurt.01"
+        ]
+    },
+
+
+    //
+    //   --  buffalo  --
+    //    
+    "animal.buffalo.ambiant": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/buffalo/buffalo.ambiant.01",
+            "sounds/safari/buffalo/buffalo.ambiant.02",
+            "sounds/safari/buffalo/buffalo.ambiant.03"
+        ]
+    },
+    "animal.buffalo.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/buffalo/buffalo.ambiant.02"
+        ]
+    },
+    "animal.buffalo.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/buffalo/buffalo.hurt.01"
+        ]
+    },
+
+
+
+    //
+    //   --  ostrich  --
+    //    
+    "animal.ostrich.ambiant": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/ostrich/ostrich.ambiant.01",
+            "sounds/safari/ostrich/ostrich.ambiant.02"
+        ]
+    },
+    "animal.ostrich.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/ostrich/ostrich.hurt.01"
+        ]
+    },
+
+
+    //
+    //   --  vulture  --
+    //    
+    "animal.vulture.ambiant": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/vulture/vulture.ambiant.01",
+            "sounds/safari/vulture/vulture.ambiant.02",
+            "sounds/safari/vulture/vulture.ambiant.03"
+        ]
+    },
+    "animal.vulture.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/vulture/vulture.death.02"
+        ]
+    },
+    "animal.vulture.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/vulture/vulture.hurt.02"
+        ]
+    },
+
+
+    //
+    //   --  jaburi  --
+    //    
+    "animal.jaburi.ambiant": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/jaburi/jaburi.ambiant.01",
+            "sounds/safari/jaburi/jaburi.ambiant.02"
+        ]
+    },
+    "animal.jaburi.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/jaburi/jaburi.death.02"
+        ]
+    },
+    "animal.jaburi.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/safari/jaburi/hurt"
+        ]
+    },
+
+
+
+    
+    //
+    //   --  jeep_0  --
+    //    
+    "vehicle.jeep_0.walk": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/jeep_0/walk"
+        ]
+    },
+    "vehicle.jeep_0.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/jeep_0/hurt"
+        ]
+    },
+    "vehicle.jeep_0.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/jeep_0/death"
+        ]
+    },
+
+    
+    //
+    //   --  jeep_1  --
+    //    
+    "vehicle.jeep_1.walk": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/jeep_0/walk"
+        ]
+    },
+    "vehicle.jeep_1.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/jeep_0/hurt"
+        ]
+    },
+    "vehicle.jeep_1.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/jeep_0/death"
+        ]
+    },
+
+    
+    //
+    //   --  motocross  --
+    //    
+    "vehicle.moto_cross.walk": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/moto_cross/walk"
+        ]
+    },
+    "vehicle.moto_cross.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/moto_cross/hurt"
+        ]
+    },
+    "vehicle.moto_cross.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/moto_cross/death"
+        ]
+    },
+
+    
+    //
+    //   --  quad  --
+    //    
+    "vehicle.quad.walk": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/quad/walk"
+        ]
+    },
+    "vehicle.quad.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/quad/hurt"
+        ]
+    },
+    "vehicle.quad.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/quad/death"
+        ]
+    },
+
+
+    "furniture.camera.flash": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/fx/flash"
+        ]
+    },
+
+
+    
+    "vehicle.boat.walk": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/jetski/walk"
+        ]
+    },
+    "vehicle.boat.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/jetski/hurt"
+        ]
+    },
+    "vehicle.boat.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/vehicle/jetski/death"
+        ]
+    }
+
+}

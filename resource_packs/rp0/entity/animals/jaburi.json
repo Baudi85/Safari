@@ -1,0 +1,41 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "animal:jaburi",
+
+
+            "textures": {
+                "default": "textures/safari/jaburi_01.png"
+            },
+            "geometry": {
+                "default": "geometry.jaburi"
+            },
+            "render_controllers": [
+                "controller.render.one"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            "animations": {
+                "idle": "animation.jaburi.idle",
+                "walk": "animation.jaburi.walk",
+                "look_at_target": "animation.common.look_at_target",
+                "varOne" : "animation.jaburi.variantone",
+                "fly" : "animation.jaburi.fly"
+            },
+            "animation_controllers": [
+                { "animal": "controller.animation.jaburi.general" }
+            ],
+
+
+            "spawn_egg": {
+                "base_color": "#c2a5c0",
+                "overlay_color": "#5b5b25"
+            }            
+        }
+    }
+}

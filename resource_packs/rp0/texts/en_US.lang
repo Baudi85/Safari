@@ -1,0 +1,957 @@
+pack.name=Safari Explorers
+pack.description=The resource pack for the map "Safari Explorers".
+
+### The tools
+item.tool:recolor.name=§6§lPaint tool §r§e(change texture)
+item.tool:rotate.name=§6§lRotate tool §r§e(rotate)
+
+
+## The empty chests
+entity.unknown.name=Box
+entity.boat.name=Box
+
+### The redstone to aluminium
+item.redstone.name=Aluminium
+tile.redstone_ore.name=Aluminium Ore
+tile.redstone_block.name=Aluminium Block
+### The lapis to meteor
+item.dye.blue.name=Meteor Stone
+tile.lapis_block.name=Meteor Block
+tile.lapis_ore.name=Meteor Ore
+
+### Replace the swords to machettes :
+item.diamond_sword.name=Diamond Machete
+item.golden_sword.name=Golden Machete
+item.iron_sword.name=Iron Machete
+item.stone_sword.name=Stone Machete
+item.wooden_sword.name=Wooden Machete
+
+
+### The dialogues with the npcs
+## Generated raw-text : {"rawtext":[{"translate":"dialogue.random.01"}]}
+dialogue.random.01=I was not able to sleep at night because of all these nocturnal animals.
+dialogue.random.02=These African temperatures make me sweat.
+dialogue.random.03=I am a very big zebra fan, that's the reason I came here.
+dialogue.random.04=The snakes in this country are so scary!
+dialogue.random.05=Yesterday, I saw an elephant standing near the river. You should maybe check it.
+dialogue.random.06=I heard that there was a hut village near the river.
+dialogue.random.07=The mesa biome reminds me of my childhood in the Grand Canyon.
+dialogue.random.08=The pride of lions on the big rock island is getting bigger and bigger.
+dialogue.random.09=How did you get to know us?
+dialogue.random.10=Did you see the sunrise this morning? Wasn't it amazing?
+dialogue.random.11=The food is really different here. But I like its taste.
+dialogue.random.12=We had two power failures this evening. Are you sure you are doing a good job?
+## Generated raw-text : {"rawtext":[{"translate":"dialogue.library"}]}
+dialogue.library=Hey! This small house is the library of the base! Here you find all the information on the animals that you have unlocked.
+dialogue.laboratory=This is where you can store your beautiful collection of animal statues.
+dialogue.garage=This is my garage. As long as you keep everything clean, you can use this machine to design new vehicles.
+dialogue.airport=You too are passionate about flying, right? Use this machine to help me create flying vehicles.
+dialogue.dna=These machines are the very top of the brand new technology. Be careful when using them!
+dialogue.spawn=Welcome to Safari Explorers! Make yourself at home.
+dialogue.energy=Be careful when plugging the new Solar Panels. One single error and the whole base could explode!
+
+
+### {"rawtext":[{"translate":"sign.desert.furnitures.01"}]}
+sign.desert.furnitures.01=Feel free to furnish the house after your fancy.
+sign.desert.furnitures.02=Feel free to decorate the house after your fancy.
+
+##
+## Solar panel stuff
+##
+item.gameplay:solar_panel_normal.name=§lSolar Panel §r§f(1 Energy every 25 seconds)
+item.gameplay:solar_panel_advanced.name=§lAdvanced Solar Panel §r§f(1 Energy every 15 seconds)
+item.gameplay:solar_cell.name=Solar Cell
+item.gameplay:wrench.name=§6§lWrench
+item.gameplay:cotton_bud.name=§6§lCotton Bud
+item.gameplay:energy_update.name=§6§lEnergy Update
+
+
+### Entity interactions
+action.interact.set_solar_panel=Attach the Solar Panel
+action.interact.remove_solar_panel=Remove the Solar Panel
+action.interact.attachchest=Attach the Chest to the animal
+action.interact.attachSadle=Attach the Saddle to the animal
+action.interact.update_energy=Update
+action.interact.analyse=Analyze (requires 10 Energy)
+action.interact.clone=Clone (requires 60 Energy)
+##
+##  Name of the DNA ITEMS
+##  
+item.dna:babbon.name=§bDNA
+item.dna:buffalo.name=§bDNA
+item.dna:camel.name=§bDNA
+item.dna:crocodile.name=§bDNA
+item.dna:elephant.name=§bDNA
+item.dna:fennec.name=§bDNA
+item.dna:gazelle.name=§bDNA
+item.dna:giraffe.name=§bDNA
+item.dna:hippopotamus.name=§bDNA
+item.dna:hyena.name=§bDNA
+item.dna:jaburi.name=§bDNA
+item.dna:jackal.name=§bDNA
+item.dna:lion.name=§bDNA
+item.dna:meerkat.name=§bDNA
+item.dna:ostrich.name=§bDNA
+item.dna:pangolin.name=§bDNA
+item.dna:piranha.name=§bDNA
+item.dna:porcupine.name=§bDNA
+item.dna:rhinoceros.name=§bDNA
+item.dna:serval.name=§bDNA
+item.dna:snake.name=§bDNA
+item.dna:vulture.name=§bDNA
+item.dna:warthog.name=§bDNA
+item.dna:zebra.name=§bDNA
+
+##
+##  Name of the unlocked DNA ITEMS
+## 
+item.dna_good:babbon.name=§bDNA [§3§lBaboon§r§b]
+item.dna_good:buffalo.name=§bDNA [§3§lBuffalo§r§b]
+item.dna_good:camel.name=§bDNA [§3§lCamel§r§b]
+item.dna_good:crocodile.name=§bDNA [§3§lCrocodile§r§b]
+item.dna_good:elephant.name=§bDNA [§3§lElephant§r§b]
+item.dna_good:fennec.name=§bDNA [§3§lFennec§r§b]
+item.dna_good:gazelle.name=§bDNA [§3§lGazelle§r§b]
+item.dna_good:giraffe.name=§bDNA [§3§lGiraffe§r§b]
+item.dna_good:hippopotamus.name=§bDNA [§3§lHippopotamus§r§b]
+item.dna_good:hyena.name=§bDNA [§3§lHyena§r§b]
+item.dna_good:jaburi.name=§bDNA [§3§lMarabou §3§lStork§r§b]
+item.dna_good:jackal.name=§bDNA [§3§lJackal§r§b]
+item.dna_good:lion.name=§bDNA [§3§lLion§r§b]
+item.dna_good:meerkat.name=§bDNA [§3§lMeerkat§r§b]
+item.dna_good:ostrich.name=§bDNA [§3§lOrstrich§r§b]
+item.dna_good:pangolin.name=§bDNA [§3§lPangolin§r§b]
+item.dna_good:piranha.name=§bDNA [§3§lPiranha§r§b]
+item.dna_good:porcupine.name=§bDNA [§3§lPorcupine§r§b]
+item.dna_good:rhinoceros.name=§bDNA [§3§lRhinoceros§r§b]
+item.dna_good:serval.name=§bDNA [§3§lServal§r§b]
+item.dna_good:snake.name=§bDNA [§3§lSnake§r§b]
+item.dna_good:vulture.name=§bDNA [§3§lVulture§r§b]
+item.dna_good:warthog.name=§bDNA [§3§lWarthog§r§b]
+item.dna_good:zebra.name=§bDNA [§3§lZebra§r§b]
+
+### Name of the Cotton item ( sweet berries )
+item.sweet_berries.name=Cotton
+
+
+
+entity.npc:npc.name=NPC
+item.spawn_egg.entity.npc:npc.name=Spawn NPC
+action.hint.exit.npc:npc=Press sneak to leave the NPC
+
+
+
+entity.animal:ostrich.name=Ostrich
+item.spawn_egg.entity.animal:ostrich.name=Spawn Ostrich
+action.hint.exit.animal:ostrich=Press sneak to leave the Ostrich
+
+entity.animal:gazelle.name=Gazelle
+item.spawn_egg.entity.animal:gazelle.name=Spawn Gazelle
+action.hint.exit.animal:gazelle=Press sneak to leave the Gazelle
+
+entity.animal:camel.name=Camel
+item.spawn_egg.entity.animal:camel.name=Spawn Camel
+action.hint.exit.animal:camel=Press sneak to leave the Camel
+
+entity.animal:porcupine.name=Porcupine
+item.spawn_egg.entity.animal:porcupine.name=Spawn Porcupine
+
+entity.animal:pangolin.name=Pangolin
+item.spawn_egg.entity.animal:pangolin.name=Spawn Pangolin
+
+entity.animal:warthog.name=Warthog
+item.spawn_egg.entity.animal:warthog.name=Spawn Warthog
+
+entity.animal:serval.name=Serval
+item.spawn_egg.entity.animal:serval.name=Spawn Serval
+
+entity.animal:hyena.name=Hyena
+item.spawn_egg.entity.animal:hyena.name=Spawn Hyena
+
+entity.animal:buffalo.name=Buffalo
+item.spawn_egg.entity.animal:buffalo.name=Spawn Buffalo
+
+entity.animal:jackal.name=Jackal
+item.spawn_egg.entity.animal:jackal.name=Spawn Jackal
+
+entity.animal:snake.name=Snake
+item.spawn_egg.entity.animal:snake.name=Spawn Snake
+
+entity.animal:fennec.name=Fennec
+item.spawn_egg.entity.animal:fennec.name=Spawn Fennec
+
+entity.animal:hippopotamus.name=Hippopotamus
+item.spawn_egg.entity.animal:hippopotamus.name=Spawn Hippopotamus
+action.hint.exit.animal:hippopotamus=Press sneak to leave the Hippopotamus
+
+entity.animal:crocodile.name=Crocodile
+item.spawn_egg.entity.animal:crocodile.name=Spawn Crocodile
+
+entity.animal:jaburi.name=Marabou Stork
+item.spawn_egg.entity.animal:jaburi.name=Spawn Marabou Stork
+
+entity.animal:babbon.name=Baboon
+item.spawn_egg.entity.animal:babbon.name=Spawn Baboon
+
+entity.animal:rhinoceros.name=Rhinoceros
+item.spawn_egg.entity.animal:rhinoceros.name=Spawn Rhinoceros
+
+entity.animal:zebra.name=Zebra
+item.spawn_egg.entity.animal:zebra.name=Spawn Zebra
+action.hint.exit.animal:zebra=Press sneak to leave the Zebra
+
+entity.animal:giraffe.name=Giraffe
+item.spawn_egg.entity.animal:giraffe.name=Spawn Giraffe
+action.hint.exit.animal:giraffe=Press sneak to leave the Giraffe
+
+entity.animal:elephant.name=Elephant
+item.spawn_egg.entity.animal:elephant.name=Spawn Elephant
+action.hint.exit.animal:elephant=Press sneak to leave the Elephant
+
+entity.animal:meerkat.name=Meerkat
+item.spawn_egg.entity.animal:meerkat.name=Spawn Meerkat
+
+entity.animal:vulture.name=Vulture
+item.spawn_egg.entity.animal:vulture.name=Spawn Vulture
+
+entity.animal:lion.name=Lion
+item.spawn_egg.entity.animal:lion.name=Spawn Lion
+
+entity.animal:piranha.name=Piranha
+item.spawn_egg.entity.animal:piranha.name=Spawn Piranha
+
+
+
+entity.vehicle:new_boat.name=Boat
+item.spawn_egg.entity.vehicle:new_boat.name=Spawn Boat
+action.hint.exit.vehicle:new_boat=Press sneak to leave the Boat
+
+entity.vehicle:jeep_1.name=Safari Vehicle
+item.spawn_egg.entity.vehicle:jeep_1.name=Spawn Safari Vehicle
+action.hint.exit.vehicle:jeep_1=Press sneak to leave the Safari Vehicle
+
+entity.vehicle:jeep_0.name=Open Safari Vehicle
+item.spawn_egg.entity.vehicle:jeep_0.name=Spawn Open Safari Vehicle
+action.hint.exit.vehicle:jeep_0=Press sneak to leave the Open Safari Vehicle
+
+entity.vehicle:hang_glider.name=Hang Glider
+item.spawn_egg.entity.vehicle:hang_glider.name=Spawn Hang Glider
+action.hint.exit.vehicle:hang_glider=Press sneak to leave the Hang Glider
+
+entity.vehicle:quad.name=Quad
+item.spawn_egg.entity.vehicle:quad.name=Spawn Quad
+action.hint.exit.vehicle:quad=Press sneak to leave the Quad
+
+entity.vehicle:plane.name=Plane
+item.spawn_egg.entity.vehicle:plane.name=Spawn Plane
+action.hint.exit.vehicle:plane=Press sneak to leave the Plane
+
+entity.vehicle:helicopter.name=Helicopter
+item.spawn_egg.entity.vehicle:helicopter.name=Spawn Helicopter
+action.hint.exit.vehicle:helicopter=Press sneak to leave the Helicopter
+
+
+entity.vehicle:dirt_bike.name=Dirt Bike
+item.spawn_egg.entity.vehicle:dirt_bike.name=Spawn Dirt Bike
+action.hint.exit.vehicle:dirt_bike=Press sneak to leave the Dirt Bike
+
+
+
+entity.furniture:ball.name=Ball
+item.spawn_egg.entity.furniture:ball.name=Spawn Ball
+action.hint.exit.furniture:ball=Press sneak to leave the Ball
+
+entity.furniture:barbecue.name=Barbecue
+item.spawn_egg.entity.furniture:barbecue.name=Spawn Barbecue
+action.hint.exit.furniture:barbecue=Press sneak to leave the Barbecue
+
+entity.furniture:bench_0.name=Bench
+item.spawn_egg.entity.furniture:bench_0.name=Spawn Bench
+action.hint.exit.furniture:bench_0=Press sneak to leave the Bench
+
+entity.furniture:bench_1.name=Bench
+item.spawn_egg.entity.furniture:bench_1.name=Spawn Bench
+action.hint.exit.furniture:bench_1=Press sneak to leave the Bench
+
+entity.furniture:bench_2.name=Bench
+item.spawn_egg.entity.furniture:bench_2.name=Spawn Bench
+action.hint.exit.furniture:bench_2=Press sneak to leave the Bench
+
+entity.furniture:bookcase.name=Bookcase
+item.spawn_egg.entity.furniture:bookcase.name=Spawn Bookcase
+action.hint.exit.furniture:bookcase=Press sneak to leave the Bookcase
+
+entity.furniture:chair_0.name=Chair
+item.spawn_egg.entity.furniture:chair_0.name=Spawn Chair
+action.hint.exit.furniture:chair_0=Press sneak to leave the Chair
+
+entity.furniture:chair_1.name=Chair
+item.spawn_egg.entity.furniture:chair_1.name=Spawn Chair
+action.hint.exit.furniture:chair_1=Press sneak to leave the Chair
+
+entity.furniture:computer.name=Computer
+item.spawn_egg.entity.furniture:computer.name=Spawn Computer
+action.hint.exit.furniture:computer=Press sneak to leave the Computer
+
+entity.furniture:deck_chair.name=Deck Chair
+item.spawn_egg.entity.furniture:deck_chair.name=Spawn Deck Chair
+action.hint.exit.furniture:deck_chair=Press sneak to leave the Deck Chair
+
+entity.furniture:fan.name=Fan
+item.spawn_egg.entity.furniture:fan.name=Spawn Fan
+action.hint.exit.furniture:fan=Press sneak to leave the Fan
+
+entity.furniture:flower_pot.name=Flower Pot
+item.spawn_egg.entity.furniture:flower_pot.name=Spawn Flower Pot
+action.hint.exit.furniture:flower_pot=Press sneak to leave the Flower Pot
+
+entity.furniture:microscope.name=Microscope
+item.spawn_egg.entity.furniture:microscope.name=Spawn Microscope
+action.hint.exit.furniture:microscope=Press sneak to leave the Microscope
+
+entity.furniture:pixelbiest.name=§g§lTrophy
+item.spawn_egg.entity.furniture:pixelbiest.name=§gSpawn §l§6Trophy
+action.hint.exit.furniture:pixelbiest=§g§lPress sneak to leave the Trophy
+
+entity.furniture:public_bin.name=Outdoor Garbage Can   
+item.spawn_egg.entity.furniture:public_bin.name=Spawn Outdoor Garbage Can  
+action.hint.exit.furniture:public_bin=Press sneak to leave the Outdoor Garbage Can  
+
+entity.furniture:shelf.name=Shelf
+item.spawn_egg.entity.furniture:shelf.name=Spawn Shelf
+action.hint.exit.furniture:shelf=Press sneak to leave the Shelf
+
+entity.furniture:table.name=Table
+item.spawn_egg.entity.furniture:table.name=Spawn Table
+action.hint.exit.furniture:table=Press sneak to leave the Table
+
+entity.furniture:toilet.name=Toilet
+item.spawn_egg.entity.furniture:toilet.name=Spawn Toilet
+action.hint.exit.furniture:toilet=Press sneak to leave the Toilet
+
+entity.furniture:umbrella.name=Umbrella
+item.spawn_egg.entity.furniture:umbrella.name=Spawn Umbrella
+action.hint.exit.furniture:umbrella=Press sneak to leave the Umbrella
+
+entity.furniture:windsock.name=Windsock
+item.spawn_egg.entity.furniture:windsock.name=Spawn Windsock
+action.hint.exit.furniture:windsock=Press sneak to leave the Windsock
+
+entity.furniture:binoculars.name=Binoculars
+item.spawn_egg.entity.furniture:binoculars.name=Spawn Binoculars
+action.hint.exit.furniture:binoculars=Press sneak to leave the Binoculars
+
+entity.furniture:veterinary_table.name=Veterinary Table
+item.spawn_egg.entity.furniture:veterinary_table.name=Spawn Veterinary Table
+action.hint.exit.furniture:veterinary_table=Press sneak to leave the Veterinary Table
+
+entity.furniture:veterinary_sink.name=Veterinary Sink
+item.spawn_egg.entity.furniture:veterinary_sink.name=Spawn Veterinary Sink
+action.hint.exit.furniture:veterinary_sink=Press sneak to leave the Veterinary Sink
+
+entity.furniture:first_aid_kit.name=First Aid Kit
+item.spawn_egg.entity.furniture:first_aid_kit.name=Spawn First Aid Kit
+action.hint.exit.furniture:first_aid_kit=Press sneak to leave the First Aid Kit
+
+entity.furniture:crossing_sign.name=Crossing Sign
+item.spawn_egg.entity.furniture:crossing_sign.name=Spawn Crossing Sign
+action.hint.exit.furniture:crossing_sign=Press sneak to leave the Crossing Sign
+
+entity.furniture:camera.name=Camera
+item.spawn_egg.entity.furniture:camera.name=Spawn Camera
+action.hint.exit.furniture:camera=Press sneak to leave the Camera
+
+
+
+entity.gameplay:box.name=Box
+item.spawn_egg.entity.gameplay:box.name=Spawn Box
+action.hint.exit.gameplay:box=Press sneak to leave the Box
+
+
+
+###
+### Library Stuff
+###
+
+### The locked sign   -> { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.locked" } ] }
+library.sign.locked=§c[§l§4 Locked §r§c]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.babbon.unlocked" } ] }
+library.sign.babbon.unlocked=§a[§2§l Baboon §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.buffalo.unlocked" } ] }
+library.sign.buffalo.unlocked=§a[§2§l Buffalo §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.camel.unlocked" } ] }
+library.sign.camel.unlocked=§a[§2§l Camel §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.crocodile.unlocked" } ] }
+library.sign.crocodile.unlocked=§a[§2§l Crocodile §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.elephant.unlocked" } ] }
+library.sign.elephant.unlocked=§a[§2§l Elephant §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.fennec.unlocked" } ] }
+library.sign.fennec.unlocked=§a[§2§l Fennec §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.gazelle.unlocked" } ] }
+library.sign.gazelle.unlocked=§a[§2§l Gazelle §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.giraffe.unlocked" } ] }
+library.sign.giraffe.unlocked=§a[§2§l Giraffe §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.hippopotamus.unlocked" } ] }
+library.sign.hippopotamus.unlocked=§a[§2§l Hippopotamus §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.hyena.unlocked" } ] }
+library.sign.hyena.unlocked=§a[§2§l Hyena §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.jaburi.unlocked" } ] }
+library.sign.jaburi.unlocked=§a[§2§l Marabou §2§lStork §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.jackal.unlocked" } ] }
+library.sign.jackal.unlocked=§a[§2§l Jackal §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.lion.unlocked" } ] }
+library.sign.lion.unlocked=§a[§2§l Lion §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.meerkat.unlocked" } ] }
+library.sign.meerkat.unlocked=§a[§2§l Meerkat §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.ostrich.unlocked" } ] }
+library.sign.ostrich.unlocked=§a[§2§l Ostrich §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.pangolin.unlocked" } ] }
+library.sign.pangolin.unlocked=§a[§2§l Pangolin §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.piranha.unlocked" } ] }
+library.sign.piranha.unlocked=§a[§2§l Piranha §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.porcupine.unlocked" } ] }
+library.sign.porcupine.unlocked=§a[§2§l Porcupine §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.rhinoceros.unlocked" } ] }
+library.sign.rhinoceros.unlocked=§a[§2§l Rhinoceros §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.serval.unlocked" } ] }
+library.sign.serval.unlocked=§a[§2§l Serval §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.snake.unlocked" } ] }
+library.sign.snake.unlocked=§a[§2§l Snake §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.vulture.unlocked" } ] }
+library.sign.vulture.unlocked=§a[§2§l Vulture §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.warthog.unlocked" } ] }
+library.sign.warthog.unlocked=§a[§2§l Warthog §r§a]
+
+## The sign to show that the animal was unlocked ->    { "rawtext": [ { "text" : "\n" },{ "translate" : "library.sign.zebra.unlocked" } ] }
+library.sign.zebra.unlocked=§a[§2§l Zebra §r§a]
+
+
+
+
+
+
+
+## The sign to explain that we can enable or not the statues in the spawn   { "rawtext": [ { "translate" : "spawn.sign.enable_stuatues.first" } ] }
+spawn.sign.enable_stuatues.first=Is the map lagging? Push this button to enable or
+##                                                                          { "rawtext": [ { "translate" : "spawn.sign.enable_stuatues.second" } ] }
+spawn.sign.enable_stuatues.second=disable the statues in the Laboratory.
+
+### The sign that show that the statues are enabled    { "rawtext": [ { "text" : "\n" },{ "translate" : "spawn.sign.statues_enabled.true" } ] }
+spawn.sign.statues_enabled.true=§a[§lEnabled§r§a]
+### The sign that show that the statues are disabled   { "rawtext": [ { "text" : "\n" },{ "translate" : "spawn.sign.statues_enabled.false" } ] }
+spawn.sign.statues_enabled.false=§c[§lDisabled§r§c]
+
+### The sign that show that the craft room in on our right    { "rawtext": [ { "text" : "---->\n" },{ "translate" : "labo.sign.craftroom" },{ "text" : "\n\n" },{ "text" : "---->" } ] }
+### The sign that show that the craft room in on our right    { "rawtext": [ { "text" : "<----\n" },{ "translate" : "labo.sign.craftroom" },{ "text" : "\n\n" },{ "text" : "<----" } ] }
+labo.sign.craftroom=§lCraft Room
+
+
+
+
+mine.sign.teleport.base=§rTeleport to the
+### The sign to teleport to the emeral mine   { "rawtext": [ { "text" : "\n" },{ "translate" : "mine.sign.teleport.base" },{ "text" : "\n" },{ "translate" : "mine.sign.teleport.emerald" } ] }
+mine.sign.teleport.emerald=§2§lEmerald Mine
+### The sign to teleport to the gold mine   { "rawtext": [ { "text" : "\n" },{ "translate" : "mine.sign.teleport.base" },{ "text" : "\n" },{ "translate" : "mine.sign.teleport.gold" } ] }
+mine.sign.teleport.gold=§2§lGold Mine
+### The sign to teleport to the coal mine   { "rawtext": [ { "text" : "\n" },{ "translate" : "mine.sign.teleport.base" },{ "text" : "\n" },{ "translate" : "mine.sign.teleport.coal" } ] }
+mine.sign.teleport.coal=§2§lCoal Mine
+### The sign to teleport to the iron mine   { "rawtext": [ { "text" : "\n" },{ "translate" : "mine.sign.teleport.base" },{ "text" : "\n" },{ "translate" : "mine.sign.teleport.iron" } ] }
+mine.sign.teleport.iron=§2§lIron Mine
+
+
+
+##{ "rawtext": [ { "translate" : "chests.sign.01" }] }
+chests.sign.01=Please, leave your inventory in these chests.
+##{ "rawtext": [ { "translate" : "chests.sign.02" }] }
+chests.sign.02=You will be able to get it back after the tutorial.
+##{ "rawtext": [{ "text" : "\n" },{ "translate" : "chests.sign.03" },{ "translate" : "chests.sign.04" }] }
+chests.sign.03=I'm done!
+chests.sign.04=Start the tutorial now.
+
+
+
+### The subtitle to say that you have unlocked an area       { "rawtext": [ { "translate" : "mine.subtitle.unlocked" }] }
+mine.subtitle.unlocked=§aYou can teleport there using the button at the Spawn.
+### The title to say that you have unlocked the gold mine    { "rawtext": [ { "translate" : "mine.title.unlocked.gold" }] }
+mine.title.unlocked.gold=§2Gold Mine unlocked
+### The title to say that you have unlocked the emerald mine    { "rawtext": [ { "translate" : "mine.title.unlocked.emerald" }] }
+mine.title.unlocked.emerald=§2Emerald Mine unlocked
+### The title to say that you have unlocked the coal mine    { "rawtext": [ { "translate" : "mine.title.unlocked.coal" }] }
+mine.title.unlocked.coal=§2Coal Mine unlocked
+### The title to say that you have unlocked the iron mine    { "rawtext": [ { "translate" : "mine.title.unlocked.iron" }] }
+mine.title.unlocked.iron=§2Iron Mine unlocked
+
+### The sign describe the title to the   { "rawtext": [ { "text" : "\n" },{ "translate" : "mine.sign.title.one" },{ "text" : "\n" },{ "translate" : "mine.sign.title.two" } ] }
+mine.sign.title.one=§lQuick
+mine.sign.title.two=§lteleport
+
+### The message to display when you try to teleport to an area but you have not unlocked it yet   { "rawtext": [{ "translate" : "mine.actionbar.no_unlocked" }] }
+mine.actionbar.no_unlocked=§4You have not unlocked this area yet!
+
+
+
+### The npc that is standing in the library  { "rawtext": [{ "translate" : "npc.library.name" } ] }
+npc.library.name=§rMichael
+###                                          { "rawtext": [{ "translate" : "npc.library.text" } ] }
+npc.library.text=§rHey! Here is the library of the base! You can find here all the information about the animals that you have unlocked.
+
+### The vehicle builder console first dialogue { "rawtext": [{ "translate" : "gameplay.vehicle_builder.first" } ] }
+gameplay.vehicle_builder.first=§rWhat kind of vehicle do you want to create today?
+### When you do not have enought enery to buy the selected vehicle { "rawtext": [{ "translate" : "gameplay.vehicle_builder.no_enought_energy" } ] }
+gameplay.vehicle_builder.no_enought_energy=§cYou do not have enough Energy to create this vehicle!
+### When you want to start the making of a vehicle but there is already one in progress   { "rawtext": [{ "translate" : "gameplay.vehicle_builder.already_rinning" } ] }
+gameplay.vehicle_builder.already_rinning=§cA vehicle is already in process!
+
+
+### When you have already unlocked an animal  {"rawtext":[{"translate":"gameplay.animals.already_unlocked"}]}
+gameplay.animals.already_unlocked=§cYou have already unlocked this animal!
+
+### {"rawtext":[{"translate":"gameplay.vehicle_builder.price.07"}]}
+gameplay.vehicle_builder.price.01=Motorbike - 35
+gameplay.vehicle_builder.price.02=Quad - 50
+gameplay.vehicle_builder.price.03=Vehicle - 100
+gameplay.vehicle_builder.price.04=Vehicle - 140
+gameplay.vehicle_builder.price.05=Plane - 110
+gameplay.vehicle_builder.price.06=Helicopter - 130
+gameplay.vehicle_builder.price.07=Boat - 80
+gameplay.vehicle_builder.price.08=Hang Glider - 80
+
+
+
+
+### When you do not have enought enery to buy the selected vegetables { "rawtext": [{ "translate" : "gameplay.vehicle_builder.no_enought_energy" } ] }
+gameplay.vegetable_grower.no_enought_energy=§cYou do not have enough Energy to grow this vegetable!
+### When you want to start the making of a vegetables but there is already one in progress   { "rawtext": [{ "translate" : "gameplay.vehicle_builder.already_rinning" } ] }
+gameplay.vegetable_grower.already_rinning=§cA vegetable is already in process!
+### The vegetable builder console first dialogue { "rawtext": [{ "translate" : "gameplay.vegetable_grower.text" } ] }
+gameplay.vegetable_grower.text=What kind of vegetable do you want to grow today?
+
+
+### The vegetable builder console first dialogue {"rawtext":[{"translate":"trophy.message.spawned"}]}
+trophy.message.spawned=§r§f[§6§lTrophy§r§f] You can take a selfie with me in your favorite part of the map and send it to:
+trophy.message.insta=§r§fInstagram: §r§e@Pixelbiesterofficial
+trophy.message.twitter=§r§fTwitter: §r§e@Pixelbiester
+
+
+### When the player update his energy tank to 60        {"rawtext":[{"translate":"gameplay.energy_tank.update.60"}]}
+gameplay.energy_tank.update.60=§3Maximum Energy set to 60
+gameplay.energy_tank.update.90=§3Maximum Energy set to 90
+gameplay.energy_tank.update.120=§3Maximum Energy set to 120
+gameplay.energy_tank.update.150=§3Maximum Energy set to 150
+gameplay.energy_tank.update.max=§3No Energy update available anymore
+
+
+
+
+### When you do not have enought enery analyse the dna { "rawtext": [{ "translate" : "gameplay.dna_analiser.no_enought_energy" } ] }
+gameplay.dna_analiser.no_enought_energy=§cYou do not have enough Energy to use the machine!
+
+
+
+### CUSTOM HOW TO PLAY
+
+
+###Categories
+howtoplay.category.map=Map
+howtoplay.category.gameplay=Gameplay
+
+### About us
+howtoplay.about_us=About us
+howtoplay.about_us.title=About us
+howtoplay.about_us.text.map_name=§r§fSafari Explorers
+howtoplay.about_us.text.team_name=§r§fMap by Pixelbiester
+howtoplay.about_us.twitter.name=§r§fTwitter
+howtoplay.about_us.twitter.at=§r§f@Pixelbiester
+howtoplay.about_us.insta.name=§r§fInstagram
+howtoplay.about_us.insta.at=§r§f@pixelbiesterofficial
+howtoplay.about_us.web.name=§r§fWebsite
+howtoplay.about_us.web.at=§r§fpixelbiester.net
+howtoplay.about_us.yt.name=§r§fYoutube
+howtoplay.about_us.yt.at=§r§fPixelBiester
+howtoplay.about_us.creators.title=Creators
+howtoplay.about_us.creators.1=ThomasEsc
+howtoplay.about_us.creators.2=Ilibu
+howtoplay.about_us.creators.3=Totacky
+howtoplay.about_us.creators.4=SpielmitStil
+howtoplay.about_us.creators.5=FranjoSchnabel
+howtoplay.about_us.creators.6=Honza
+
+
+
+### Map
+howtoplay.map=Map
+howtoplay.map.title=Map
+howtoplay.map.overview=Overview
+howtoplay.map.title.01=Biomes
+howtoplay.map.description.01=The map is composed of 4 main biomes:
+howtoplay.map.description.savanna.color=§5█ §fSavanna
+howtoplay.map.description.messa.color=§c█ §fMesa
+howtoplay.map.description.desert.color=§6█ §fDesert
+howtoplay.map.description.swamp.color=§1█ §fSwamp
+howtoplay.map.title.02=Base
+howtoplay.map.description.main_base.01=The Base is located in the center of the map, to the east of the savanna biome.
+howtoplay.map.description.main_base.02=You can find there everything that you may need to prepare your future expeditions.
+
+### Base
+howtoplay.base=Base
+howtoplay.base.title=Base
+howtoplay.base.description.main=The Base is the place where you can find everything that you may need to prepare your future expeditions.
+howtoplay.base.list.01=§9█ §fLaboratory
+howtoplay.base.list.02=§a█ §fSpawn
+howtoplay.base.list.03=§b█ §fGarage
+howtoplay.base.list.04=§c█ §fAirport
+howtoplay.base.list.05=§d█ §fEnergy Area
+howtoplay.base.list.06=§e█ §fLibrary
+howtoplay.base.list.07=§4█ §fCloning Area
+howtoplay.base.list.08=§6█ §fPort
+howtoplay.base.description.01.title=Laboratory
+howtoplay.base.description.01.descr=The Laboratory is the place where you find all the statues of the different animals that you have unlocked. You also find there the two machines that are used to analyze the DNA of the animals. In the underground, there is a room where all the new craftings of the map are explained.
+howtoplay.base.description.02.title=Spawn
+howtoplay.base.description.02.descr=The Spawn is the place where you appear for the first time in the map. In this place, you find a button that allows you to enable or disable the statues from the map in case you are lagging too much. There is also a button if you want to restart the tutorial.
+howtoplay.base.description.03.title=Garage
+howtoplay.base.description.03.descr=The Garage is the place where you can create the different vehicles and store them. To create a vehicle, you need to use the machine standing inside of the house. Every vehicle needs Energy to be created. The bigger the vehicle is, the more expensive in Energy it will be.
+howtoplay.base.description.04.title=Airport
+howtoplay.base.description.04.descr=The Airport is the same as the Garage, but only for flying vehicles such as Planes and Helicopters.
+howtoplay.base.description.05.title=Energy Area
+howtoplay.base.description.05.descr=The Energy Area is the place where you are able to place the Solar Panels in order to create Energy. You may also find an 'Energy Tank' that represents the maximum Energy that you can store.
+howtoplay.base.description.06.title=Library
+howtoplay.base.description.06.descr=The Library is the place where you can find the books that explain everything about the species you have unlocked.
+howtoplay.base.description.07.title=Cloning Area
+howtoplay.base.description.07.descr=The Cloning Area is the place where you can transform your analyzed DNA into its corresponding spawn egg.
+howtoplay.base.description.08.title=Port
+howtoplay.base.description.08.descr=The Port is the place where you can create and use the Boat.
+
+
+### Mines
+howtoplay.mines=Mines
+howtoplay.mines.title=Mines
+howtoplay.mines.description=Several Mines are hidden all over the map. In these Mines, you can collect Ores that help you to craft different items. There is one Mine in every biome. In total, that makes 4 Mines.
+howtoplay.mines.gold=Messa biome: §7Gold Mine
+howtoplay.mines.emerald=Savanna biome: §7Emerald Mine
+howtoplay.mines.iron=Desert biome: §7Iron Mine
+howtoplay.mines.coal=Swamp biome: §7Coal Mine
+howtoplay.mines.description.enter=Once you discover a new Mine, you will be able to teleport there at any moment by using the button in the 'fast teleport' area from the Base.
+
+
+### Animals
+howtoplay.animals=Animals
+howtoplay.animals.title=Animals
+howtoplay.animals.description=There are 24 new animals implemented in the game. Each of them have their favorite biome and their eating habits. Your goal, as a perfect explorer, is to find them all.
+howtoplay.animals.list=Here is a list of all the different species that you may find in the game:
+howtoplay.animals.list.01=§7- Baboon
+howtoplay.animals.list.02=§7- Buffalo
+howtoplay.animals.list.03=§7- Camel
+howtoplay.animals.list.04=§7- Crocodile
+howtoplay.animals.list.05=§7- Elephant
+howtoplay.animals.list.06=§7- Fennec
+howtoplay.animals.list.07=§7- Gazelle
+howtoplay.animals.list.08=§7- Giraffe
+howtoplay.animals.list.09=§7- Hippopotamus
+howtoplay.animals.list.10=§7- Hyena
+howtoplay.animals.list.11=§7- Marabou Stork
+howtoplay.animals.list.12=§7- Jackal
+howtoplay.animals.list.13=§7- Lion
+howtoplay.animals.list.14=§7- Meerkat
+howtoplay.animals.list.15=§7- Ostrich
+howtoplay.animals.list.16=§7- Pangolin
+howtoplay.animals.list.17=§7- Piranha
+howtoplay.animals.list.18=§7- Porcupine
+howtoplay.animals.list.19=§7- Rhinoceros
+howtoplay.animals.list.20=§7- Serval
+howtoplay.animals.list.21=§7- Snake
+howtoplay.animals.list.22=§7- Vulture
+howtoplay.animals.list.23=§7- Warthog
+howtoplay.animals.list.24=§7- Zebra
+
+
+
+### DNA
+howtoplay.dna=DNA
+howtoplay.dna.title=DNA
+howtoplay.dna.description.01=The main goal of the map is to unlock all the species that are in the game. For that, you need to collect the DNA of the animals using a Cotton Bud. Every time you are using the Cotton Bud on an animal, you have a chance of around 20% to drop its DNA. Once this is done, you can go to the Laboratory and analyze the DNA in order to unlock the corresponding species and have access to its statue and its description in the library.
+howtoplay.dna.description.02=If you want to see how the DNA system is working, play the tutorial again by using the button standing in the Spawn.
+
+
+### Energy
+howtoplay.energy=Energy
+howtoplay.energy.title=Energy
+howtoplay.energy.description.01=Energy is the resource that allows you to use the different machines that are standing in the map. Energy can be perceived like money in some other games. You can see how much Energy you own on the scoreboard on the right of your screen.
+howtoplay.energy.description.02=To create Energy and upgrade your maximum amount of Energy, you have to go to the 'Energy Area', to the east of the Laboratory, in the Base.
+howtoplay.energy.description.03=If you want to see how the Energy is working, play the tutorial again by using the button standing in the Spawn.
+
+### Ores
+howtoplay.ores=Ores
+howtoplay.ores.title=Ores
+howtoplay.ores.description=Here is a list of all the different Ores that were implemented in the map:
+howtoplay.ores.alu.0=Aluminium
+howtoplay.ores.alu.description=This Ore can be found in the rocks from the savanna biome. It is a replacement of the Redstone.
+howtoplay.ores.meteor.0=Meteor
+howtoplay.ores.meteor.description=This Ore can be found inside of the desert biome. It is a replacement of the Lapis Lazuli.
+
+
+
+
+### Craftings
+howtoplay.craftings=Craftings
+howtoplay.craftings.title=Craftings
+howtoplay.craftings.description=Here is a list of all the different craftings that were implemented in the map:
+howtoplay.craftings.craft.0=Wrench
+howtoplay.craftings.craft.1=Cotton Bud
+howtoplay.craftings.craft.2=Solar Panel
+howtoplay.craftings.craft.3=Advanced Solar Panel
+howtoplay.craftings.craft.4=Energy Update
+howtoplay.craftings.craft.5=Aluminium Block
+
+
+### Getting started
+howtoplay.gettingstarted=Getting started
+howtoplay.gettingstarted.title=Getting started
+howtoplay.gettingstarted.description.01=The best way to start the adventure is to explore the compound and the nature around it! This way, you will find some Ores that could help you make your first Solar Panels in order to make some Energy. You can also start collecting some Cotton in order to create Cotton Buds and start collecting the DNA of some species.
+howtoplay.gettingstarted.description.02=We wish you good luck!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### When you have unlocked a mob   {"rawtext":[{"translate":"unlock.unlocked.01"}]}
+unlock.unlocked.01=§aYou have unlocked the§2§l Baboon§r§a!§2§l
+unlock.unlocked.02=§aYou have unlocked the§2§l Buffalo§r§a!§2§l
+unlock.unlocked.03=§aYou have unlocked the§2§l Camel§r§a!§2§l
+unlock.unlocked.04=§aYou have unlocked the§2§l Crocodile§r§a!§2§l
+unlock.unlocked.05=§aYou have unlocked the§2§l Elephant§r§a!§2§l
+unlock.unlocked.06=§aYou have unlocked the§2§l Fennec§r§a!§2§l
+unlock.unlocked.07=§aYou have unlocked the§2§l Gazelle§r§a!§2§l
+unlock.unlocked.08=§aYou have unlocked the§2§l Giraffe§r§a!§2§l
+unlock.unlocked.09=§aYou have unlocked the§2§l Hippopotamus§r§a!§2§l
+unlock.unlocked.10=§aYou have unlocked the§2§l Hyena§r§a!§2§l
+unlock.unlocked.11=§aYou have unlocked the§2§l Marabou Stork§r§a!§2§l
+unlock.unlocked.12=§aYou have unlocked the§2§l Jackal§r§a!§2§l
+unlock.unlocked.13=§aYou have unlocked the§2§l Lion§r§a!§2§l
+unlock.unlocked.14=§aYou have unlocked the§2§l Meerkat§r§a!§2§l
+unlock.unlocked.15=§aYou have unlocked the§2§l Ostrich§r§a!§2§l
+unlock.unlocked.16=§aYou have unlocked the§2§l Pangolin§r§a!§2§l
+unlock.unlocked.17=§aYou have unlocked the§2§l Piranha§r§a!§2§l
+unlock.unlocked.18=§aYou have unlocked the§2§l Porcupine§r§a!§2§l
+unlock.unlocked.19=§aYou have unlocked the§2§l Rhinoceros§r§a!§2§l
+unlock.unlocked.20=§aYou have unlocked the§2§l Serval§r§a!§2§l
+unlock.unlocked.21=§aYou have unlocked the§2§l Snake§r§a!§2§l
+unlock.unlocked.22=§aYou have unlocked the§2§l Vulture§r§a!§2§l
+unlock.unlocked.23=§aYou have unlocked the§2§l Warthog§r§a!§2§l
+unlock.unlocked.24=§aYou have unlocked the§2§l Zebra§r§a!§2§l
+
+
+
+
+
+
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.elephant.description.01"}]}
+library.book.elephant.description.01=§8§lDescription:§r The elephant from Africa is the biggest terrestrial animal in the world. It can weigh more than 7 tons (the largest elephant found weighed as much as 150 men). They are much bigger than their cousins, the Asian elephants.
+## Generated raw-text : {"rawtext":[{"translate":"library.book.elephant.description.02"}]}
+library.book.elephant.description.02=They are also very intelligent and have the biggest brain in the animal world. Unfortunately, elephants are hunted because of their tusks. Nowadays, they are classified as deserving protection.
+
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.baboon.description.01"}]}
+library.book.baboon.description.01=§8§lDescription:§r Baboons are large, heavily-built primates living in South Sahara's tropical savanna. They look rather doglike with their long, pointed muzzles and in the way they walk on all four legs.
+## Generated raw-text : {"rawtext":[{"translate":"library.book.baboon.description.02"}]}
+library.book.baboon.description.02=Their jaws are very powerful and they have long, sharp canine teeth.
+
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.buffalo.description.01"}]}
+library.book.buffalo.description.01=§8§lDescription:§r The African buffalo is one of the biggest and most dangerous (for humans) grassland animals. Buffalos feed on grasses, mostly at night, only in cold periods during the day.
+## Generated raw-text : {"rawtext":[{"translate":"library.book.buffalo.description.02"}]}
+library.book.buffalo.description.02=They are sociable animals and often gather in herds of 2,000 or more when there is plentiful food. The male is often almost twice the weight of the female, has stronger horns, a thicker neck, and a shoulder hump.
+
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.camel.description.01"}]}
+library.book.camel.description.01=§8§lDescription:§r Camels are very well-adapted to living in a hot and dry climate. They have cushioned feet that prevent them from sinking in the sand, long eyelashes that keep the sand out of their eyes, and nostrils that shut during a dust storm.
+## Generated raw-text : {"rawtext":[{"translate":"library.book.camel.description.02"}]}
+library.book.camel.description.02=They can travel very long distances and go without food for weeks. A camel is able to drink up to a quarter of its weight in water at a time and can store it for several days in its hump.
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.crocodile.description.01"}]}
+library.book.crocodile.description.01=§8§lDescription:§r Crocodiles are only living in Africa's, Asia's, and Australia's rivers and lakes. They are often confused with alligators that are only living in America. The biggest crocodiles can reach 5.2 meters (16.4 feet) and weigh up to 1,000 kilograms (2,205 pounds).
+## Generated raw-text : {"rawtext":[{"translate":"library.book.crocodile.description.02"}]}
+library.book.crocodile.description.02=The crocodile has the most powerful bite on the planet. It can reach 22,000 Newton (around 2,243 kilograms of pressure). This is 15 times as strong as the bite of a rottweiler.
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.fennec.description.01"}]}
+library.book.fennec.description.01=§8§lDescription:§r The fennec is the smallest of the foxes. It lives in the Sahara desert, one of the hottest and driest places on earth. It is accustomed to desert temperatures that can drop below 20 °C (68 °F) and climb up to 40 °C (104 °F).
+## Generated raw-text : {"rawtext":[{"translate":"library.book.fennec.description.02"}]}
+library.book.fennec.description.02=It is recognizable by its very large ears that help to transfer the sounds of even the smallest prey. They are mostly nocturnal, meaning they are usually active at night. Unlike most foxes who live alone, fennecs live in family units of a male and female pair.
+
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.gazelle.description.01"}]}
+library.book.gazelle.description.01=§8§lDescription:§r The gazelle is a fast and graceful little animal. It is also called 'impala' in the Zulu language. The main predators of the gazelle are the lions. To confuse their predators, their first jump can reach 10 meters long and 3 meters high.
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.gazelle.description.02"}]}
+library.book.gazelle.description.02=They only sleep in five-minute bursts for a total of just an hour each day, probably not to be attacked by the predators during the night.
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.giraffe.description.01"}]}
+library.book.giraffe.description.01=§8§lDescription:§r The giraffe is the world's tallest animal. It is even taller than three adult men standing on each other's heads. The males can reach a height of 5.5 metres (18 feet). They need this incredible size to eat the leaves from the top of the trees.
+## Generated raw-text : {"rawtext":[{"translate":"library.book.giraffe.description.02"}]}
+library.book.giraffe.description.02=The giraffe is one of the few animals (with the okapi) that sleep standing up.
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.hippopotamus.description.01"}]}
+library.book.hippopotamus.description.01=§8§lDescription:§r Hippopotamuses are even-toed hoofed mammals, but scientists think that they are genetically close to whales and dolphins. They spend most of their time in water which helps them to keep a good temperature and keep their skin moist.
+## Generated raw-text : {"rawtext":[{"translate":"library.book.hippopotamus.description.02"}]}
+library.book.hippopotamus.description.02=The hippopotamus is one of Africa's largest animals. It can weigh up to 4,500 kilograms (9,900 pounds). It also has the widest mouth of any land animal: it can open it up to one meter (3.3 feet) wide. Hippopotamuses can be dangerous, especially if they are threatened.
+
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.hyena.description.01"}]}
+library.book.hyena.description.01=§8§lDescription:§r Although hyenas look a bit like dogs, they are more closely related to cats. They are known for scavenging, which is picking up food left behind by other animals. But they are also successful hunters, especially when they work together.
+## Generated raw-text : {"rawtext":[{"translate":"library.book.hyena.description.02"}]}
+library.book.hyena.description.02=They can hunt big prey, such as zebras or wildebeests. When a pack of hyenas call, it can sound just like a human laughing. These 'laughs' often mean that someone in the pack is feeling scared or unhappy.
+
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.jaburi.description.01"}]}
+library.book.jaburi.description.01=§8§lDescription:§r Storks are wading birds with long legs. They are mostly found in rivers and lakes all around the world. The marabou stork is only living in Africa. It can live up to 25 years and reach 1.5 meters (3.2 feet).
+## Generated raw-text : {"rawtext":[{"translate":"library.book.jaburi.description.02"}]}
+library.book.jaburi.description.02=Unlike the European storks that eat fish, the marabou stork devours carrion and is often compared to vultures because of its diet. It also occasionally eats other birds like pigeons and pelicans.
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.jackal.description.01"}]}
+library.book.jackal.description.01=§8§lDescription:§r Jackals are part of the dog family that is living in Africa. There are three species of jackals: the golden, the side-striped and the black ones. The most common one is the golden jackal.
+## Generated raw-text : {"rawtext":[{"translate":"library.book.jackal.description.02"}]}
+library.book.jackal.description.02=They often hunt in pairs or small groups. They hunt for any food they can find: from carrion they find in nature to gazelles they have hunted themselves. They also sometimes eat fruits and insects.
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.lion.description.01"}]}
+library.book.lion.description.01=§8§lDescription:§r Lions are the only cats to live in groups, called prides. The males and the females have different roles in their pride. Males have to protect the females from other males by pacing through their territory. The role of the females, however, is to hunt and to feed the group.
+## Generated raw-text : {"rawtext":[{"translate":"library.book.lion.description.02"}]}
+library.book.lion.description.02=Lions are only active at night. By day, they spend their time resting and sleeping in the shade, getting up only for an occasional drink or for playing.
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.meerkat.description.01"}]}
+library.book.meerkat.description.01=§8§lDescription:§r Meerkats are very small catlike carnivores. Their faces often have a curious look, seemingly taking in everything in their surroundings. They have long bodies and short flat ears and are able to stand on their hind legs.
+## Generated raw-text : {"rawtext":[{"translate":"library.book.meerkat.description.02"}]}
+library.book.meerkat.description.02=Their social cooperation within a large group and their extensively burrowed tunnels help them to survive in arid African deserts.
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.ostrich.description.01"}]}
+library.book.ostrich.description.01=§8§lDescription:§r The ostrich is the world's largest bird. It has big, shaggy wings, but they are not strong enough for flying. That means that it must rely on its strong legs for walking and running.
+## Generated raw-text : {"rawtext":[{"translate":"library.book.ostrich.description.02"}]}
+library.book.ostrich.description.02=Ostriches will eat anything from seeds and grass to lizards and frogs. An ostrich can run up to 70 kilometers (45 miles) per hour, making it the fastest of all running birds. Ostriches also lay the largest eggs of all animals.
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.pangolin.description.01"}]}
+library.book.pangolin.description.01=§8§lDescription:§r Pangolins are unusual animals that are armor-plated, distinguished from other mammals due to the layer of protective horny scales. Pangolins are solitary and nocturnal.
+## Generated raw-text : {"rawtext":[{"translate":"library.book.pangolin.description.02"}]}
+library.book.pangolin.description.02=They are very rare because they are hunted for their meat. They are also used in traditional Chinese medicine although they have no proven medicinal value. Some local people even believe that the pangolin's body parts can generate rain, ward off lions and neutralize evil spirits.
+
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.piranha.description.01"}]}
+library.book.piranha.description.01=§8§lDescription:§r Most piranhas have large, sharp-edged teeth for slicing through flesh and preying on other fish. The biggest kinds may even strip the flesh from land animals that venture into the water, but piranhas are usually not dangerous for humans.
+## Generated raw-text : {"rawtext":[{"translate":"library.book.piranha.description.02"}]}
+library.book.piranha.description.02=Most of them swim in shoals for safety from bigger predators.
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.rhinoceros.description.01"}]}
+library.book.rhinoceros.description.01=§8§lDescription:§r The rhinoceros (together with the hippopotamus) is the biggest land mammal in the world after the elephant. Despite their scary appearance, rhinoceroses are calm and gentle vegetarians, but they can become aggressive if they are stressed or threatened.
+## Generated raw-text : {"rawtext":[{"translate":"library.book.rhinoceros.description.02"}]}
+library.book.rhinoceros.description.02=There are five species of rhinoceroses and all of them are endangered, mainly due to illegal hunting by humans.
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.serval.description.01"}]}
+library.book.serval.description.01=§8§lDescription:§r The serval is a wild cat native to Africa. Active in the day as well as at night, servals tend to be solitary with minimal social interaction. They are carnivores: they prey on rodents, small birds, frogs, insects, and reptiles.
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.snake.description.01"}]}
+library.book.snake.description.01=§8§lDescription:§r Snakes are reptiles with a long, thin body without legs. All snakes eat live prey which is grabbed and swallowed on the whole without chewing it into pieces. A snake's jaws are flexible and can open very wide.
+## Generated raw-text : {"rawtext":[{"translate":"library.book.snake.description.02"}]}
+library.book.snake.description.02=Venomous snakes, such as vipers, have two grooved or hollow needle-pointed teeth, which are called fangs. Most species of snakes are harmless for humans, but venomous snakes kill more than 100,000 people every year.
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.vulture.description.01"}]}
+library.book.vulture.description.01=§8§lDescription:§r Vultures are big birds that only eat carcasses of big animals. Hundreds of these vultures gather to feed on large dead animals. They gorge so much that they cannot fly and then rest with wings spread and their backs facing the sun.
+## Generated raw-text : {"rawtext":[{"translate":"library.book.vulture.description.02"}]}
+library.book.vulture.description.02=The most common vulture in Africa is the white-backed vulture. Vultures are highly social and diurnal. They are very tame birds and may venture into towns, looking for food.
+
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.warthog.description.01"}]}
+library.book.warthog.description.01=§8§lDescription:§r The warthog is a pig with a large head living in Africa's savanna. It lives in groups of around four to 16 individuals. They especially eat grass, roots, and berries. During times of scarcity, warthogs may eat meat, but they don't hunt.
+## Generated raw-text : {"rawtext":[{"translate":"library.book.warthog.description.02"}]}
+library.book.warthog.description.02=During the dry season, the warthog kneels on its padded front knees to feed itself with underground stems.
+
+## Generated raw-text : {"rawtext":[{"translate":"library.book.zebra.description.01"}]}
+library.book.zebra.description.01=§8§lDescription:§r Zebras are striped horses that live in the wild in Africa. Each zebra has unique stripes, just like humans have unique fingerprints.  Zebras live in herds which help them to protect themselves against dangerous predators from the savanna: lions, leopards ...
+## Generated raw-text : {"rawtext":[{"translate":"library.book.zebra.description.02"}]}
+library.book.zebra.description.02=Scientists think that the stripes of a zebra protect it from danger: it is hard for a predator to pick out individual animals from a group.
+
+
+
+
+
+
+## Generated raw-text : {"rawtext":[{"translate":"cine.subtitle.01"}]}
+cine.subtitle.01=§fMap by Pixelbiester
+cine.title.01=§fSafari Explorers
+
+cine.text.00=§f<> §6Hey! Welcome to Safari Explorers!
+cine.text.01=§f<> §6In this world, you will discover several new biomes, new technological inventions and plenty of new animals!
+cine.text.02=§f<> §6Now let me show you the map. This will just be a short overview for you. Later, you can play a tutorial to learn how to interact with the important things here.
+cine.text.03=§f<> §6Let me start introducing the different areas.
+cine.text.04=§f<> §6There is a big Savanna area with lots of African animals.
+cine.text.05=§f<> §6In the swamp, you find small huts and many colorful amphibious creatures.
+cine.text.06=§f<> §6In the mesa, you can see higher mountains and scavenger animals.
+cine.text.07=§f<> §6The desert biome is very dry, but on the little oasis you can find a lot of life.
+cine.text.08=§f<> §6Let's move onto the Garage. You can craft several sorts of vehicles, such as motorbikes, cars, quads, or planes. You need to use a construction machine to manufacture the vehicles.
+cine.text.09=§f<> §6In the Library, you can get information about the unlocked species that you may find on this map.
+cine.text.10=§f<> §6In the showcase area, you can collect statues. You get one statue for each animal you have unlocked. This is the best place to show off in front of your friends!
+cine.text.11=§f<> §6To unlock the animals, you need to analyze their DNA. You can do so with the shown machines. You will get more information on how this works in the next part of the tutorial.
+cine.text.12=§f<> §6All machines need Energy. You can produce Energy by creating Solar Panels and placing them in the Energy area.
+cine.text.13=§f<> §6You can use the quick teleporter for teleporting to different areas that you have already explored and unlocked.
+cine.text.14=§f<> §6All the new crafting recipes are displayed in this room. You find it under the Laboratory.
+
+tuto.text.01=§f<> §6Now, let's start the tutorial. Here you will learn how the map mechanics are working.
+tuto.text.02=§f<> §6First things first, I will explain the Energy system. Safari Explorers contains many different machines that need Energy to work. These machines can create vehicles and food or can be used in scientific experiences. The energy is produced by Solar Panels.
+tuto.text.03=§f<> §6Craft the 'Solar Panel' just like shown in the drawing in front of you.
+tuto.text.04=§f<> §6Great! This Solar Panel has the capacity to produce 1 Energy every 25 seconds.
+tuto.text.05=§f<> §6You can now place this Solar Panel on its footing.
+tuto.text.06=§f<> §6Perfect! See how the value of Energy on the right interface increases!
+tuto.text.07=§f<> §6Now, remove the Solar Panel by interacting with it using the 'Wrench' item.
+tuto.text.08=§f<> §6Great job!
+tuto.text.09=§f<> §6Place the 'Advanced Solar Panel' on the footing to produce Energy faster.
+tuto.text.10=§f<> §6Perfect! We have reached the maximum amount of Energy. Now we have to upgrade our Energy Tank.
+tuto.text.11=§f<> §6Update the Energy Tank by interacting with the 'Energy Update' item.
+tuto.text.12=§f<> §6Amazing! Now that you know how the Energy works, let's try using some machines.
+tuto.text.13=§f<> §6You can create a vehicle by using the Console that is standing in front of you.
+tuto.text.14=§f<> §6Yes, exactly like this.
+tuto.text.15=§f<> §6Another big part of the map is the DNA system. To collect the DNA of animals, you need Cotton Buds. To create them, you need to collect Cotton from a Cotton Shrub.
+tuto.text.16=§f<> §6Collect the Cotton from the Shrub.
+tuto.text.17=§f<> §6Great!
+tuto.text.18=§f<> §6Now craft the Cotton Bud using the recipe in front of you.
+tuto.text.19=§f<> §6Correct! Every time you are using the Cotton Bud on an animal, you have a chance of around 20% to drop its DNA.
+tuto.text.20=§f<> §6You can collect the DNA of an animal by interacting with it using the Cotton Bud. Try it.
+tuto.text.21=§f<> §6Great job! Let's find out what kind of DNA you have just found. For that you need the DNA Analyzer.
+tuto.text.22=§f<> §6Try to interact with it.
+tuto.text.23=§f<> §6Analyzing completed.
+tuto.text.24=§f<> §6Now you need to do research on the DNA. For that you need to interact with the analyzed DNA on the computer.
+tuto.text.25=§f<> §6Congratulations! You have unlocked the Giraffe. Everytime you unlock an animal, you will get a unique statue of it in the Laboratory. Once you have unlocked an animal, you can also get all the information on it at the Library. It's only possible to unlock an animal once. Your goal is it to unlock every animal of the map.
+
+tuto.text.26=§f<> §6Once you have unlocked a species, you can use its DNA to get the corresponding spawn egg.
+tuto.text.27=§f<> §6Try to interact the DNA with the cloner.
+tuto.text.28=§f<> §6Perfect, you have finished the tutorial. Hope you will have a lot of fun on the map!
+
+

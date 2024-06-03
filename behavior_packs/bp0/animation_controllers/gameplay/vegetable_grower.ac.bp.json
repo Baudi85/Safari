@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        
+        "controller.animation.vegetable_grower": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "on_entry" : [
+                        "@s reset"
+                    ] ,
+                    "transitions" : [
+                        { "run" : "query.is_sheared" }
+                    ]
+                },
+                "run" : {
+                    "transitions" : [
+                        { "default" : "!query.is_sheared" }
+                    ],
+                    "animations" : [
+                        "compute"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "format_version" : "1.10.0",
+    "animation_controllers":{
+        "controller.animation.fennec.general": {
+            "initial_state" : "default",
+            "states": {
+                "default": {
+                    "animations" : [
+                        "idle",
+                        "look_at_target",
+                        {
+                            "walk" : "query.modified_move_speed> 0.05"
+                        }
+                    ],
+                    "blend_transition" : 0.1,
+                    "transitions" : [
+                        {
+							"sneeze" : "query.is_sneezing"
+						}
+                    ]
+                },
+                "sneeze":{
+                    "animations" : [
+                        "variantOne"
+                    ],
+                    "transitions" : [
+                        {
+							"default" : "query.all_animations_finished"
+						}
+                    ]
+                }
+            }
+        }
+    }
+}

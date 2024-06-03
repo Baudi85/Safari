@@ -1,0 +1,37 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "ui:laboratory",
+
+            "geometry": {
+                "default": "geometry.display"
+            },
+            "materials": {
+                "default": "bat"
+            },
+            "render_controllers": [
+                "controller.render.one"
+            ],
+            "textures": {
+                "default": "textures/gameplay/empty.png"
+            },
+            
+
+            "animations": {
+                "ui_part": "animation.particles.ui"
+            },
+            "animation_controllers": [
+                { "AC_p": "controller.animation.particles.ui" }
+            ],
+
+            "particle_effects": {
+                "part_ui": "p:ui_laboratory"
+            },
+            "spawn_egg": {
+                "base_color": "#c36ea9",
+                "overlay_color": "#4f89c1"
+            }
+        }
+    }
+}

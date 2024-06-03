@@ -1,0 +1,150 @@
+{
+    "resource_pack_name" : "safari",
+    "texture_data": {
+        "rotate": {
+            "textures": "textures/items/rotate.png"
+        },
+        "recolor": {
+            "textures": "textures/items/recolor.png"
+        },
+        "duplicate": {
+            "textures": "textures/items/duplicate.png"
+        },
+        "remove": {
+            "textures": "textures/items/remove.png"
+        },
+        "newboat": {
+            "textures": "textures/items/boat.png"
+        },
+        "wrench": {
+            "textures": "textures/items/wrench.png"
+        },
+        "energy_update": {
+            "textures": "textures/items/energy_update.png"
+        },
+        "helicopter": {
+            "textures": "textures/items/helicopter.png"
+        },
+        "solar_panel_normal": {
+            "textures": "textures/items/solar_panel_normal.png"
+        },
+        "solar_panel_advanced": {
+            "textures": "textures/items/solar_panel_advanced.png"
+        },
+        "solar_panel": {
+            "textures": "textures/items/solar_panel.png"
+        },
+        "solar_cell": {
+            "textures": "textures/items/solar_cell.png"
+        },
+        "dna": {
+            "textures": "textures/items/dna.png"
+        },
+        "dna_good": {
+            "textures": "textures/items/dna_good.png"
+        },
+        "organic_drops": {
+            "textures": "textures/items/organic_drops.png"
+        },
+        "cotton_bud": {
+            "textures": "textures/items/cotton_bud.png"
+        },
+        "ball": {
+            "textures": "textures/items/ball.png"
+        },
+        "barbecue": {
+            "textures": "textures/items/barbecue.png"
+        },
+        "bench_0": {
+            "textures": "textures/items/bench_0.png"
+        },
+        "bench_1": {
+            "textures": "textures/items/bench_1.png"
+        },
+        "bench_2": {
+            "textures": "textures/items/bench_2.png"
+        },
+        "binoculars": {
+            "textures": "textures/items/binoculars.png"
+        },
+        "bookcase": {
+            "textures": "textures/items/bookcase.png"
+        },
+        "camera": {
+            "textures": "textures/items/camera.png"
+        },
+        "chair_0": {
+            "textures": "textures/items/chair_0.png"
+        },
+        "chair_1": {
+            "textures": "textures/items/chair_1.png"
+        },
+        "computer": {
+            "textures": "textures/items/computer.png"
+        },
+        "crossing_sign": {
+            "textures": "textures/items/crossing_sign.png"
+        },
+        "deck_chair": {
+            "textures": "textures/items/deck_chair.png"
+        },
+        "fan": {
+            "textures": "textures/items/fan.png"
+        },
+        "first_aid_kit": {
+            "textures": "textures/items/first_aid_kit.png"
+        },
+        "flower_pota": {
+            "textures": "textures/items/flower_pota.png"
+        },
+        "microscope": {
+            "textures": "textures/items/microscope.png"
+        },
+        "pixelbiest": {
+            "textures": "textures/items/pixelbiest.png"
+        },
+        "public_bin": {
+            "textures": "textures/items/public_bin.png"
+        },
+        "shelf": {
+            "textures": "textures/items/shelf.png"
+        },
+        "table": {
+            "textures": "textures/items/table.png"
+        },
+        "toilet": {
+            "textures": "textures/items/toilet.png"
+        },
+        "umbrella": {
+            "textures": "textures/items/umbrella.png"
+        },
+        "veterinary_sink": {
+            "textures": "textures/items/veterinary_sink.png"
+        },
+        "veterinary_table": {
+            "textures": "textures/items/veterinary_table.png"
+        },
+        "windsock": {
+            "textures": "textures/items/windsock.png"
+        },
+        "dirt_bike": {
+            "textures": "textures/items/dirt_bike.png"
+        },
+        "hang_glider": {
+            "textures": "textures/items/hang_glider.png"
+        },
+        "jeep_0": {
+          "textures": "textures/items/jeep_0.png"
+        },
+        "jeep_1": {
+            "textures": "textures/items/jeep_1.png"
+        },
+        "plane": {
+            "textures": "textures/items/plane.png"
+        },
+        "quad": {
+            "textures": "textures/items/quad.png"
+        }
+    },
+    "texture_name": "atlas.items"
+}

@@ -1,0 +1,19 @@
+{
+    "animations": {
+        "animation.dlg_dlg_3": {
+            "animation_length": 8,
+            "timeline": {
+                "2": [
+                    "/say I have lost my pixelbiest statues :("
+                ],
+                "4": [
+                    "/say Could you please bring them back to me?"
+                ],
+                "6": [
+                    "/say I had 5 before to lose them all! They are hidden all around the map"
+                ]
+            }
+        }
+    },
+    "format_version": "1.8.0"
+}

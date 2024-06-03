@@ -1,0 +1,35 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "gameplay:dna_analiser",
+            
+            "textures": {
+                "default": "textures/gameplay/dna_analiser/dna_analiser.png"
+            },
+            "geometry": {
+                "default": "geometry.dna_analiser"
+            },
+            "render_controllers": [
+                "controller.render.dna_analiser"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+            
+            "animations": {
+                "run"  : "animation.dna_analiser.run",
+                "idle" : "animation.dna_analiser.idle"
+            },
+            "animation_controllers": [
+                { "ac_run": "controller.animation.dna_analiser" }
+            ],
+            
+            
+            "spawn_egg": {
+                "base_color": "#7334df",
+                "overlay_color": "#3255a3"
+            }
+        }
+    }
+}

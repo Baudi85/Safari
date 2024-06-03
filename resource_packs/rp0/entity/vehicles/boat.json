@@ -1,0 +1,46 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "vehicle:new_boat",
+
+            "textures": {
+                "default" : "textures/vehicles/boat/01.png"
+            },
+            "geometry": {
+                "default": "geometry.boat"
+            },
+            "render_controllers": [
+                "controller.render.one"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            
+            "animations": {
+                "recolorAnim": "animation.particles.recolor",
+                "walk" : "animation.boat.walk",
+                "idle" : "animation.boat.idle"
+            },
+            "animation_controllers": [
+                { "recolor": "controller.animation.particles.recolor" },
+                { "general": "controller.animation.boat.general" }
+            ],
+
+
+
+
+            "particle_effects": {
+                "rotation_particles": "p:recolor"
+            },
+
+            "spawn_egg": {
+                "texture": "newboat"
+            }
+            
+        }
+    }
+}

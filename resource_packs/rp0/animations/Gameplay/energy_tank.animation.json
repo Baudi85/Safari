@@ -1,0 +1,93 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.energy_tank.zero": {
+            "loop": true,
+            "bones": {
+                "Energy": {
+                    "scale": [1, 0, 1]
+                }    
+            }
+        },
+        "animation.energy_tank.one": {
+            "loop": true,
+            "bones": {
+                "Energy": {
+                    "scale": [1, 2, 1]
+                }
+            }
+        },
+        "animation.energy_tank.two": {
+            "loop": true,
+            "bones": {
+                "Energy": {
+                    "scale": [1, 3.5, 1]
+                }
+            }
+        },
+        "animation.energy_tank.three": {
+            "loop": true,
+            "bones": {
+                "Energy": {
+                    "scale": [1, 5.5, 1]
+                }
+            }
+        },
+        "animation.energy_tank.four": {
+            "loop": true,
+            "bones": {
+                "Energy": {
+                    "scale": [1, 7.5, 1]
+                }
+            }
+        },
+        "animation.energy_tank.five": {
+            "loop": true,
+            "bones": {
+                "Energy": {
+                    "scale": [1, 9.5, 1]
+                }
+            }
+        },
+        "animation.energy_tank.six": {
+            "loop": true,
+            "bones": {
+                "Energy": {
+                    "scale": [1, 11.4, 1]
+                }
+            }
+        },
+        "animation.energy_tank.seven": {
+            "loop": true,
+            "bones": {
+                "Energy": {
+                    "scale": [1, 13.3, 1]
+                }
+            }
+        },
+        "animation.energy_tank.eight": {
+            "loop": true,
+            "bones": {
+                "Energy": {
+                    "scale": [1, 15.2, 1]
+                }
+            }
+        },
+        "animation.energy_tank.nine": {
+            "loop": true,
+            "bones": {
+                "Energy": {
+                    "scale": [1, 17.1, 1]
+                }
+            }
+        },
+        "animation.energy_tank.ten": {
+            "loop": true,
+            "bones": {
+                "Energy": {
+                    "scale": [1, 19, 1]
+                }
+            }
+        }
+    }
+}

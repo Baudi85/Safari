@@ -1,0 +1,30 @@
+{
+    "animation_controllers": {
+        "controller.animation.vehicle_builder": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        "idle"
+                    ],
+                    "transitions": [
+                        {
+                            "run": "query.is_sheared == true"
+                        }
+                    ]
+                },
+                "run": {
+                    "animations": [
+                        "run"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.all_animations_finished == true"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "format_version": "1.10.0"
+}

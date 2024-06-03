@@ -1,0 +1,33 @@
+{
+    "format_version" : "1.10.0",
+    "animation_controllers":{
+        "controller.animation.piranha.general": {
+
+            "initial_state" : "default",
+            "states": {
+
+                "default": {
+                    "animations" : [
+                        "swim"
+                    ],
+                    "transitions" : [
+                        {
+                            "flop" : "!query.is_in_water"
+                        }
+                    ]
+                },
+                "flop":{
+                    "animations" : [
+                        "flop"
+                    ],
+                    "transitions" : [
+                        {
+                            "default" : "query.is_in_water"
+                        }
+                    ]
+                }
+                
+            }
+        }
+    }
+}

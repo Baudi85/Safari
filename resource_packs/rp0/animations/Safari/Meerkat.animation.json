@@ -1,0 +1,78 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.meerkat.walk": {
+			"loop": true,
+			"bones": {
+				"Meerkat": {
+					"position": [0, 3, 8]
+				},
+				"Body": {
+					"position": [0, -6.3, 0]
+				},
+				"Chess": {
+					"rotation": [90, 0, "math.cos(query.anim_time*600 +100)*4"]
+				},
+				"Arm1": {
+					"rotation": ["-105 + math.sin(query.anim_time*600 +300)*15", 0, 0],
+					"position": [0, -1.4, 0.5]
+				},
+				"Arm1_1": {
+					"rotation": [-45, 0, 0]
+				},
+				"Arm2": {
+					"rotation": ["-95 + math.sin(query.anim_time*600 +100)*15", 0, 0],
+					"position": [0, -1.9, 0.3]
+				},
+				"Arm1_2": {
+					"rotation": [-60, 0, 0]
+				},
+				"Tail": {
+					"rotation": ["60 + math.sin(query.anim_time*400)*10", 0, 0]
+				},
+				"Leg1": {
+					"rotation": ["-15 + math.sin(query.anim_time*600 +200)*20", 0, 0]
+				},
+				"Leg1_1": {
+					"rotation": [95, 0, 0],
+					"position": [0, 0, 0.8]
+				},
+				"Leg2": {
+					"rotation": ["-25 + math.sin(query.anim_time*600)*20", 0, 0]
+				},
+				"Leg1_2": {
+					"rotation": [95, 0, 0]
+				},
+				"Head": {
+					"rotation": ["-90 + math.sin(query.anim_time*600 )*4", 0, 0]
+				}
+			}
+		},
+		"animation.meerkat.idle": {
+			"loop": true,
+			"bones": {
+				"Body": {
+					"position": [0, -3.1, 0]
+				},
+				"Chess": {
+					"rotation": ["math.sin(query.anim_time*100)*4", 0, 0]
+				},
+				"Arm1": {
+					"rotation": [0, 0, "math.sin(query.anim_time*160)*6"]
+				},
+				"Arm2": {
+					"rotation": [0, 0, "math.sin(query.anim_time*100+ 100)*6"]
+				},
+				"Tail": {
+					"rotation": ["25 + math.sin(query.anim_time*160)*6", "math.sin(query.anim_time*80)*8", "math.sin(query.anim_time*100)*6"]
+				},
+				"Head": {
+					"rotation": ["math.sin(query.anim_time*160)*3", 0, 0]
+				},
+				"Meerkat": {
+					"position": [0, 3, 0]
+				}
+			}
+		}
+	}
+}

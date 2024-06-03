@@ -1,0 +1,142 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "tuto:solar_panel",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            
+            "animations": {
+                "tuto":     "controller.animation.solar_panel_tuto"
+
+            },
+            "scripts": {
+                "animate": [ "tuto" ]
+            },
+            "runtime_identifier": "minecraft:boat"
+        },
+        "component_groups": {
+            
+            "minecraft:captain":  {
+                "minecraft:is_illager_captain":{},
+                "minecraft:timer": {"looping": false,"time": 0.3,"time_down_event": {"event": "evt:reset"}}
+            },
+            
+            "state:off": {
+                "minecraft:variant": { "value" : 0   },
+                "minecraft:interact": {
+                    "interactions" : [
+                        {
+                            "on_interact": {
+                                "filters": {"all_of": [    {"test": "has_equipment","domain": "hand","subject": "other","value": "gameplay:solar_panel_normal"}]},
+                                "event": "evt:set_normal"
+                            },
+                            "use_item": true,
+                            "swing": true,
+                            "interact_text" : "action.interact.set_solar_panel"
+                        },
+                        {
+                            "on_interact": {
+                                "filters": {"all_of": [    {"test": "has_equipment","domain": "hand","subject": "other","value": "gameplay:solar_panel_advanced"}]},
+                                "event": "evt:set_advanced"
+                            },
+                            "use_item": true,
+                            "swing": true,
+                            "interact_text" : "action.interact.set_solar_panel"
+                        }
+                    ]
+                }
+            },
+            
+            
+            "state:normal": {
+                "minecraft:variant": { "value" : 1   },
+                "minecraft:interact": {
+                    "interactions" : [
+                        {
+                            "on_interact": {
+                                "filters": {"all_of": [    {"test": "has_equipment","domain": "hand","subject": "other","value": "gameplay:wrench"}]},
+                                "event": "evt:set_off"
+                            },
+                            "spawn_items": { "table": "loot_tables/gameplay/solar_panel_normal.json" },
+                            "use_item": false,
+                            "swing": true,
+                            "interact_text" : "action.interact.remove_solar_panel"
+                        }
+                    ]
+                }
+            },
+            
+            
+            "state:advanced": {
+                "minecraft:variant": { "value" : 2   },
+                "minecraft:interact": {
+                    "interactions" : [
+                        {
+                            "on_interact": {
+                                "filters": {"all_of": [    {"test": "has_equipment","domain": "hand","subject": "other","value": "gameplay:wrench"}]},
+                                "event": "evt:set_off"
+                            },
+                            "spawn_items": { "table": "loot_tables/gameplay/solar_panel_advanced.json" },
+                            "use_item": false,
+                            "swing": true,
+                            "interact_text" : "action.interact.remove_solar_panel"
+                        }
+                    ]
+                }
+            }
+        },
+        
+        
+        
+        
+        "components": {
+            "minecraft:type_family": {   "family": [ "furniture", "inanimate" ]    },
+            "minecraft:collision_box": {
+                "width": 1,
+                "height": 0.8
+            },
+            "minecraft:health": {
+                "value": 2,
+                "max": 2
+            },
+            "minecraft:rideable" : {
+                "seat_count" : 0,
+                "interact_text" : ""
+              },
+            "minecraft:scale": {  "value": 1  },
+            "minecraft:navigation.walk": { },
+            "minecraft:movement.basic": {   "max_turn": 0.01   },
+            "minecraft:physics": {},
+            "minecraft:is_stackable": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": true
+            }
+        },
+        "events": {
+            
+            "minecraft:entity_spawned": {
+                "add":     {"component_groups": ["state:off"]}
+            },
+            
+            "evt:set_off": {
+                "remove":     {"component_groups": ["state:normal", "state:advanced"]  },
+                "add":         {"component_groups": ["state:off", "minecraft:captain" , "cg:no_mark_variant"]  }
+            },
+            "evt:set_normal": {
+                "remove":     {"component_groups": ["state:off", "state:advanced" ]  },
+                "add":         {"component_groups": ["state:normal", "minecraft:captain" ]  }
+            },
+            "evt:set_advanced": {
+                "remove":     {"component_groups": ["state:off", "state:normal"]  },
+                "add":         {"component_groups": ["state:advanced", "minecraft:captain" ]  }
+            },
+            
+            "evt:reset":{
+                "remove":     {"component_groups": [ "minecraft:captain" ]  }
+            }
+        }
+    }
+}

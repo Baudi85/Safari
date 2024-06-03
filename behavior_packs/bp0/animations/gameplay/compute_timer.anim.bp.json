@@ -1,0 +1,29 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        
+        "animation.compute_timer": {
+            "animation_length": 11,
+            "loop" : false,
+            "timeline": {
+                "0.0" :  [ "/title @a actionbar §3[ §b__________ §3]" , "/execute @a ~ ~ ~ /playsound random.click @s ~ ~ ~ 0.1"],
+                "1.0" :  [ "/title @a actionbar §3[ §bo_________ §3]" , "/execute @a ~ ~ ~ /playsound random.click @s ~ ~ ~ 0.1"],
+                "2.0" :  [ "/title @a actionbar §3[ §boo________ §3]" , "/execute @a ~ ~ ~ /playsound random.click @s ~ ~ ~ 0.1"],
+                "3.0" :  [ "/title @a actionbar §3[ §booo_______ §3]" , "/execute @a ~ ~ ~ /playsound random.click @s ~ ~ ~ 0.1"],
+                "4.0" :  [ "/title @a actionbar §3[ §boooo______ §3]" , "/execute @a ~ ~ ~ /playsound random.click @s ~ ~ ~ 0.1"],
+                "5.0" :  [ "/title @a actionbar §3[ §booooo_____ §3]" , "/execute @a ~ ~ ~ /playsound random.click @s ~ ~ ~ 0.1"],
+                "6.0" :  [ "/title @a actionbar §3[ §boooooo____ §3]" , "/execute @a ~ ~ ~ /playsound random.click @s ~ ~ ~ 0.1"],
+                "7.0" :  [ "/title @a actionbar §3[ §booooooo___ §3]" , "/execute @a ~ ~ ~ /playsound random.click @s ~ ~ ~ 0.1"],
+                "8.0" :  [ "/title @a actionbar §3[ §boooooooo__ §3]" , "/execute @a ~ ~ ~ /playsound random.click @s ~ ~ ~ 0.1"],
+                "9.0" :  [ "/title @a actionbar §3[ §booooooooo_ §3]" , "/execute @a ~ ~ ~ /playsound random.click @s ~ ~ ~ 0.1"],
+                "10" :   [ "/title @a actionbar §3[ §boooooooooo §3]" , "/execute @a ~ ~ ~ /playsound random.levelup @s ~ ~ ~ 0.3"],
+                "10.1" : [ 
+                    "/function timer/timer_finished" 
+                ],
+                "10.2" : [
+                    "/kill @e[type=gameplay:timer]"
+                ]        
+            }
+        }
+    }
+}

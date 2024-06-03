@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"geometry.public_bin": {
+		"texturewidth": 128,
+		"textureheight": 128,
+		"visible_bounds_width": 2,
+		"visible_bounds_height": 2,
+		"visible_bounds_offset": [0, 0, 0],
+		"bones": [
+			{
+				"name": "bone",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-7, 0, 5], "size": [2, 24, 2], "uv": [24, 44]},
+					{"origin": [-6.5, 22.5, -6.5], "size": [13, 2, 13], "uv": [0, 29]},
+					{"origin": [-5, 17, 6], "size": [10, 1, 1], "uv": [51, 30]},
+					{"origin": [-5, 0, 6], "size": [10, 1, 1], "uv": [51, 28]},
+					{"origin": [-7, 17, -5], "size": [1, 1, 10], "uv": [51, 1]},
+					{"origin": [-7, 0, -5], "size": [1, 1, 10], "uv": [42, 42]},
+					{"origin": [-6.5, 1, -6.5], "size": [13, 16, 13], "uv": [0, 0]},
+					{"origin": [-7, 0, -7], "size": [2, 24, 2], "uv": [16, 44]},
+					{"origin": [5, 0, -7], "size": [2, 24, 2], "uv": [8, 44]},
+					{"origin": [5, 0, 5], "size": [2, 24, 2], "uv": [0, 44]},
+					{"origin": [6, 17, -5], "size": [1, 1, 10], "uv": [39, 29]},
+					{"origin": [-5, 17, -7], "size": [10, 1, 1], "uv": [30, 44]},
+					{"origin": [6, 0, -5], "size": [1, 1, 10], "uv": [39, 0]},
+					{"origin": [-5, 0, -7], "size": [10, 1, 1], "uv": [39, 40]}
+				],
+				"locators": {
+					"particles": [0, 7, 0]
+				}
+			}
+		]
+	}
+}

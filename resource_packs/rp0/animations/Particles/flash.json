@@ -1,0 +1,23 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+
+        "animation.particles.flash": {
+			"loop":false,
+			"animation_length": 1.0,
+            "particle_effects": {
+                "0.0": [
+                    {
+                        "effect": "flash_p",
+                        "locator": "camera"
+                    }
+                ]
+            }
+        }
+        
+
+
+
+
+    }
+}

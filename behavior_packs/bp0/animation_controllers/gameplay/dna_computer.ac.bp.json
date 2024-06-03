@@ -1,0 +1,283 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        
+      "controller.animation.dna_computer.run_animation" : {
+        "initial_state": "default",
+        "states" : {
+          "default" : {
+            "transitions": [ { "run": "query.is_sheared" } ]
+          },
+          "run" : {
+            "transitions": [ { "default": "!query.is_sheared" } ],
+            "animations" : [
+              "running"
+            ]
+          }
+        }
+      },
+
+
+        "controller.animation.dna_computer": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [     
+                        { "ask": "query.is_illager_captain" },
+                        { "give_01": "query.is_baby && query.variant == 1" },
+                        { "give_02": "query.is_baby && query.variant == 2" },
+                        { "give_03": "query.is_baby && query.variant == 3" },
+                        { "give_04": "query.is_baby && query.variant == 4" },
+                        { "give_05": "query.is_baby && query.variant == 5" },
+                        { "give_06": "query.is_baby && query.variant == 6" },
+                        { "give_07": "query.is_baby && query.variant == 7" },
+                        { "give_08": "query.is_baby && query.variant == 8" },
+                        { "give_09": "query.is_baby && query.variant == 9" },
+                        { "give_10": "query.is_baby && query.variant == 10" },
+                        { "give_11": "query.is_baby && query.variant == 11" },
+                        { "give_12": "query.is_baby && query.variant == 12" },
+                        { "give_13": "query.is_baby && query.variant == 13" },
+                        { "give_14": "query.is_baby && query.variant == 14" },
+                        { "give_15": "query.is_baby && query.variant == 15" },
+                        { "give_16": "query.is_baby && query.variant == 16" },
+                        { "give_17": "query.is_baby && query.variant == 17" },
+                        { "give_18": "query.is_baby && query.variant == 18" },
+                        { "give_19": "query.is_baby && query.variant == 19" },
+                        { "give_20": "query.is_baby && query.variant == 20" },
+                        { "give_21": "query.is_baby && query.variant == 21" },
+                        { "give_22": "query.is_baby && query.variant == 22" },
+                        { "give_23": "query.is_baby && query.variant == 23" },
+                        { "give_24": "query.is_baby && query.variant == 24" },
+
+                        
+                        { "deny_01": "query.is_tamed && query.variant == 1" },
+                        { "deny_02": "query.is_tamed && query.variant == 2" },
+                        { "deny_03": "query.is_tamed && query.variant == 3" },
+                        { "deny_04": "query.is_tamed && query.variant == 4" },
+                        { "deny_05": "query.is_tamed && query.variant == 5" },
+                        { "deny_06": "query.is_tamed && query.variant == 6" },
+                        { "deny_07": "query.is_tamed && query.variant == 7" },
+                        { "deny_08": "query.is_tamed && query.variant == 8" },
+                        { "deny_09": "query.is_tamed && query.variant == 9" },
+                        { "deny_10": "query.is_tamed && query.variant == 10"},
+                        { "deny_11": "query.is_tamed && query.variant == 11"},
+                        { "deny_12": "query.is_tamed && query.variant == 12"},
+                        { "deny_13": "query.is_tamed && query.variant == 13"},
+                        { "deny_14": "query.is_tamed && query.variant == 14"},
+                        { "deny_15": "query.is_tamed && query.variant == 15"},
+                        { "deny_16": "query.is_tamed && query.variant == 16"},
+                        { "deny_17": "query.is_tamed && query.variant == 17"},
+                        { "deny_18": "query.is_tamed && query.variant == 18"},
+                        { "deny_19": "query.is_tamed && query.variant == 19"},
+                        { "deny_20": "query.is_tamed && query.variant == 20"},
+                        { "deny_21": "query.is_tamed && query.variant == 21"},
+                        { "deny_22": "query.is_tamed && query.variant == 22"},
+                        { "deny_23": "query.is_tamed && query.variant == 23"},
+                        { "deny_24": "query.is_tamed && query.variant == 24"}
+                    ]
+                },
+                "ask": {
+                  "on_entry": [ "/function gameplay/dna_computer/ask" ],
+                  "transitions": [
+                    { "default": "!query.is_illager_captain" }
+                  ]
+                },
+
+
+                "deny_01" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/01" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_02" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/02" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_03" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/03" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_04" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/04" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_05" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/05" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_06" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/06" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_07" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/07" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_08" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/08" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_09" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/09" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_10" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/10" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_11" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/11" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_12" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/12" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_13" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/13" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_14" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/14" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_15" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/15" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_16" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/16" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_17" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/17" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_18" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/18" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_19" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/19" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_20" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/20" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_21" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/21" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_22" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/22" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_23" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/23" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+                "deny_24" : {
+                  "on_entry": [ "/function gameplay/dna_computer/deny/24" ],
+                  "transitions": [ { "default": "!query.is_tamed" } ]
+                },
+
+                "give_01": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/babbon" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_02": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/buffalo" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_03": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/camel" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_04": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/crocodile" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_05": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/elephant" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_06": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/fennec" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_07": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/gazelle" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_08": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/giraffe" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_09": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/hippopotamus" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_10": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/hyena" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_11": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/jaburi" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_12": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/jackal" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_13": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/lion" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_14": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/meerkat" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_15": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/ostrich" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_16": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/pangolin" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_17": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/piranha" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_18": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/porcupine" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_19": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/rhinoceros" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_20": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/serval" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_21": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/snake" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_22": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/vulture" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_23": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/warthog" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                },
+                "give_24": {
+                  "on_entry": [ "/function gameplay/unlock/unlock/zebra" ],
+                  "transitions": [ { "default": "!query.is_baby" } ]
+                }
+            }
+        }
+    }
+}

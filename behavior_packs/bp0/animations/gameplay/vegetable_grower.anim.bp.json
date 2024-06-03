@@ -1,0 +1,17 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        
+        "animation.vegetable_grower.run": {
+            "animation_length": 11,
+            "loop" : false,
+            "timeline": {
+                "0.0" :  [ "@s set_one"],
+                "2.5" :  [ "@s set_two"],
+                "5.0" :  [ "@s set_three"],
+                "7.5" :  [ "@s set_four"],
+                "10" :   [ "@s reset"]    
+            }
+        }
+    }
+}

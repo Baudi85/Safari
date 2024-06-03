@@ -1,0 +1,18 @@
+{
+    "format_version" : "1.10.0",
+    "animation_controllers":{
+        "controller.animation.jeep_0.general": {
+
+            "initial_state" : "default",
+            "states": {
+                "default": {
+                    "animations" : [
+                        {
+                            "walk" : "query.modified_move_speed > 0.1"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

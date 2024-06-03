@@ -1,0 +1,18 @@
+{
+    "format_version": "1.8.0",
+    "animation_controllers": {
+        "controller.animation.fly": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "on_entry":[	"/scoreboard players set @s rideme 0"],
+                    "transitions": [ 	{ "rided": "query.has_rider == 1" }]
+                },
+                "rided": {
+                    "on_entry":[	"/scoreboard players set @s rideme 1"],
+                    "transitions": [ 	{ "default": "query.has_rider == 0" }]
+                }
+            }
+        }
+    }
+}

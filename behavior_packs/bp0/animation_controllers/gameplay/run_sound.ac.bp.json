@@ -1,0 +1,70 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        
+        "controller.animation.run_sound.computer": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [     
+                        { "running": "query.is_sheared == true" }
+                    ]
+                },
+                "running" : {
+                    "on_entry":[    "/playsound fx.computer @a 43 67 119"],
+                    "transitions": [     
+                        { "default": "query.is_sheared == false" }
+                    ]
+                }
+            }
+        },
+        "controller.animation.run_sound.analyser": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [     
+                        { "running": "query.is_sheared == true" }
+                    ]
+                },
+                "running" : {
+                    "on_entry":[    "/playsound fx.analyser @a 43 67 115"],
+                    "transitions": [     
+                        { "default": "query.is_sheared == false" }
+                    ]
+                }
+            }
+        },
+        "controller.animation.run_sound.cloner": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [     
+                        { "running": "query.is_sheared == true" }
+                    ]
+                },
+                "running" : {
+                    "on_entry":[    "/playsound fx.clone @a -13 70 186"],
+                    "transitions": [     
+                        { "default": "query.is_sheared == false" }
+                    ]
+                }
+            }
+        },
+        "controller.animation.run_sound.boat": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [     
+                        { "running": "query.is_sheared == true" }
+                    ]
+                },
+                "running" : {
+                    "on_entry":[    "/playsound fx.boat @a 67 64 181"],
+                    "transitions": [     
+                        { "default": "query.is_sheared == false" }
+                    ]
+                }
+            }
+        }
+    }
+}

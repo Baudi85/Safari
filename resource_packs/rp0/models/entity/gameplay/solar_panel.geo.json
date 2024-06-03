@@ -1,0 +1,164 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.solar_panel",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "Solar_panel",
+					"pivot": [-2, 12, -5]
+				},
+				{
+					"name": "Branch",
+					"parent": "Solar_panel",
+					"pivot": [0, 13, 0],
+					"cubes": [
+						{
+							"origin": [-5, 18, -3],
+							"size": [5, 9, 6],
+							"uv": [0, 0]
+						},
+						{
+							"origin": [-2, 12, -2],
+							"size": [4, 5, 4],
+							"uv": [60, 33]
+						},
+						{
+							"origin": [-1.5, 17, -1.5],
+							"size": [3, 29, 3],
+							"uv": [38, 38]
+						}
+					]
+				},
+				{
+					"name": "Panel",
+					"parent": "Branch",
+					"pivot": [0, 45, 0],
+					"cubes": [
+						{
+							"origin": [-30, 45, 0.9],
+							"size": [60, 2, 31],
+							"uv": [0, 0]
+						},
+						{
+							"origin": [-30, 45, -32.1],
+							"size": [60, 2, 31],
+							"uv": [0, 0]
+						},
+						{
+							"origin": [-25, 43, -26.95],
+							"size": [3, 2, 54],
+							"uv": [0, 33]
+						},
+						{
+							"origin": [22, 43, -26.95],
+							"size": [3, 2, 54],
+							"uv": [0, 33]
+						},
+						{
+							"origin": [-22, 43, -2.95],
+							"size": [44, 2, 5],
+							"uv": [60, 60]
+						}
+					]
+				},
+				{
+					"name": "Base",
+					"parent": "Solar_panel",
+					"pivot": [-2, 12, -5],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 12, 16],
+							"uv": [0, 89]
+						},
+						{
+							"origin": [-13, 0, -3],
+							"size": [5, 9, 6],
+							"uv": [0, 15]
+						},
+						{
+							"origin": [-7, 12, -7],
+							"size": [5, 1, 14],
+							"uv": [0, 48]
+						},
+						{
+							"origin": [-2, 12, 2],
+							"size": [4, 1, 5],
+							"uv": [60, 48]
+						},
+						{
+							"origin": [-2, 12, -7],
+							"size": [4, 1, 5],
+							"uv": [60, 42]
+						},
+						{
+							"origin": [2, 12, -7],
+							"size": [5, 1, 14],
+							"uv": [0, 33]
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.solar_panel_tuto",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 6.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "Solar_panel",
+					"pivot": [5, 12, -2],
+					"rotation": [0, -90, 0]
+				},
+				{
+					"name": "Branch",
+					"parent": "Solar_panel",
+					"pivot": [7, 13, 3],
+					"cubes": [
+						{"origin": [2, 18, 0], "size": [5, 9, 6], "uv": [0, 0]},
+						{"origin": [5, 12, 1], "size": [4, 5, 4], "uv": [60, 33]},
+						{"origin": [5.5, 17, 1.5], "size": [3, 29, 3], "uv": [38, 38]}
+					]
+				},
+				{
+					"name": "Panel",
+					"parent": "Branch",
+					"pivot": [7, 45, 3],
+					"cubes": [
+						{"origin": [-23, 45, 3.9], "size": [60, 2, 31], "uv": [0, 0]},
+						{"origin": [-23, 45, -29.1], "size": [60, 2, 31], "uv": [0, 0]},
+						{"origin": [-18, 43, -23.95], "size": [3, 2, 54], "uv": [0, 33]},
+						{"origin": [29, 43, -23.95], "size": [3, 2, 54], "uv": [0, 33]},
+						{"origin": [-15, 43, 0.05], "size": [44, 2, 5], "uv": [60, 60]}
+					]
+				},
+				{
+					"name": "Base",
+					"parent": "Solar_panel",
+					"pivot": [5, 12, -2],
+					"cubes": [
+						{"origin": [-1, 0, -5], "size": [16, 12, 16], "uv": [0, 89]},
+						{"origin": [-6, 0, 0], "size": [5, 9, 6], "uv": [0, 15]},
+						{"origin": [0, 12, -4], "size": [5, 1, 14], "uv": [0, 48]},
+						{"origin": [5, 12, 5], "size": [4, 1, 5], "uv": [60, 48]},
+						{"origin": [5, 12, -4], "size": [4, 1, 5], "uv": [60, 42]},
+						{"origin": [9, 12, -4], "size": [5, 1, 14], "uv": [0, 33]}
+					]
+				}
+			]
+		}
+	]
+}

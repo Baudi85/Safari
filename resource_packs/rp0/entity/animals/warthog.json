@@ -1,0 +1,40 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "animal:warthog",
+
+
+            "textures": {
+                "default": "textures/safari/warthog_01.png"
+            },
+            "geometry": {
+                "default": "geometry.warthog"
+            },
+            "render_controllers": [
+                "controller.render.one"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            "animations": {
+                "idle": "animation.warthog.idle",
+                "walk": "animation.warthog.walk",
+                "look_at_target": "animation.common.look_at_target",
+                "variantOne" : "animation.warthog.variantone"
+            },
+            "animation_controllers": [
+                { "animal": "controller.animation.warthog.general" }
+            ],
+
+
+            "spawn_egg": { 
+                "base_color" : "#52595a" ,
+                "overlay_color" : "#85fc1e"
+            }
+        }
+    }
+}

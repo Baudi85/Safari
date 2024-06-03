@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.npc.idle": {
+			"loop": true,
+			"bones": {
+				"RightArm": {
+					"rotation": ["math.cos(query.anim_time*60)*4", 0, "math.sin(query.anim_time*80)*2"]
+				},
+				"LeftArm": {
+					"rotation": ["math.cos(query.anim_time*90)*4", 0, "math.sin(query.anim_time*70)*3"]
+				}
+			}
+		}
+	}
+}

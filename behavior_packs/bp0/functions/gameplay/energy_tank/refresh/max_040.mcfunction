@@ -1,0 +1,11 @@
+execute @e[type=armor_stand,name=current,scores={ener=0..1}] ~ ~ ~ function gameplay/energy_tank/set/set_0
+execute @e[type=armor_stand,name=current,scores={ener=2..5}] ~ ~ ~ function gameplay/energy_tank/set/set_1
+execute @e[type=armor_stand,name=current,scores={ener=6..9}] ~ ~ ~ function gameplay/energy_tank/set/set_2
+execute @e[type=armor_stand,name=current,scores={ener=10..13}] ~ ~ ~ function gameplay/energy_tank/set/set_3
+execute @e[type=armor_stand,name=current,scores={ener=14..17}] ~ ~ ~ function gameplay/energy_tank/set/set_4
+execute @e[type=armor_stand,name=current,scores={ener=18..21}] ~ ~ ~ function gameplay/energy_tank/set/set_5
+execute @e[type=armor_stand,name=current,scores={ener=22..25}] ~ ~ ~ function gameplay/energy_tank/set/set_6
+execute @e[type=armor_stand,name=current,scores={ener=26..29}] ~ ~ ~ function gameplay/energy_tank/set/set_7
+execute @e[type=armor_stand,name=current,scores={ener=30..33}] ~ ~ ~ function gameplay/energy_tank/set/set_8
+execute @e[type=armor_stand,name=current,scores={ener=34..37}] ~ ~ ~ function gameplay/energy_tank/set/set_9
+execute @e[type=armor_stand,name=current,scores={ener=38..40}] ~ ~ ~ function gameplay/energy_tank/set/set_10

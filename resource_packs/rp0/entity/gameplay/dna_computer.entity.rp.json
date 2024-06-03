@@ -1,0 +1,33 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "gameplay:dna_computer",
+            
+            "textures": {
+                "default": "textures/gameplay/dna_computer/dna_computer.png",
+                "one" :    "textures/gameplay/dna_computer/dna_computer_01.png",
+                "two" :    "textures/gameplay/dna_computer/dna_computer_02.png",
+                "three" :  "textures/gameplay/dna_computer/dna_computer_03.png",
+                "four" :   "textures/gameplay/dna_computer/dna_computer_04.png",
+                "five" :   "textures/gameplay/dna_computer/dna_computer_05.png",
+                "six" :    "textures/gameplay/dna_computer/dna_computer_06.png"
+            },
+            "geometry": {
+                "default": "geometry.dna_computer"
+            },
+            "render_controllers": [
+                "controller.render.dna_computer"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+            
+            
+            "spawn_egg": {
+                "base_color": "#1336f2",
+                "overlay_color": "#0786b5"
+            }
+        }
+    }
+}

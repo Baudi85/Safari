@@ -1,0 +1,26 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "adv:adv_06",
+            
+            "textures": {
+                "default": "textures/adv/adv_5"
+            },
+            "geometry": {
+                "default": "geometry.adv_3"
+            },
+            "render_controllers": [
+                "controller.render.one"
+            ],
+            "materials": {
+                "default": "entity_emissive_alpha"
+            },
+            
+            "spawn_egg": {
+                "base_color": "#3eb0e9",
+                "overlay_color": "#66fb11"
+            }
+        }
+    }
+}

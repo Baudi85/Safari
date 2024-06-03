@@ -1,0 +1,32 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "create:energy_update"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "groups": [
+            "tools"
+        ],
+        "pattern": [
+            "lll",
+            "lil",
+            "lll"
+        ],
+        "key": {
+            "l": {
+                "item": "minecraft:dye",
+                "data": 4
+            },
+            "i": {
+                "item": "minecraft:redstone_block"
+            }
+        },
+        "result": {
+            "item": "gameplay:energy_update",
+            "count": 1
+        }
+    }
+}

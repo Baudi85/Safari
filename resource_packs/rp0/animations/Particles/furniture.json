@@ -1,0 +1,31 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+
+        "animation.particles.recolor_furn": {
+			"loop":false,
+			"animation_length": 1.0,
+            "particle_effects": {
+                "0.0": [
+                    {
+                        "effect": "recolor_p",
+                        "locator": "particles"
+                    }
+                ]
+            }
+        },
+
+        "animation.particles.rotate_furn": {
+			"loop":false,
+			"animation_length": 1.0,
+            "particle_effects": {
+                "0.0": [
+                    {
+                        "effect": "rotate_p",
+                        "locator": "particles"
+                    }
+                ]
+            }
+        }
+    }
+}

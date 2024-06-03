@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        
+        "controller.animation.energy_tank_tuto": {
+            "initial_state": "default",
+            "states": {
+                
+                "default": {
+                    "transitions": [     
+                        { "updated": "query.mark_variant == 1" }
+                    ]
+                },
+                "updated" : {
+                    "on_entry": [ "/function tuto/tuto/next" ]
+                }
+            }
+        }
+    }
+}

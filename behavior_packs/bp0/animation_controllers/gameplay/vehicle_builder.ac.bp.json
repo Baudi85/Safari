@@ -1,0 +1,23 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        
+        "controller.animation.vehicle_builder": {
+            "initial_state": "default",
+            "states": {
+                
+                "default": {
+                    "transitions": [     
+                        { "running": "query.is_sheared == true" }
+                    ]
+                },
+                "running" : {
+                    "on_entry":[    "/tag @s remove run"],
+                    "transitions": [     
+                        { "default": "query.is_sheared == false" }
+                    ]
+                }
+            }
+        }
+    }
+}

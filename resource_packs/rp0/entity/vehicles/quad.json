@@ -1,0 +1,62 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+
+            "identifier": "vehicle:quad",
+
+            
+            "scripts": {
+                "pre_animation": [
+                    "variable.speed = 5;",
+                    "variable.amplitude = 10;"
+                ]
+            },
+
+            "textures": {
+                "one" : "textures/vehicles/quad/quad_01.png",
+                "two" : "textures/vehicles/quad/quad_02.png",
+                "three" : "textures/vehicles/quad/quad_03.png",
+                "four" : "textures/vehicles/quad/quad_04.png",
+                "five" : "textures/vehicles/quad/quad_05.png",
+                "six" : "textures/vehicles/quad/quad_06.png",
+                "seven" : "textures/vehicles/quad/quad_07.png"
+            },
+            "geometry": {
+                "default": "geometry.quad"
+            },
+            "render_controllers": [
+                "controller.render.seven"
+            ],
+            "materials": {
+                "default": "bat"
+            },
+
+
+            "animations": {
+                "recolorAnim": "animation.particles.recolor",
+                "walk" : "animation.quad.walk",
+                "steeringwheel": "animation.steeringwheel.turn.y"
+            },
+            "animation_controllers": [
+                { "recolor": "controller.animation.particles.recolor" },
+                { "general": "controller.animation.quad.general" },
+                { "whell" : "controller.animation.steeringwheel.general"}
+            ],
+
+
+
+
+            "particle_effects": {
+                "rotation_particles": "p:recolor",
+                "dirt_particles": "p:dirt"
+            },
+
+
+            "spawn_egg": {
+                "texture": "quad"
+            }
+            
+        }
+    }
+}

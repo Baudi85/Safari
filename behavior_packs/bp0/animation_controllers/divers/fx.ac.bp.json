@@ -1,0 +1,20 @@
+{
+    "format_version": "1.8.0",
+    "animation_controllers": {
+
+      "controller.animation.flash": {
+      "initial_state": "default",
+        "states": {
+          "default": {
+            "transitions": [ 	{ "action": "query.is_illager_captain == 1" }]
+          },
+          "action": {
+            "on_entry":[	"/function util/flash"],
+            "transitions": [ { "default": "query.is_illager_captain == 0" }]
+          }
+        }
+      }
+   }
+  }
+  
+  

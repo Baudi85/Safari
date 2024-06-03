@@ -1,0 +1,27 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.lion.male": {
+            "geometry": "Geometry.male",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.male"
+            ]
+        },
+        "controller.render.lion.female": {
+            "geometry": "Geometry.female",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.female"
+            ]
+        }
+    }
+}

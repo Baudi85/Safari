@@ -1,0 +1,76 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+
+        "controller.render.oneChest": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ],
+            "part_visibility": [ { "chest*": "query.is_chested" } ]
+        },
+        "controller.render.box": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ],
+            "part_visibility": [ { "arrow*": "query.is_sheared" } ]
+        },
+
+
+        "controller.render.oneChestSaddle": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ],
+            "part_visibility": [ 
+                { "chest*": "query.is_chested" }, 
+                { "saddle*": "query.is_saddled" } 
+            ]
+        },
+        "controller.render.oneSaddleSadleTwo": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ],
+            "part_visibility": [ 
+                { "saddle_2": "query.is_tamed" }, 
+                { "saddle": "query.is_saddled" } 
+            ]
+        },
+        "controller.render.oneSaddle": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ],
+            "part_visibility": [ 
+                { "saddle": "query.is_saddled" } 
+            ]
+        }
+    }
+}

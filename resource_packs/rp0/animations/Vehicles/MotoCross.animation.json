@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.motocross.walk": {
+			"loop": true,
+			"bones": {
+				"wheel_3": {
+					"rotation": ["query.anim_time*360", 0, 0]
+				},
+				"wheel_2": {
+					"rotation": ["query.anim_time*360", 0, 0]
+				},
+				"chess": {
+					"position": [0, "math.sin(query.anim_time*800)*0.2", 0]
+				}
+			},
+			"particle_effects": {
+                "0.0": [
+                    {
+                        "effect": "dirt_particles",
+                        "locator": "wheel_loc_0"
+                    }
+                ]
+            }
+		}
+	}
+}
